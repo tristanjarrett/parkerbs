@@ -15,9 +15,6 @@
 				<br>
 				<a href="<?php echo get_bloginfo('wpurl') . '/branches'; ?>">Store Finder</a>
 			</div>
-			<div class="col-auto">
-				<img src="<?php echo get_bloginfo('template_directory') . '/images/core/404.jpg'; ?>" alt="404" height="400px">
-			</div>
 		</div>
 
 	</div>
