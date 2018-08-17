@@ -276,24 +276,27 @@ li {
 }
 
 /* ================================== *\
-   home - jumbotron
+   home - carousel
 \* ================================== */
-.pbs-home-jumbotron {
+.pbs-home-carousel {
 	background-color: #FFFFFF;
 	position: relative;
 	z-index: 9999;
 }
-.pbs-home-jumbotron .pbs-slide {
+.pbs-home-carousel .pbs-slide {
 	background-size: cover;
 	background-position: center;
-	padding-top: 300px;
+	height: 400px;
 }
-.pbs-home-jumbotron .pbs-slide .pbs-overlay {
+.pbs-home-carousel .pbs-slide .pbs-overlay {
 	background-color: rgba(67,169,172,0.8);  /* pbs green */
 	padding: 30px 0px;
 	color: #FFFFFF;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 }
-.pbs-home-jumbotron .pbs-slide .pbs-overlay h5 {
+.pbs-home-carousel .pbs-slide .pbs-overlay h5 {
 	font-weight: bold;
 	margin-bottom: 0px;
 	text-shadow: 1px 1px 1px #666666;
@@ -377,7 +380,7 @@ li {
 }
 .pbs-home-news-item .pbs-text {
 	padding: 15px;
-	padding-bottom: 61px; /* because more button is set height */
+	padding-bottom: 61px; /* .pbs-text padding + .pbs-more button height */
 	margin-bottom: 0px;
 	color: #999999;
 	font-weight: bold;
@@ -386,8 +389,6 @@ li {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	height: 46px; /* added 2 for the border */
-	border-top: solid 2px #E1E1E1;
 }
 .pbs-home-news-item .pbs-more a {
 	color: #44A8AB !important;
@@ -395,6 +396,8 @@ li {
 	display: block;
 	padding: 10px;
 	text-align: right;
+	height: 46px; /* added 2 for the border */
+	border-top: solid 2px #E1E1E1;
 }
 .pbs-home-news-item .pbs-more a:hover {
 	color: #3C999A !important;
@@ -495,7 +498,7 @@ li {
 }
 .pbs-post-other-news-item .pbs-text {
 	padding: 15px;
-	padding-bottom: 61px; /* because more button is set height */
+	padding-bottom: 61px; /* .pbs-text padding + .pbs-more button height */
 	margin-bottom: 0px;
 	color: #999999;
 	font-weight: bold;
@@ -504,8 +507,6 @@ li {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	height: 46px; /* added 2 for the border */
-	border-top: solid 2px #E1E1E1;
 }
 .pbs-post-other-news-item .pbs-more a {
 	color: #44A8AB !important;
@@ -513,6 +514,8 @@ li {
 	display: block;
 	padding: 10px;
 	text-align: right;
+	height: 46px; /* added 2 for the border */
+	border-top: solid 2px #E1E1E1;
 }
 .pbs-post-other-news-item .pbs-more a:hover {
 	color: #3C999A !important;
