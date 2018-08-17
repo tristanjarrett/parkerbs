@@ -638,6 +638,12 @@ li {
 }
 .pbs-footer a {
 	color: #F7F7F7;
+	transition: 0.3s ease;
+}
+.pbs-footer a:hover {
+	text-decoration: none;
+	padding-left: 10px;
+	color: #E7E7E7 !important;
 }
 .pbs-footer .pbs-col {
 	margin-bottom: 20px;

@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 
 	<div class="container-fluid">
+
 		<div class="row pbs-404">
 			<div class="col pbs-404-text">
 				<h1>Oops!</h1>
@@ -15,10 +16,10 @@
 				<a href="<?php echo get_bloginfo('wpurl') . '/branches'; ?>">Store Finder</a>
 			</div>
 			<div class="col-auto">
-				<img src="<?php echo get_bloginfo('template_directory') . '/images/core/404.png'; ?>" alt="404" height="450px">
-
+				<img src="<?php echo get_bloginfo('template_directory') . '/images/core/404.jpg'; ?>" alt="404" height="400px">
 			</div>
 		</div>
+
 	</div>
 
 <?php get_footer(); ?>
