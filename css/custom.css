@@ -634,12 +634,10 @@ li {
 }
 .pbs-footer a {
 	color: #F7F7F7;
-	transition: 0.3s ease;
 }
 .pbs-footer a:hover {
 	text-decoration: none;
-	padding-left: 10px;
-	color: #E7E7E7 !important;
+	color: #44A8AB !important;
 }
 .pbs-footer .pbs-col {
 	margin-bottom: 20px;
@@ -647,7 +645,7 @@ li {
 .pbs-footer .pbs-copyright {
 	padding-top: 20px;
 	margin-top: 10px;
-	border-top: solid 1px #E1E1E1;
+	border-top: solid 2px #E1E1E1;
 }
 @media (max-width: 767px) {
 		.pbs-footer .pbs-copyright {
