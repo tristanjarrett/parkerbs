@@ -8,7 +8,7 @@
 <?php get_header(); ?>
 
 	<div class="container-fluid">
-		charities & communities
+    charities & communities
 	</div>
 
 <?php get_footer(); ?>
