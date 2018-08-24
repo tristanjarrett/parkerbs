@@ -5,14 +5,16 @@
 			<div class="row">
 				<div class="col-lg-3">
 					<div class="pbs-sidebar">
-						<?php
-			       $args = array( 'post_type' => 'branch', 'posts_per_page' => -1, 'orderby'=> 'title', 'order' => 'ASC' );
-			       $loop = new WP_Query( $args );
-			       while ( $loop->have_posts() ) : $loop->the_post(); ?>
-			         <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-			       <?php
-			       endwhile;
-			   		?>
+						<ul>
+							<?php
+				       $args = array( 'post_type' => 'branch', 'posts_per_page' => -1, 'orderby'=> 'title', 'order' => 'ASC' );
+				       $loop = new WP_Query( $args );
+				       while ( $loop->have_posts() ) : $loop->the_post(); ?>
+				         <li><a href="<?php the_permalink(); ?>"><span class="pbs-map-icon"><i class="fas fa-fw fa-map-marker-alt"></i></span> <?php the_title(); ?></a></li>
+				       <?php
+				       endwhile;
+				   		?>
+						</ul>
 					</div>
 				</div>
 				<div class="col-lg-9">
@@ -22,7 +24,7 @@
 							while ( have_posts() ) : the_post(); ?>
 
 								<h4><?php the_title(); ?></h4>
-								<p class="text-muted">Posted <i class="far fa-fw fa-calendar-alt"></i> <?php the_date(); ?> by <i class="far fa-fw fa-user"> </i><?php the_author(); ?></p>
+								<p class="text-muted">Posted <i class="far fa-fw fa-calendar-alt"></i> <?php the_date(); ?></p>
 								<hr>
 								<?php the_content(); ?>
 

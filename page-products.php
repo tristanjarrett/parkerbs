@@ -22,7 +22,7 @@
               <div class="pbs-grandchild">
                 <h4><?php the_title(); ?></h4>
                 <?php the_content(); ?>
-                <a href="<?php echo get_bloginfo('wpurl') . '/store-finder'; ?>" class="btn btn-outline-primary">Visit your local branch for <?php the_title(); ?></a>
+                <a href="<?php echo get_bloginfo('wpurl') . '/branches'; ?>" class="btn btn-outline-primary">Visit your local branch for <?php the_title(); ?></a>
               </div>
             </div>
             <div class="col-auto pbs-child">
