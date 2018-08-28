@@ -1,6 +1,5 @@
 <?php
 /**
- * Template Name: Vacancies
  * Use the page slug "vacancies"
  */
  ?>

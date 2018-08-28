@@ -1,6 +1,5 @@
 <?php
 /**
- * Template Name: Products
  * Use the page slug "products"
  */
  ?>

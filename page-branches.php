@@ -1,6 +1,5 @@
 <?php
 /**
- * Template Name: Branches
  * Use the page slug "branches"
  */
  ?>

@@ -1,6 +1,5 @@
 <?php
 /**
- * Template Name: Charities & Communities
  * Use the page slug "charities-and-communities"
  */
  ?>

@@ -1,6 +1,5 @@
 <?php
 /**
- * Template Name: Contact Us
  * Use the page slug "contact-us"
  */
  ?>
