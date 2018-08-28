@@ -642,10 +642,6 @@ li {
 .pbs-footer a {
 	color: #F7F7F7;
 }
-.pbs-footer a:hover {
-	text-decoration: none;
-	color: #44A8AB !important;
-}
 .pbs-footer .pbs-col {
 	margin-bottom: 20px;
 }
