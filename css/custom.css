@@ -450,14 +450,14 @@ li {
 }
 .pbs-post-section .pbs-sidebar a {
 	display: block;
-	padding: 15px;
+	padding: 15px 15px 15px 10px; /* because there is an invisible border of 5px for hover effects */
 	color: #999999 !important;
 	text-decoration: none;
-	border-left: solid 3px transparent;
+	border-left: solid 5px transparent;
 }
 .pbs-post-section .pbs-sidebar a:hover {
 	background-color: #F9F9F9;
-	border-left: solid 3px #44A8AB;
+	border-left: solid 5px #44A8AB;
 }
 .pbs-post-section .pbs-sidebar a .pbs-map-icon {
 	margin-right: 10px;
