@@ -65,7 +65,15 @@ li {
 .pbs-cut-p {
 	margin-bottom: 0px;
 }
-
+.pbs-heading {
+	color: #44A8AB;
+	text-transform: uppercase;
+}
+.pbs-font {
+	font-family: franklin-gothic-urw, sans-serif !important;
+	font-style: normal;
+	font-weight: 900;
+}
 /* ================================== *\
    universal - flex (height equal)
 \* ================================== */
@@ -299,9 +307,6 @@ li {
 .pbs-home-carousel .pbs-slide .pbs-overlay h5 {
 	margin-bottom: 0px;
 	text-shadow: 1px 1px 1px #666666;
-	font-family: franklin-gothic-urw, sans-serif !important;
-	font-style: normal;
-	font-weight: 900;
 }
 
 /* ================================== *\
@@ -327,11 +332,6 @@ li {
 }
 .pbs-home-brands h4 {
 	margin-bottom: 20px;
-	color: #44A8AB;
-	font-family: franklin-gothic-urw, sans-serif !important;
-	font-style: normal;
-	font-weight: 900;
-	text-transform: uppercase;
 }
 .pbs-home-brands .pbs-block {
 	color: #FFFFFF;
@@ -371,11 +371,6 @@ li {
 }
 .pbs-home-news h4 {
 	margin-bottom: 20px;
-	color: #44A8AB;
-	font-family: franklin-gothic-urw, sans-serif !important;
-	font-style: normal;
-	font-weight: 900;
-	text-transform: uppercase;
 }
 .pbs-home-news-item {
 	background-color: #FFFFFF;
@@ -502,11 +497,6 @@ li {
 }
 .pbs-post-other-news h4 {
 	margin-bottom: 20px;
-	color: #44A8AB;
-	font-family: franklin-gothic-urw, sans-serif !important;
-	font-style: normal;
-	font-weight: 900;
-	text-transform: uppercase;
 }
 .pbs-post-other-news-item {
 	background-color: #FFFFFF;
@@ -623,7 +613,6 @@ li {
 }
 .pbs-products-section li.pbs-products-item h4 {
 	margin-bottom: 20px;
-	color: #888888;
 }
 .pbs-products-section li.pbs-products-item:last-child {
 	border-bottom: none;

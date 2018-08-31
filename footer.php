@@ -3,7 +3,7 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-sm-6 col-lg-3 pbs-col">
-					<h5>My Account</h5>
+					<h5 class="pbs-font">My Account</h5>
 					<ul>
 						<li><a href="#">Account Application</a></li>
 						<li><a href="#">Request Login</a></li>
@@ -14,7 +14,7 @@
 					<img src="<?php echo get_bloginfo( 'template_directory' ) . '/images/core/logo.png'; ?>" alt="Logo" height="100">
 				</div>
 				<div class="col-sm-6 col-lg-3 pbs-col">
-					<h5>Information</h5>
+					<h5 class="pbs-font">Information</h5>
 					<ul>
 						<li><a href="<?php echo get_bloginfo('wpurl') . '/contact-us'; ?>">Contact Us</a></li>
 						<li><a href="<?php echo get_bloginfo('wpurl') . '/about-us'; ?>">About Us</a></li>
@@ -27,7 +27,7 @@
 					</ul>
 				</div>
 				<div class="col-sm-6 col-lg-3 pbs-col">
-					<h5>Social Media</h5>
+					<h5 class="pbs-font">Social Media</h5>
 					<ul>
 						<li><i class="fab fa-fw fa-twitter"></i> <a href="https://twitter.com/helpmebuildit">Twitter</a></li>
 						<li><i class="fab fa-fw fa-facebook-f"></i> <a href="https://www.facebook.com/helpmebuildit/">Facebook</a></li>
@@ -35,7 +35,7 @@
 					</ul>
 				</div>
 				<div class="col-sm-6 col-lg-3 pbs-col">
-					<h5>Our Location</h5>
+					<h5 class="pbs-font">Our Location</h5>
 					<ul>
 						<li>Unit J1–J4 Franklin House</li>
 						<li>Chaucer Business Park</li>
