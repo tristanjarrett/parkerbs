@@ -29,9 +29,9 @@
 				<div class="col-sm-6 col-lg-3 pbs-col">
 					<h5>Social Media</h5>
 					<ul>
-						<li><a href="https://twitter.com/helpmebuildit"><i class="fab fa-fw fa-twitter"></i> Twitter</a></li>
-						<li><a href="https://www.facebook.com/helpmebuildit/"><i class="fab fa-fw fa-facebook-f"></i> Facebook</a></li>
-						<li><a href="https://www.linkedin.com/company/parker-building-supplies-ltd"><i class="fab fa-fw fa-linkedin-in"></i> LinkedIn</a></li>
+						<li><i class="fab fa-fw fa-twitter"></i> <a href="https://twitter.com/helpmebuildit">Twitter</a></li>
+						<li><i class="fab fa-fw fa-facebook-f"></i> <a href="https://www.facebook.com/helpmebuildit/">Facebook</a></li>
+						<li><i class="fab fa-fw fa-linkedin-in"></i> <a href="https://www.linkedin.com/company/parker-building-supplies-ltd">LinkedIn</a></li>
 					</ul>
 				</div>
 				<div class="col-sm-6 col-lg-3 pbs-col">
@@ -44,8 +44,8 @@
 						<li>East Sussex</li>
 						<li>BN26 6JF</li>
 						<br>
-						<li><a href="tel:08442577000"><i class="fas fa-fw fa-phone"></i> 0844 257 7000</a></li>
-						<li><a href="mailto:info@parkerbs.com"><i class="far fa-fw fa-envelope"></i> info@parkerbs.com</a></li>
+						<li><i class="fas fa-fw fa-phone"></i> <a href="tel:08442577000">0844 257 7000</a></li>
+						<li><i class="far fa-fw fa-envelope"></i> <a href="mailto:info@parkerbs.com">info@parkerbs.com</a></li>
 					</ul>
 				</div>
 			</div>
