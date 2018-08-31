@@ -6,7 +6,7 @@
 
 <?php get_header(); ?>
 
-<div class="pbs-products-list">
+  <div class="pbs-products-section">
 
   	<div class="container-fluid">
 
@@ -15,13 +15,13 @@
         $args = array( 'post_type' => 'product', 'posts_per_page' => -1, 'orderby'=> 'title', 'order' => 'ASC' );
         $loop = new WP_Query( $args );
         while ( $loop->have_posts() ) : $loop->the_post(); ?>
-        <li class="pbs-products-item">
+        <li class="pbs-products-item" id="<?php the_title(); ?>">
           <div class="row">
             <div class="col pbs-child">
               <div class="pbs-grandchild">
                 <h4><?php the_title(); ?></h4>
                 <?php the_content(); ?>
-                <a href="<?php echo get_bloginfo('wpurl') . '/branches'; ?>" class="btn btn-outline-primary">Visit your local branch for <?php the_title(); ?></a>
+                <a href="<?php echo get_bloginfo('wpurl') . '/branches'; ?>" class="btn btn-outline-secondary">Visit your local branch for <?php the_title(); ?></a>
               </div>
             </div>
             <div class="col-auto pbs-child">
