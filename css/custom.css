@@ -235,8 +235,8 @@ li {
 	text-align: center;
 	color: #FFFFFF;
 	line-height: normal;
-	font-weight: bold;
 	word-break: break-all;
+	font-weight: bold;
 }
 .pbs-nav li:hover {
 	cursor: pointer;
@@ -297,9 +297,11 @@ li {
 	width: 100%;
 }
 .pbs-home-carousel .pbs-slide .pbs-overlay h5 {
-	font-weight: bold;
 	margin-bottom: 0px;
 	text-shadow: 1px 1px 1px #666666;
+	font-family: franklin-gothic-urw, sans-serif !important;
+	font-style: normal;
+	font-weight: 900;
 }
 
 /* ================================== *\
@@ -317,7 +319,7 @@ li {
 }
 
 /* ================================== *\
-   home - brands
+   home - our brands
 \* ================================== */
 .pbs-home-brands {
 	background-color: #FFFFFF;
@@ -325,7 +327,11 @@ li {
 }
 .pbs-home-brands h4 {
 	margin-bottom: 20px;
-	color: #888888;
+	color: #44A8AB;
+	font-family: franklin-gothic-urw, sans-serif !important;
+	font-style: normal;
+	font-weight: 900;
+	text-transform: uppercase;
 }
 .pbs-home-brands .pbs-block {
 	color: #FFFFFF;
@@ -365,7 +371,11 @@ li {
 }
 .pbs-home-news h4 {
 	margin-bottom: 20px;
-	color: #888888;
+	color: #44A8AB;
+	font-family: franklin-gothic-urw, sans-serif !important;
+	font-style: normal;
+	font-weight: 900;
+	text-transform: uppercase;
 }
 .pbs-home-news-item {
 	background-color: #FFFFFF;
@@ -433,14 +443,16 @@ li {
   position: -ms-sticky;
   position: -o-sticky;
 	top: 20px;
-	background-color: #FFFFFF;
-	box-shadow: 2px 2px 5px 0 #C1C1C1;
 	margin-bottom: 30px;
 }
 @media (max-width: 991px) {
 	.pbs-post-section .pbs-sidebar {
 		display: none;
 	}
+}
+.pbs-post-section .pbs-sidebar ul {
+	background-color: #FFFFFF;
+	box-shadow: 2px 2px 5px 0 #C1C1C1;
 }
 .pbs-post-section .pbs-sidebar li {
 	border-bottom: solid 2px #E1E1E1;
@@ -490,7 +502,11 @@ li {
 }
 .pbs-post-other-news h4 {
 	margin-bottom: 20px;
-	color: #888888;
+	color: #44A8AB;
+	font-family: franklin-gothic-urw, sans-serif !important;
+	font-style: normal;
+	font-weight: 900;
+	text-transform: uppercase;
 }
 .pbs-post-other-news-item {
 	background-color: #FFFFFF;
