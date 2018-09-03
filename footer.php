@@ -11,7 +11,9 @@
 						<li><a href="#">Password Recovery</a></li>
 					</ul>
 					<br>
-					<img src="<?php echo get_bloginfo( 'template_directory' ) . '/images/core/logo.png'; ?>" alt="Logo" height="100">
+					<a href="<?php echo get_bloginfo('wpurl'); ?>">
+						<img src="<?php echo get_bloginfo( 'template_directory' ) . '/images/core/logo.png'; ?>" alt="Logo" height="100">
+					</a>
 				</div>
 				<div class="col-sm-6 col-lg-3 pbs-col">
 					<h5>Information</h5>

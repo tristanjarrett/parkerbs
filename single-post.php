@@ -39,6 +39,6 @@
 		</div>
 	</div>
 
-	<?php get_template_part( 'template-parts/post-other-news' ); ?>
+	<?php get_template_part( 'template-parts/post-news' ); ?>
 
 <?php get_footer(); ?>
