@@ -18,19 +18,6 @@
 	    </div>
 
 	    <div class="carousel-item">
-				<div class="pbs-slide" style="background-image: url('<?php echo get_bloginfo( 'template_directory' ) . '/images/banners/forklift-side.jpg'; ?>');">
-					<div class="container-fluid">
-
-					</div>
-					<div class="pbs-overlay">
-						<div class="container-fluid">
-							<h5 class="pbs-font">Building Sussex and Kent’s future, one brick and block at a time.</h5>
-						</div>
-					</div>
-				</div>
-	    </div>
-
-	    <div class="carousel-item">
 				<div class="pbs-slide" style="background-image: url('<?php echo get_bloginfo( 'template_directory' ) . '/images/banners/lorry-front-side.jpg'; ?>');">
 					<div class="container-fluid">
 

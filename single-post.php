@@ -3,20 +3,7 @@
 	<div class="pbs-post-section">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-lg-3">
-					<div class="pbs-sidebar">
-						<ul>
-							<?php
-				       $args = array( 'post_type' => 'branch', 'posts_per_page' => -1, 'orderby'=> 'title', 'order' => 'ASC' );
-				       $loop = new WP_Query( $args );
-				       while ( $loop->have_posts() ) : $loop->the_post(); ?>
-				         <li><a href="<?php the_permalink(); ?>"><span class="pbs-map-icon"><i class="fas fa-fw fa-map-marker-alt"></i></span> <?php the_title(); ?></a></li>
-				       <?php
-				       endwhile;
-				   		?>
-						</ul>
-					</div>
-				</div>
+
 				<div class="col-lg-9">
 					<div class="pbs-post-content">
 						<?php
@@ -35,6 +22,30 @@
 						?>
 					</div>
 				</div>
+
+				<div class="col-lg-3">
+					<div class="pbs-sidebar">
+						<ul>
+							<?php
+				       $args = array(
+								 'post_type' => 'branch',
+								 'posts_per_page' => -1,
+								 'orderby'=> 'title',
+								 'order' => 'ASC'
+							 );
+				       $loop = new WP_Query( $args );
+				       while ( $loop->have_posts() ) : $loop->the_post(); ?>
+				         <li><a href="<?php the_permalink(); ?>"><span class="pbs-map-icon"><i class="fas fa-fw fa-map-marker-alt"></i></span> <?php the_title(); ?></a></li>
+
+ 								<?php wp_reset_postdata(); ?>
+
+							 <?php
+				       endwhile;
+				   		?>
+						</ul>
+					</div>
+				</div>
+
 			</div>
 		</div>
 	</div>
