@@ -8,8 +8,18 @@
       if ( have_posts() ) :
         while ( have_posts() ) : the_post(); ?>
 
-          <h4><?php the_title(); ?></h4>
-          <p class="text-muted">Posted <i class="far fa-fw fa-calendar-alt"></i> <?php the_date(); ?></p>
+        <div class="row">
+          <div class="col">
+            <h4><?php the_title(); ?></h4>
+            <p class="text-muted mb-0">Posted <i class="far fa-fw fa-calendar-alt"></i> <?php the_date(); ?></p>
+          </div>
+          <div class="col-auto">
+            <form method="post">
+              <input type="text" name="" value="<?php the_title(); ?>" hidden>
+              <button class="btn btn-outline-primary" type="submit">Apply</button>
+            </form>
+          </div>
+        </div>
           <hr>
           <?php the_content(); ?>
 

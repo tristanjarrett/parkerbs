@@ -58,14 +58,14 @@
 									<img src="<?php echo get_bloginfo('template_directory') . '/images/core/slogan.png'; ?>" alt="Slogan" class="pbs-slogan">
 								</div>
 								<div class="col" style="text-align: right;">
-									<a href="#" class="btn btn-outline-secondary">My Account</a>
+									<a href="#" class="btn btn-outline-primary">My Account</a>
 								</div>
 							</div>
 
 							<div class="input-group mb-3" style="margin-bottom: 0px !important;">
 							  <input type="text" class="form-control" placeholder="Find your nearest branch.." aria-label="Find your nearest branch.." aria-describedby="button-addon2">
 							  <div class="input-group-append">
-							    <button class="btn btn-secondary" type="button" id="button-addon2">Go</button>
+							    <button class="btn btn-primary" type="button" id="button-addon2">Go</button>
 							  </div>
 							</div>
 

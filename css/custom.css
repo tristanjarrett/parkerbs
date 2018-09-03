@@ -609,6 +609,13 @@ img {
 	padding-top: 0px;
 	background-color: #FFFFFF;
 }
+.pbs-products-section ul {
+	margin-bottom: 0px;
+	padding-left: 0px;
+}
+.pbs-products-section li {
+	list-style-type: none;
+}
 .pbs-products-section li.pbs-products-item {
 	padding: 30px 0px;
 	border-bottom: dashed 3px #E1E1E1;
