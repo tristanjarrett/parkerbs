@@ -247,6 +247,8 @@ img {
 }
 .pbs-nav a:hover {
 	background-color: #3C999A;
+	color: #FFFFFF;
+	text-decoration: none;
 }
 .pbs-nav li {
 	padding: 15px 15px;
@@ -681,6 +683,9 @@ img {
 	border-top: solid 5px #44A8AB;
 }
 .pbs-footer a {
+	color: #F7F7F7;
+}
+.pbs-footer a:hover {
 	color: #F7F7F7;
 }
 .pbs-footer ul {

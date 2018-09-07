@@ -4,8 +4,8 @@
 	 * custom page title
 	 */
 	function pbs_title() {
-	 $site_description = get_bloginfo( 'description', 'display' );
-	 $site_name = get_bloginfo( 'name' );
+	 $site_description = get_bloginfo('description', 'display');
+	 $site_name = get_bloginfo('name');
 	 // for home page
 	 if ( $site_description && ( is_home() || is_front_page() ) ):
 		 echo $site_name; echo ' | '; echo  $site_description;
@@ -17,26 +17,18 @@
 	}
 
 	/**
-	 * load stylesheets
-	 */
-	function theme_styles() {
-		wp_enqueue_style( 'custom', get_template_directory_uri() . '/css/custom.css' );
-	}
-	add_action('wp_enqueue_scripts', 'theme_styles');
-
-	/**
 	 * load system jQuery
 	 */
 	function add_custom_script() {
-		wp_register_script('jquery', get_template_directory_uri() . '/js/jquery.js', array( 'jquery' ));
+		wp_register_script('jquery', array('jquery'));
 		wp_enqueue_script('jquery');
 	}
-	add_action( 'wp_enqueue_scripts', 'add_custom_script' );
+	add_action('wp_enqueue_scripts', 'add_custom_script');
 
 	/**
 	 * enable post thumbnails
 	 */
-	add_theme_support( 'post-thumbnails' );
+	add_theme_support('post-thumbnails');
 
 	/**
 	 * remove non-needed menu items
