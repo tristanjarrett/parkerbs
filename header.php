@@ -4,12 +4,10 @@
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 	<title><?php pbs_title(); ?></title>
-	<!-- core stylesheets -->
+	<!-- stylesheets -->
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() . '/css/custom.css'; ?>">
-	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() . '/css/slick.min.css'; ?>">
-	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() . '/css/swiper.min.css'; ?>">
-	<!-- bootstrap 4 -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() . '/slick/css/slick.min.css'; ?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() . '/node_modules/bootstrap/dist/css/bootstrap.min.css'; ?>">
 	<!-- google fonts -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Franklin">
 	<!-- icons -->
