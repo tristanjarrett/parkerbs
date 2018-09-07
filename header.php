@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 	<title><?php pbs_title(); ?></title>
 	<!-- core stylesheets -->
-	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() . '/css/theme.css'; ?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() . '/css/custom.css'; ?>">
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() . '/css/slick.min.css'; ?>">
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() . '/css/swiper.min.css'; ?>">
 	<!-- bootstrap 4 -->
