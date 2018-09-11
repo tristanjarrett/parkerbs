@@ -1,0 +1,8 @@
+// #1 Custom Styles
+@import "template/template";
+
+// #2 Import custom bootstrap alterations
+@import "bootstrap-custom/bootstrap";
+
+// #3 Import bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";

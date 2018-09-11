@@ -5,9 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 	<title><?php pbs_title(); ?></title>
 	<!-- stylesheets -->
-	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() . '/css/main.css'; ?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() . '/css/custom.css'; ?>">
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() . '/slick/css/slick.min.css'; ?>">
-	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() . '/node_modules/bootstrap/dist/css/bootstrap.min.css'; ?>">
 	<!-- google fonts -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Franklin">
 	<!-- icons -->
@@ -56,14 +55,14 @@
 									<img src="<?php echo get_bloginfo('template_directory') . '/images/core/slogan.png'; ?>" alt="Slogan" class="pbs-slogan">
 								</div>
 								<div class="col" style="text-align: right;">
-									<a href="#" class="btn btn-outline-primary">My Account</a>
+									<a href="#" class="btn btn-primary">My Account</a>
 								</div>
 							</div>
 
 							<div class="input-group mb-3" style="margin-bottom: 0px !important;">
 							  <input type="text" class="form-control" placeholder="Find your nearest branch.." aria-label="Find your nearest branch.." aria-describedby="button-addon2">
 							  <div class="input-group-append">
-							    <button class="btn btn-primary" type="button" id="button-addon2">Go</button>
+							    <button class="btn btn-primary" type="button" id="button-addon2">Search</button>
 							  </div>
 							</div>
 
