@@ -18,14 +18,13 @@
         <li class="pbs-products-item">
           <div class="row">
             <div class="col pbs-child">
-              <div class="pbs-grandchild">
+              <div class="pbs-granchild">
                 <h4 class="pbs-heading pbs-font"><?php the_title(); ?></h4>
                 <?php the_content(); ?>
-                <a href="<?php echo get_bloginfo('wpurl') . '/branches'; ?>" class="btn btn-outline-primary">Visit your local branch for <?php the_title(); ?></a>
               </div>
             </div>
             <div class="col-auto pbs-child">
-              <div class="pbs-grandchild">
+              <div class="pbs-granchild">
                 <?php if ( has_post_thumbnail() ) { ?>
           				<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
           				<div class="pbs-product-thumbnail" style="background-image: url('<?php echo $thumb['0']; ?>')"></div>

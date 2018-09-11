@@ -370,28 +370,27 @@ img {
   /* pbs green */
 }
 
+/**
+ * Home page
+ */
 .pbs-home-carousel {
   background-color: #FFFFFF;
   position: relative;
   z-index: 9999;
 }
-
 .pbs-home-carousel .pbs-slide {
   background-size: cover;
   background-position: center;
   height: 400px;
 }
-
 .pbs-home-carousel .pbs-slide .pbs-overlay {
   background-color: rgba(67, 169, 172, 0.8);
-  /* pbs green */
   padding: 30px 0px;
   color: #FFFFFF;
   position: absolute;
   bottom: 0;
   width: 100%;
 }
-
 .pbs-home-carousel .pbs-slide .pbs-overlay h5 {
   margin-bottom: 0px;
   text-shadow: 1px 1px 1px #666666;
@@ -404,36 +403,23 @@ img {
   background-size: cover;
 }
 
-.pbs-home-about h4 {
-  margin-bottom: 20px;
-  color: #888888;
-}
-
 .pbs-home-brands {
   background-color: #FFFFFF;
   padding-top: 30px;
 }
-
 .pbs-home-brands h4 {
   margin-bottom: 20px;
 }
-
 .pbs-home-brands .pbs-block {
   color: #FFFFFF;
   margin-bottom: 30px;
 }
-
-.pbs-home-brands .pbs-block a {
-  color: #FFFFFF !important;
-}
-
 .pbs-home-brands .pbs-block .pbs-block-back {
   padding-top: 250px;
   margin-top: 5px;
   background-position: center;
   background-size: cover;
 }
-
 @media (max-width: 767px) {
   .pbs-home-brands .pbs-block .pbs-block-back {
     padding-top: 150px;
@@ -446,34 +432,32 @@ img {
   display: block;
   font-weight: bold;
 }
-
 .pbs-home-brands .pbs-block .pbs-more:hover {
   background-color: rgba(0, 0, 0, 0.7);
+}
+.pbs-home-brands .pbs-block a {
+  color: #FFFFFF !important;
 }
 
 .pbs-home-news {
   background-color: #F7F7F9;
   padding-top: 30px;
 }
-
 .pbs-home-news h4 {
   margin-bottom: 20px;
 }
-
-.pbs-home-news-item {
+.pbs-home-news .pbs-home-news-item {
   background-color: #FFFFFF;
   margin-bottom: 30px;
   box-shadow: 2px 2px 5px 0 #C1C1C1;
   position: relative;
 }
-
-.pbs-home-news-item .pbs-thumbnail {
+.pbs-home-news .pbs-home-news-item .pbs-thumbnail {
   background-position: center;
   background-size: cover;
   padding-top: 66.66%;
 }
-
-.pbs-home-news-item .pbs-text {
+.pbs-home-news .pbs-home-news-item .pbs-text {
   padding: 15px;
   padding-bottom: 61px;
   /* .pbs-text padding + .pbs-more button height */
@@ -481,14 +465,12 @@ img {
   color: #999999;
   font-weight: bold;
 }
-
-.pbs-home-news-item .pbs-more {
+.pbs-home-news .pbs-home-news-item .pbs-more {
   position: absolute;
   bottom: 0;
   width: 100%;
 }
-
-.pbs-home-news-item .pbs-more a {
+.pbs-home-news .pbs-home-news-item .pbs-more a {
   color: #44A8AB !important;
   font-weight: bold;
   display: block;
@@ -498,8 +480,7 @@ img {
   /* added 2 for the border */
   border-top: solid 2px #E1E1E1;
 }
-
-.pbs-home-news-item .pbs-more a:hover {
+.pbs-home-news .pbs-home-news-item .pbs-more a:hover {
   color: #3C999A !important;
   background-color: #F9F9F9;
 }
@@ -508,7 +489,6 @@ img {
   background-color: #FFFFFF;
   padding: 20px 0px;
 }
-
 .pbs-home-logos .pbs-block {
   height: 80px;
   background-color: #333333;
@@ -516,34 +496,37 @@ img {
   font-size: 200%;
 }
 
+/**
+ * 404 page
+ */
 .pbs-404 {
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-/* ================================== *\
-   products page
-\* ================================== */
+/**
+ * Products page
+ */
 .pbs-products-section {
   padding-top: 0px;
   background-color: #FFFFFF;
 }
-
 .pbs-products-section ul {
   margin-bottom: 0px;
   padding-left: 0px;
 }
-
-.pbs-products-section li {
-  list-style-type: none;
-}
-
-.pbs-products-section li.pbs-products-item {
+.pbs-products-section ul li.pbs-products-item {
   padding: 30px 0px;
   border-bottom: dashed 3px #E1E1E1;
+  list-style-type: none;
 }
-
-.pbs-products-section li.pbs-products-item .pbs-child {
+.pbs-products-section ul li.pbs-products-item:nth-child(even) .row {
+  flex-direction: row-reverse;
+}
+.pbs-products-section ul li.pbs-products-item:last-child {
+  border-bottom: none;
+}
+.pbs-products-section ul li.pbs-products-item .pbs-child {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
@@ -552,24 +535,13 @@ img {
   -webkit-box-align: center;
   align-items: center;
 }
-
-.pbs-products-section li.pbs-products-item .pbs-grandchild {
+.pbs-products-section ul li.pbs-products-item .pbs-child .pbs-granchild {
   display: block;
 }
-
-.pbs-products-section li.pbs-products-item h4 {
+.pbs-products-section ul li.pbs-products-item .pbs-child .pbs-granchild h4 {
   margin-bottom: 20px;
 }
-
-.pbs-products-section li.pbs-products-item:last-child {
-  border-bottom: none;
-}
-
-.pbs-products-section li.pbs-products-item:nth-child(even) .row {
-  flex-direction: row-reverse;
-}
-
-.pbs-products-section li.pbs-products-item .pbs-product-thumbnail {
+.pbs-products-section ul li.pbs-products-item .pbs-child .pbs-granchild .pbs-product-thumbnail {
   width: 250px;
   height: 250px;
   background-position: center;
@@ -577,15 +549,23 @@ img {
   box-shadow: 2px 2px 5px 0 #C1C1C1;
 }
 
-/* ================================== *\
-   single post - main
-\* ================================== */
+/**
+ * Post page
+ */
 .pbs-post-section {
   padding-top: 30px;
   padding-bottom: 10px;
   background-color: #F7F7F9;
 }
-
+.pbs-post-section .pbs-post-content {
+  background-color: #FFFFFF;
+  padding: 30px;
+  box-shadow: 2px 2px 5px 0 #C1C1C1;
+  margin-bottom: 30px;
+}
+.pbs-post-section .pbs-post-content p:last-child {
+  margin-bottom: 0px;
+}
 .pbs-post-section .pbs-sidebar {
   position: sticky;
   position: -webkit-sticky;
@@ -595,7 +575,6 @@ img {
   top: 20px;
   margin-bottom: 30px;
 }
-
 @media (max-width: 991px) {
   .pbs-post-section .pbs-sidebar {
     display: none;
@@ -607,17 +586,14 @@ img {
   margin-bottom: 0px;
   padding-left: 0px;
 }
-
-.pbs-post-section .pbs-sidebar li {
+.pbs-post-section .pbs-sidebar ul li {
   border-bottom: solid 2px #E1E1E1;
   list-style-type: none;
 }
-
-.pbs-post-section .pbs-sidebar li:last-child {
+.pbs-post-section .pbs-sidebar ul li:last-child {
   border-bottom: none;
 }
-
-.pbs-post-section .pbs-sidebar a {
+.pbs-post-section .pbs-sidebar ul li a {
   display: block;
   padding: 15px 15px 15px 10px;
   /* because there is an invisible border of 5px for hover effects */
@@ -625,63 +601,34 @@ img {
   text-decoration: none;
   border-left: solid 5px transparent;
 }
-
-.pbs-post-section .pbs-sidebar a:hover {
+.pbs-post-section .pbs-sidebar ul li a:hover {
   background-color: #F9F9F9;
   border-left: solid 5px #44A8AB;
 }
-
-.pbs-post-section .pbs-sidebar a .pbs-map-icon {
+.pbs-post-section .pbs-sidebar ul li a .pbs-map-icon {
   margin-right: 10px;
   color: #44A8AB;
 }
 
-.pbs-post-section .pbs-post-content {
-  background-color: #FFFFFF;
-  padding: 30px;
-  box-shadow: 2px 2px 5px 0 #C1C1C1;
-  margin-bottom: 30px;
-}
-
-.pbs-post-section .pbs-post-content p:last-child {
-  margin-bottom: 0px;
-}
-
-/* wp style for images in posts */
-.pbs-post-section .wp-block-gallery {
-  margin-bottom: 1em;
-}
-
-.pbs-post-section .wp-block-image {
-  margin-bottom: 1em;
-}
-
-/* ================================== *\
-   single post - other news
-\* ================================== */
 .pbs-post-other-news {
   background-color: #FFFFFF;
   padding-top: 30px;
 }
-
 .pbs-post-other-news h4 {
   margin-bottom: 20px;
 }
-
-.pbs-post-other-news-item {
+.pbs-post-other-news .pbs-post-other-news-item {
   background-color: #FFFFFF;
   margin-bottom: 30px;
   box-shadow: 2px 2px 5px 0 #C1C1C1;
   position: relative;
 }
-
-.pbs-post-other-news-item .pbs-thumbnail {
+.pbs-post-other-news .pbs-post-other-news-item .pbs-thumbnail {
   background-position: center;
   background-size: cover;
   padding-top: 66.66%;
 }
-
-.pbs-post-other-news-item .pbs-text {
+.pbs-post-other-news .pbs-post-other-news-item .pbs-text {
   padding: 15px;
   padding-bottom: 61px;
   /* .pbs-text padding + .pbs-more button height */
@@ -689,14 +636,12 @@ img {
   color: #999999;
   font-weight: bold;
 }
-
-.pbs-post-other-news-item .pbs-more {
+.pbs-post-other-news .pbs-post-other-news-item .pbs-more {
   position: absolute;
   bottom: 0;
   width: 100%;
 }
-
-.pbs-post-other-news-item .pbs-more a {
+.pbs-post-other-news .pbs-post-other-news-item .pbs-more a {
   color: #44A8AB !important;
   font-weight: bold;
   display: block;
@@ -706,22 +651,21 @@ img {
   /* added 2 for the border */
   border-top: solid 2px #E1E1E1;
 }
-
-.pbs-post-other-news-item .pbs-more a:hover {
+.pbs-post-other-news .pbs-post-other-news-item .pbs-more a:hover {
   color: #3C999A !important;
   background-color: #F9F9F9;
 }
 
-/* ================================== *\
-   vacancies page
-\* ================================== */
+/**
+ * Vacancies page
+ */
 .pbs-vacancies-page {
   padding-top: 30px;
 }
 
-/* ================================== *\
-   single vacancy page
-\* ================================== */
+/**
+ * Vacancy page
+ */
 .pbs-vacancy-page {
   padding-top: 30px;
 }

@@ -1,139 +1,127 @@
-//
-// Carousel section
-//
+/**
+ * Home page
+ */
+
+// Carousel
 .pbs-home-carousel {
 	background-color: #FFFFFF;
 	position: relative;
 	z-index: 9999;
-}
-.pbs-home-carousel .pbs-slide {
-	background-size: cover;
-	background-position: center;
-	height: 400px;
-}
-.pbs-home-carousel .pbs-slide .pbs-overlay {
-	background-color: rgba(67,169,172,0.8);  /* pbs green */
-	padding: 30px 0px;
-	color: #FFFFFF;
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-}
-.pbs-home-carousel .pbs-slide .pbs-overlay h5 {
-	margin-bottom: 0px;
-	text-shadow: 1px 1px 1px #666666;
+	.pbs-slide {
+		background-size: cover;
+		background-position: center;
+		height: 400px;
+		.pbs-overlay {
+			background-color: rgba(67,169,172,0.8);
+			padding: 30px 0px;
+			color: #FFFFFF;
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			h5 {
+				margin-bottom: 0px;
+				text-shadow: 1px 1px 1px #666666;
+			}
+		}
+	}
 }
 
-//
-// About section
-//
+// About
 .pbs-home-about {
 	background-color: #F7F7F9;
 	padding: 30px 0px;
 	background-position: center;
 	background-size: cover;
 }
-.pbs-home-about h4 {
-	margin-bottom: 20px;
-	color: #888888;
-}
 
-//
-// Our brands section
-//
+// Our brands
 .pbs-home-brands {
 	background-color: #FFFFFF;
 	padding-top: 30px;
-}
-.pbs-home-brands h4 {
-	margin-bottom: 20px;
-}
-.pbs-home-brands .pbs-block {
-	color: #FFFFFF;
-	margin-bottom: 30px;
-}
-.pbs-home-brands .pbs-block a {
-	color: #FFFFFF !important;
-}
-.pbs-home-brands .pbs-block .pbs-block-back {
-	padding-top: 250px;
-	margin-top: 5px;
-	background-position: center;
-	background-size: cover;
-}
-@media (max-width: 767px) {
-	.pbs-home-brands .pbs-block .pbs-block-back {
-		padding-top: 150px;
+	h4 {
+		margin-bottom: 20px;
+	}
+	.pbs-block {
+		color: #FFFFFF;
+		margin-bottom: 30px;
+		.pbs-block-back {
+			padding-top: 250px;
+			margin-top: 5px;
+			background-position: center;
+			background-size: cover;
+			@media (max-width: 767px) {
+				padding-top: 150px;
+			}
+		}
+		.pbs-more {
+			background-color: rgba(0,0,0,0.5);
+			padding: 10px;
+			text-align: center;
+			display: block;
+			font-weight: bold;
+			&:hover {
+				background-color: rgba(0,0,0,0.7);
+			}
+		}
+		a {
+			color: #FFFFFF !important;
+		}
 	}
 }
-.pbs-home-brands .pbs-block .pbs-more {
-	background-color: rgba(0,0,0,0.5);
-	padding: 10px;
-	text-align: center;
-	display: block;
-	font-weight: bold;
-}
-.pbs-home-brands .pbs-block .pbs-more:hover {
-	background-color: rgba(0,0,0,0.7);
-}
 
-//
-// News section
-//
+// News
 .pbs-home-news {
 	background-color: #F7F7F9;
 	padding-top: 30px;
-}
-.pbs-home-news h4 {
-	margin-bottom: 20px;
-}
-.pbs-home-news-item {
-	background-color: #FFFFFF;
-	margin-bottom: 30px;
-	box-shadow: 2px 2px 5px 0 #C1C1C1;
-	position: relative;
-}
-.pbs-home-news-item .pbs-thumbnail {
-	background-position: center;
-	background-size: cover;
-	padding-top: 66.66%;
-}
-.pbs-home-news-item .pbs-text {
-	padding: 15px;
-	padding-bottom: 61px; /* .pbs-text padding + .pbs-more button height */
-	margin-bottom: 0px;
-	color: #999999;
-	font-weight: bold;
-}
-.pbs-home-news-item .pbs-more {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-}
-.pbs-home-news-item .pbs-more a {
-	color: #44A8AB !important;
-	font-weight: bold;
-	display: block;
-	padding: 10px;
-	text-align: right;
-	height: 46px; /* added 2 for the border */
-	border-top: solid 2px #E1E1E1;
-}
-.pbs-home-news-item .pbs-more a:hover {
-	color: #3C999A !important;
-	background-color: #F9F9F9;
+	h4 {
+		margin-bottom: 20px;
+	}
+	.pbs-home-news-item {
+		background-color: #FFFFFF;
+		margin-bottom: 30px;
+		box-shadow: 2px 2px 5px 0 #C1C1C1;
+		position: relative;
+		.pbs-thumbnail {
+			background-position: center;
+			background-size: cover;
+			padding-top: 66.66%;
+		}
+		.pbs-text {
+			padding: 15px;
+			padding-bottom: 61px; /* .pbs-text padding + .pbs-more button height */
+			margin-bottom: 0px;
+			color: #999999;
+			font-weight: bold;
+		}
+		.pbs-more {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			a {
+				color: #44A8AB !important;
+				font-weight: bold;
+				display: block;
+				padding: 10px;
+				text-align: right;
+				height: 46px; /* added 2 for the border */
+				border-top: solid 2px #E1E1E1;
+				&:hover {
+					color: #3C999A !important;
+					background-color: #F9F9F9;
+				}
+			}
+		}
+	}
 }
 
-//
-// Logos section
-//
+// Logos
 .pbs-home-logos {
 	background-color: #FFFFFF;
 	padding: 20px 0px;
-}
-.pbs-home-logos .pbs-block {
-	height: 80px;
-	background-color: #333333;
-	color: #FFFFFF;
-	font-size: 200%;
+	.pbs-block {
+		height: 80px;
+		background-color: #333333;
+		color: #FFFFFF;
+		font-size: 200%;
+	}
 }
