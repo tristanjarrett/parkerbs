@@ -1,5 +1,54 @@
 @charset "UTF-8";
 /* ================================== *\
+   universal - flex (height equal)
+\* ================================== */
+.pbs-flex-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pbs-flex-row::before, .pbs-flex-row::after {
+  width: 0;
+}
+
+.pbs-flex-row [class*=col-] {
+  display: flex;
+  flex-direction: column;
+}
+
+.pbs-flex-item {
+  display: block;
+  height: 100%;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+/* ================================== *\
+   grid for xxl
+\* ================================== */
+@media (max-width: 1365.98px) {
+  .container-fluid {
+    max-width: 1152px;
+  }
+}
+@media (min-width: 1366px) and (max-width: 1439.98px) {
+  .container-fluid {
+    max-width: 1280px;
+  }
+}
+@media (min-width: 1440px) {
+  .container-fluid {
+    max-width: 1366px;
+  }
+}
+/* ================================== *\
+   @media ref
+\* ================================== */
+/* ================================== *\
    global
 \* ================================== */
 body {
@@ -91,55 +140,6 @@ img {
   font-weight: 900;
 }
 
-/* ================================== *\
-   universal - flex (height equal)
-\* ================================== */
-.pbs-flex-row {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.pbs-flex-row::before, .pbs-flex-row::after {
-  width: 0;
-}
-
-.pbs-flex-row [class*=col-] {
-  display: flex;
-  flex-direction: column;
-}
-
-.pbs-flex-item {
-  display: block;
-  height: 100%;
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-/* ================================== *\
-   grid for xxl
-\* ================================== */
-@media (max-width: 1365.98px) {
-  .container-fluid {
-    max-width: 1152px;
-  }
-}
-@media (min-width: 1366px) and (max-width: 1439.98px) {
-  .container-fluid {
-    max-width: 1280px;
-  }
-}
-@media (min-width: 1440px) {
-  .container-fluid {
-    max-width: 1366px;
-  }
-}
-/* ================================== *\
-   @media ref
-\* ================================== */
 /* ================================== *\
    universal - header
 \* ================================== */
@@ -302,8 +302,74 @@ img {
   }
 }
 /* ================================== *\
-   home - carousel
+   universal - footer
 \* ================================== */
+.pbs-footer {
+  background-color: #2C3E50;
+  padding: 30px 0px 20px 0px;
+  color: #F7F7F7;
+  border-top: solid 5px #44A8AB;
+}
+
+.pbs-footer a {
+  color: #F7F7F7;
+}
+
+.pbs-footer a:hover {
+  color: #F7F7F7;
+}
+
+.pbs-footer ul {
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+
+.pbs-footer li {
+  list-style-type: none;
+}
+
+.pbs-footer .pbs-col {
+  margin-bottom: 20px;
+}
+
+.pbs-footer .pbs-copyright {
+  padding-top: 20px;
+  margin-top: 10px;
+  border-top: solid 2px #E1E1E1;
+}
+
+@media (max-width: 767px) {
+  .pbs-footer .pbs-copyright {
+    text-align: center;
+  }
+}
+.pbs-footer .pbs-copyright p {
+  margin-bottom: 0px;
+}
+
+/* ================================== *\
+   universal - return to top
+\* ================================== */
+.pbs-footer #pbs-top-button {
+  padding: 10px 15px;
+  background-color: rgba(67, 169, 172, 0.8);
+  /* pbs green */
+  opacity: 0.7;
+  z-index: 9999;
+  right: 15px;
+  bottom: 15px;
+  position: fixed;
+  display: none;
+  text-align: center;
+  font-weight: bold;
+}
+
+.pbs-footer #pbs-top-button:hover {
+  cursor: pointer;
+  background-color: #43a9ac;
+  /* pbs green */
+}
+
 .pbs-home-carousel {
   background-color: #FFFFFF;
   position: relative;
@@ -331,9 +397,6 @@ img {
   text-shadow: 1px 1px 1px #666666;
 }
 
-/* ================================== *\
-   home - about
-\* ================================== */
 .pbs-home-about {
   background-color: #F7F7F9;
   padding: 30px 0px;
@@ -346,9 +409,6 @@ img {
   color: #888888;
 }
 
-/* ================================== *\
-   home - our brands
-\* ================================== */
 .pbs-home-brands {
   background-color: #FFFFFF;
   padding-top: 30px;
@@ -391,9 +451,6 @@ img {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-/* ================================== *\
-   home - news
-\* ================================== */
 .pbs-home-news {
   background-color: #F7F7F9;
   padding-top: 30px;
@@ -447,9 +504,6 @@ img {
   background-color: #F9F9F9;
 }
 
-/* ================================== *\
-   home - logos
-\* ================================== */
 .pbs-home-logos {
   background-color: #FFFFFF;
   padding: 20px 0px;
@@ -460,6 +514,67 @@ img {
   background-color: #333333;
   color: #FFFFFF;
   font-size: 200%;
+}
+
+.pbs-404 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* ================================== *\
+   products page
+\* ================================== */
+.pbs-products-section {
+  padding-top: 0px;
+  background-color: #FFFFFF;
+}
+
+.pbs-products-section ul {
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+
+.pbs-products-section li {
+  list-style-type: none;
+}
+
+.pbs-products-section li.pbs-products-item {
+  padding: 30px 0px;
+  border-bottom: dashed 3px #E1E1E1;
+}
+
+.pbs-products-section li.pbs-products-item .pbs-child {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.pbs-products-section li.pbs-products-item .pbs-grandchild {
+  display: block;
+}
+
+.pbs-products-section li.pbs-products-item h4 {
+  margin-bottom: 20px;
+}
+
+.pbs-products-section li.pbs-products-item:last-child {
+  border-bottom: none;
+}
+
+.pbs-products-section li.pbs-products-item:nth-child(even) .row {
+  flex-direction: row-reverse;
+}
+
+.pbs-products-section li.pbs-products-item .pbs-product-thumbnail {
+  width: 250px;
+  height: 250px;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 2px 2px 5px 0 #C1C1C1;
 }
 
 /* ================================== *\
@@ -598,125 +713,6 @@ img {
 }
 
 /* ================================== *\
-   branch details
-\* ================================== */
-.pbs-branch-details {
-  background-color: #F7F7F9;
-  padding-bottom: 30px;
-}
-
-.pbs-branch-details .pbs-branch-image-box {
-  padding: 15px;
-}
-
-.pbs-branch-details .pbs-branch-image {
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 500px;
-  margin-bottom: 15px;
-}
-
-.pbs-branch-details h4.pbs-branch-name {
-  color: #888888;
-  margin-bottom: 10px;
-}
-
-.pbs-branch-details .pbs-branch-tagline {
-  padding-bottom: 50px;
-  border-bottom: dashed 2px #E1E1E1;
-  margin-bottom: 50px;
-}
-
-.pbs-branch-details .pbs-manager-photo {
-  margin-bottom: 20px;
-  width: 300px;
-  height: 300px;
-  background-position: center;
-  background-size: cover;
-  border: solid 3px #44A8AB;
-  border-radius: 50%;
-}
-
-.pbs-branch-details .pbs-quote-text {
-  color: #D31245;
-}
-
-.pbs-branch-details .pbs-contact-links a {
-  color: inherit !important;
-}
-
-.pbs-branch-details .pbs-contact-links a:hover {
-  color: #44A8AB !important;
-}
-
-.pbs-branch-details .pbs-branch-map {
-  background-color: #E1E1E1;
-  width: 400px;
-}
-
-.pbs-branch-details .pbs-branch-map #map {
-  height: 400px;
-  width: 100%;
-}
-
-/* ================================== *\
-   products page
-\* ================================== */
-.pbs-products-section {
-  padding-top: 0px;
-  background-color: #FFFFFF;
-}
-
-.pbs-products-section ul {
-  margin-bottom: 0px;
-  padding-left: 0px;
-}
-
-.pbs-products-section li {
-  list-style-type: none;
-}
-
-.pbs-products-section li.pbs-products-item {
-  padding: 30px 0px;
-  border-bottom: dashed 3px #E1E1E1;
-}
-
-.pbs-products-section li.pbs-products-item .pbs-child {
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  align-items: center;
-}
-
-.pbs-products-section li.pbs-products-item .pbs-grandchild {
-  display: block;
-}
-
-.pbs-products-section li.pbs-products-item h4 {
-  margin-bottom: 20px;
-}
-
-.pbs-products-section li.pbs-products-item:last-child {
-  border-bottom: none;
-}
-
-.pbs-products-section li.pbs-products-item:nth-child(even) .row {
-  flex-direction: row-reverse;
-}
-
-.pbs-products-section li.pbs-products-item .pbs-product-thumbnail {
-  width: 250px;
-  height: 250px;
-  background-position: center;
-  background-size: cover;
-  box-shadow: 2px 2px 5px 0 #C1C1C1;
-}
-
-/* ================================== *\
    vacancies page
 \* ================================== */
 .pbs-vacancies-page {
@@ -728,83 +724,6 @@ img {
 \* ================================== */
 .pbs-vacancy-page {
   padding-top: 30px;
-}
-
-/* ================================== *\
-   universal - error 404
-\* ================================== */
-.pbs-404 {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-/* ================================== *\
-   universal - footer
-\* ================================== */
-.pbs-footer {
-  background-color: #2C3E50;
-  padding: 30px 0px 20px 0px;
-  color: #F7F7F7;
-  border-top: solid 5px #44A8AB;
-}
-
-.pbs-footer a {
-  color: #F7F7F7;
-}
-
-.pbs-footer a:hover {
-  color: #F7F7F7;
-}
-
-.pbs-footer ul {
-  margin-bottom: 0px;
-  padding-left: 0px;
-}
-
-.pbs-footer li {
-  list-style-type: none;
-}
-
-.pbs-footer .pbs-col {
-  margin-bottom: 20px;
-}
-
-.pbs-footer .pbs-copyright {
-  padding-top: 20px;
-  margin-top: 10px;
-  border-top: solid 2px #E1E1E1;
-}
-
-@media (max-width: 767px) {
-  .pbs-footer .pbs-copyright {
-    text-align: center;
-  }
-}
-.pbs-footer .pbs-copyright p {
-  margin-bottom: 0px;
-}
-
-/* ================================== *\
-   universal - return to top
-\* ================================== */
-.pbs-footer #pbs-top-button {
-  padding: 10px 15px;
-  background-color: rgba(67, 169, 172, 0.8);
-  /* pbs green */
-  opacity: 0.7;
-  z-index: 9999;
-  right: 15px;
-  bottom: 15px;
-  position: fixed;
-  display: none;
-  text-align: center;
-  font-weight: bold;
-}
-
-.pbs-footer #pbs-top-button:hover {
-  cursor: pointer;
-  background-color: #43a9ac;
-  /* pbs green */
 }
 
 /*!

@@ -1,0 +1,73 @@
+/* ================================== *\
+   global
+\* ================================== */
+body {
+	background-color: #FFFFFF;
+}
+img {
+	user-select: none;
+	-webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+ */
+	max-width: 100%;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #D1D1D1;
+  opacity: 1; /* Firefox */
+	text-transform: none;
+	text-overflow: ellipsis;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #D1D1D1;
+	text-transform: none;
+	text-overflow: ellipsis;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #D1D1D1;
+	text-transform: none;
+	text-overflow: ellipsis;
+}
+::-moz-focus-inner { /* firefox border on back */
+  border: 0;
+}
+* {
+	-webkit-transition: all 0s ease;
+	transition: all 0s ease;
+	border-radius: 0%; /* because safari on iOS */
+	box-sizing: border-box;
+	-webkit-overflow-scrolling: touch;
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+	overflow-wrap: break-word;
+	font-family: 'Libre Franklin', sans-serif !important;
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+     /* IE10+ CSS styles go here */
+	* {
+		-webkit-transition: none !important;
+		transition: none !important;
+	}
+}
+
+/* ================================== *\
+   helpers
+\* ================================== */
+.pbs-focus-p {
+	text-align: justify;
+}
+@media (max-width: 575.98px) {
+	.pbs-focus-p {
+		text-align: left;
+	}
+}
+.pbs-cut-p {
+	margin-bottom: 0px;
+}
+.pbs-heading {
+	color: #44A8AB;
+	text-transform: uppercase;
+}
+.pbs-font {
+	font-family: franklin-gothic-urw, sans-serif !important;
+	font-style: normal;
+	font-weight: 900;
+}
