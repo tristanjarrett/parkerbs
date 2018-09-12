@@ -1,80 +1,66 @@
-/* ================================== *\
-   universal - header
-\* ================================== */
+/**
+ * Global header
+ */
+
+ // Header
 .pbs-header {
 	background-color: #FFFFFF;
 	padding: 30px 0px;
 	z-index: 9997;
 	position: relative;
 	box-shadow: 2px 2px 5px 0 #C1C1C1;
-}
-@media (max-width: 767.98px) {
-	/* for mobile menu button position */
-	.pbs-header .pbs-mobile {
-		position: relative;
-		display: -ms-flexbox;
-		display: flex;
-		-ms-flex-wrap: wrap;
-		flex-wrap: wrap;
-		-ms-flex-align: center;
-		align-items: center;
-		-ms-flex-pack: justify;
-		justify-content: space-between;
+	img {
+		&.pbs-logo {
+			height: 120px;
+			width: auto;
+			@media (max-width: 767.98px) {
+				height: 60px;
+			}
+			@media (min-width: 768px) and (max-width: 991.98px) {
+				height: 100px;
+			}
+		}
+		&.pbs-slogan {
+			height: 50px;
+			width: auto;
+			margin-top: 16px;
+			margin-bottom: 16px;
+			@media (min-width: 768px) and (max-width: 991.98px) {
+				height: 40px;
+				margin-top: 11px;
+				margin-bottom: 11px;
+			}
+		}
 	}
-}
-.pbs-header img.pbs-logo {
-	height: 120px;
-	width: auto;
-}
-.pbs-header img.pbs-slogan {
-	height: 50px;
-	width: auto;
-	margin-top: 16px;
-	margin-bottom: 16px;
-}
-.pbs-header .navbar-toggler {
-  padding: 0px !important;
-  font-size: inherit;
-  line-height: 1;
-  background-color: transparent;
-  border: 0px solid transparent;
-  border-radius: 0px;
-}
-.pbs-header .pbs-menu-icon {
-	color: #44A8AB;
-	display: block;
-}
-.pbs-header .pbs-menu-icon:hover {
-	color: #3C999A !important;
-}
-
-@media (max-width: 767.98px) {
-	.pbs-header {
+	.pbs-menu-btn {
+	  padding: 0px !important;
+	  font-size: inherit;
+	  line-height: 1;
+	  background-color: transparent;
+	  border: 0px solid transparent;
+	  border-radius: 0px;
+		cursor: pointer;
+		.pbs-menu-icon {
+			color: #44A8AB;
+			display: block;
+			&:hover {
+				color: #3C999A !important;
+			}
+		}
+	}
+	@media (max-width: 767.98px) {
 		padding: 15px 0px;
+		// Mobile menu button position
+		.row {
+			position: relative;
+			display: -ms-flexbox;
+			display: flex;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			-ms-flex-align: center;
+			align-items: center;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+		}
 	}
-	.pbs-header img.pbs-logo {
-		height: 60px;
-	}
-}
-@media (min-width: 768px) and (max-width: 991.98px) {
-	.pbs-header img.pbs-logo {
-		height: 100px;
-	}
-	.pbs-header img.pbs-slogan {
-		height: 40px;
-		margin-top: 11px;
-		margin-bottom: 11px;
-	}
-}
-@media (min-width: 992px) and (max-width: 1199.98px) {
-
-}
-@media (min-width: 1200px) and (max-width: 1365.98px) {
-
-}
-@media (min-width: 1366px) and (max-width: 1439.98px) {
-
-}
-@media (min-width: 1440px) {
-
 }

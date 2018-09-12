@@ -11,7 +11,7 @@
 					</div>
 					<div class="pbs-overlay">
 						<div class="container-fluid">
-							<h5 class="pbs-font">Building Sussex and Kent’s future, one brick and block at a time.</h5>
+							<h5>Building Sussex and Kent’s future, one brick and block at a time.</h5>
 						</div>
 					</div>
 				</div>
@@ -24,7 +24,7 @@
 					</div>
 					<div class="pbs-overlay">
 						<div class="container-fluid">
-							<h5 class="pbs-font">Building Sussex and Kent’s future, one brick and block at a time.</h5>
+							<h5>Building Sussex and Kent’s future, one brick and block at a time.</h5>
 						</div>
 					</div>
 				</div>

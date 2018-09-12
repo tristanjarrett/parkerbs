@@ -38,43 +38,42 @@
 		<!-- main header -->
 		<header class="pbs-header">
 			<div class="container-fluid">
-				<div class="pbs-mobile">
 
-					<div class="row">
+				<div class="row">
 
-						<div class="col-auto">
-							<a href="<?php echo get_bloginfo('wpurl'); ?>">
-								<img src="<?php echo get_bloginfo('template_directory') . '/images/core/logo.png'; ?>" alt="Logo" class="pbs-logo">
-							</a>
-						</div>
-
-						<div class="col d-none d-md-block" style="padding-left: 0px !important;">
-
-							<div class="row">
-								<div class="col-auto">
-									<img src="<?php echo get_bloginfo('template_directory') . '/images/core/slogan.png'; ?>" alt="Slogan" class="pbs-slogan">
-								</div>
-								<div class="col" style="text-align: right;">
-									<a href="#" class="btn btn-primary">My Account</a>
-								</div>
-							</div>
-
-							<div class="input-group mb-3" style="margin-bottom: 0px !important;">
-							  <input type="text" class="form-control" placeholder="Find your nearest branch.." aria-label="Find your nearest branch.." aria-describedby="button-addon2">
-							  <div class="input-group-append">
-							    <button class="btn btn-primary" type="button" id="button-addon2">Search</button>
-							  </div>
-							</div>
-
-						</div>
-
+					<div class="col-auto">
+						<a href="<?php echo get_bloginfo('wpurl'); ?>">
+							<img src="<?php echo get_bloginfo('template_directory') . '/images/core/logo.png'; ?>" alt="Logo" class="pbs-logo">
+						</a>
 					</div>
 
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#pbsNav" aria-controls="pbsNav" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="pbs-menu-icon"><i class="fas fa-bars fa-3x"></i></span>
-					</button>
+					<div class="col d-none d-md-block pl-0">
+
+						<div class="row">
+							<div class="col-auto">
+								<img src="<?php echo get_bloginfo('template_directory') . '/images/core/slogan.png'; ?>" alt="Slogan" class="pbs-slogan">
+							</div>
+							<div class="col" style="text-align: right;">
+								<a href="#" class="btn btn-primary">My Account</a>
+							</div>
+						</div>
+
+						<div class="input-group">
+						  <input type="text" class="form-control" placeholder="Find your nearest branch.." aria-label="Find your nearest branch.." aria-describedby="button-addon2">
+						  <div class="input-group-append">
+						    <button class="btn btn-primary" type="button" id="button-addon2">Search</button>
+						  </div>
+						</div>
+					</div>
+
+					<div class="col-auto d-md-none">
+						<button class="pbs-menu-btn" type="button" data-toggle="collapse" data-target="#pbsNav">
+							<span class="pbs-menu-icon"><i class="fas fa-bars fa-3x"></i></span>
+						</button>
+					</div>
 
 				</div>
+
 			</div>
 		</header>
 		<!-- /main header -->

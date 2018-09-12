@@ -1,48 +1,46 @@
-/* ================================== *\
-   universal - footer
-\* ================================== */
+/**
+ * Global footer
+ */
+
+ // Footer
 .pbs-footer {
 	background-color: #2C3E50;
 	padding: 30px 0px 20px 0px;
 	color: #F7F7F7;
 	border-top: solid 5px #44A8AB;
-}
-.pbs-footer a {
-	color: #F7F7F7;
-}
-.pbs-footer a:hover {
-	color: #F7F7F7;
-}
-.pbs-footer ul {
-	margin-bottom: 0px;
-	padding-left: 0px;
-}
-.pbs-footer li {
-	list-style-type: none;
-}
-.pbs-footer .pbs-col {
-	margin-bottom: 20px;
-}
-.pbs-footer .pbs-copyright {
-	padding-top: 20px;
-	margin-top: 10px;
-	border-top: solid 2px #E1E1E1;
-}
-@media (max-width: 767px) {
-		.pbs-footer .pbs-copyright {
+	ul {
+		margin-bottom: 20px;
+		padding-left: 0px;
+		li {
+			list-style-type: none;
+			a {
+				color: #F7F7F7;
+				&:hover {
+					color: #F7F7F7;
+				}
+			}
+		}
+	}
+	img {
+		margin-bottom: 20px;
+	}
+	.pbs-copyright {
+		padding-top: 20px;
+		margin-top: 10px;
+		border-top: solid 2px #E1E1E1;
+		@media (max-width: 767px) {
 			text-align: center;
 		}
-}
-.pbs-footer .pbs-copyright p {
-	margin-bottom: 0px;
+		p {
+			margin-bottom: 0px;
+		}
+	}
 }
 
-/* ================================== *\
-   universal - return to top
-\* ================================== */
-.pbs-footer #pbs-top-button {
+// Back to top
+#pbs-top-button {
 	padding: 10px 15px;
-	background-color: rgba(67,169,172,0.8);  /* pbs green */
+	background-color: rgba(67,169,172,0.8);
 	opacity: 0.7;
 	z-index: 9999;
 	right: 15px;
@@ -51,8 +49,8 @@
 	display: none;
 	text-align: center;
 	font-weight: bold;
-}
-.pbs-footer #pbs-top-button:hover {
 	cursor: pointer;
-	background-color: rgba(67,169,172,1.0);  /* pbs green */
+	&:hover {
+		background-color: rgba(67,169,172,1.0);
+	}
 }

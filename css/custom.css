@@ -140,9 +140,9 @@ img {
   font-weight: 900;
 }
 
-/* ================================== *\
-   universal - header
-\* ================================== */
+/**
+ * Global header
+ */
 .pbs-header {
   background-color: #FFFFFF;
   padding: 30px 0px;
@@ -150,10 +150,54 @@ img {
   position: relative;
   box-shadow: 2px 2px 5px 0 #C1C1C1;
 }
-
+.pbs-header img.pbs-logo {
+  height: 120px;
+  width: auto;
+}
 @media (max-width: 767.98px) {
-  /* for mobile menu button position */
-  .pbs-header .pbs-mobile {
+  .pbs-header img.pbs-logo {
+    height: 60px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .pbs-header img.pbs-logo {
+    height: 100px;
+  }
+}
+.pbs-header img.pbs-slogan {
+  height: 50px;
+  width: auto;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .pbs-header img.pbs-slogan {
+    height: 40px;
+    margin-top: 11px;
+    margin-bottom: 11px;
+  }
+}
+.pbs-header .pbs-menu-btn {
+  padding: 0px !important;
+  font-size: inherit;
+  line-height: 1;
+  background-color: transparent;
+  border: 0px solid transparent;
+  border-radius: 0px;
+  cursor: pointer;
+}
+.pbs-header .pbs-menu-btn .pbs-menu-icon {
+  color: #44A8AB;
+  display: block;
+}
+.pbs-header .pbs-menu-btn .pbs-menu-icon:hover {
+  color: #3C999A !important;
+}
+@media (max-width: 767.98px) {
+  .pbs-header {
+    padding: 15px 0px;
+  }
+  .pbs-header .row {
     position: relative;
     display: -ms-flexbox;
     display: flex;
@@ -165,72 +209,21 @@ img {
     justify-content: space-between;
   }
 }
-.pbs-header img.pbs-logo {
-  height: 120px;
-  width: auto;
-}
 
-.pbs-header img.pbs-slogan {
-  height: 50px;
-  width: auto;
-  margin-top: 16px;
-  margin-bottom: 16px;
-}
-
-.pbs-header .navbar-toggler {
-  padding: 0px !important;
-  font-size: inherit;
-  line-height: 1;
-  background-color: transparent;
-  border: 0px solid transparent;
-  border-radius: 0px;
-}
-
-.pbs-header .pbs-menu-icon {
-  color: #44A8AB;
-  display: block;
-}
-
-.pbs-header .pbs-menu-icon:hover {
-  color: #3C999A !important;
-}
-
-@media (max-width: 767.98px) {
-  .pbs-header {
-    padding: 15px 0px;
-  }
-
-  .pbs-header img.pbs-logo {
-    height: 60px;
-  }
-}
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .pbs-header img.pbs-logo {
-    height: 100px;
-  }
-
-  .pbs-header img.pbs-slogan {
-    height: 40px;
-    margin-top: 11px;
-    margin-bottom: 11px;
-  }
-}
-/* ================================== *\
-   universal - nav
-\* ================================== */
+/**
+ * Global nav
+ */
 .pbs-nav {
   background-color: #44A8AB;
   white-space: nowrap;
   position: relative;
   z-index: 9999;
 }
-
 .pbs-nav ul {
   position: relative;
   width: 100%;
   display: table;
 }
-
 .pbs-nav a {
   display: table-cell;
   vertical-align: middle;
@@ -239,17 +232,14 @@ img {
   color: #FFFFFF;
   border-left: solid 2px #3C999A;
 }
-
 .pbs-nav a:last-child {
   border-right: solid 2px #3C999A;
 }
-
 .pbs-nav a:hover {
   background-color: #3C999A;
   color: #FFFFFF;
   text-decoration: none;
 }
-
 .pbs-nav li {
   padding: 15px 15px;
   display: block;
@@ -257,87 +247,72 @@ img {
   color: #FFFFFF;
   line-height: normal;
   word-break: break-all;
-  font-weight: bold;
 }
-
 .pbs-nav li:hover {
   cursor: pointer;
 }
-
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
   .pbs-nav {
     white-space: normal;
     box-shadow: 2px 2px 5px 0 #C1C1C1;
   }
-
   .pbs-nav .container-fluid {
     padding-left: 0px !important;
     padding-right: 0px !important;
   }
-
   .pbs-nav ul {
     display: initial;
   }
-
   .pbs-nav a {
     display: block;
     border-left: none;
     border-bottom: solid 2px #3C999A;
   }
-
   .pbs-nav a:last-child {
     border-right: none;
     border-bottom: none;
   }
-
   .pbs-nav li {
     padding: 20px 15px;
     text-align: left;
-    font-weight: bold;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
   .pbs-nav {
     font-size: 90%;
   }
 }
-/* ================================== *\
-   universal - footer
-\* ================================== */
+
+/**
+ * Global footer
+ */
 .pbs-footer {
   background-color: #2C3E50;
   padding: 30px 0px 20px 0px;
   color: #F7F7F7;
   border-top: solid 5px #44A8AB;
 }
-
-.pbs-footer a {
-  color: #F7F7F7;
-}
-
-.pbs-footer a:hover {
-  color: #F7F7F7;
-}
-
 .pbs-footer ul {
-  margin-bottom: 0px;
+  margin-bottom: 20px;
   padding-left: 0px;
 }
-
-.pbs-footer li {
+.pbs-footer ul li {
   list-style-type: none;
 }
-
-.pbs-footer .pbs-col {
+.pbs-footer ul li a {
+  color: #F7F7F7;
+}
+.pbs-footer ul li a:hover {
+  color: #F7F7F7;
+}
+.pbs-footer img {
   margin-bottom: 20px;
 }
-
 .pbs-footer .pbs-copyright {
   padding-top: 20px;
   margin-top: 10px;
   border-top: solid 2px #E1E1E1;
 }
-
 @media (max-width: 767px) {
   .pbs-footer .pbs-copyright {
     text-align: center;
@@ -347,13 +322,9 @@ img {
   margin-bottom: 0px;
 }
 
-/* ================================== *\
-   universal - return to top
-\* ================================== */
-.pbs-footer #pbs-top-button {
+#pbs-top-button {
   padding: 10px 15px;
   background-color: rgba(67, 169, 172, 0.8);
-  /* pbs green */
   opacity: 0.7;
   z-index: 9999;
   right: 15px;
@@ -362,12 +333,10 @@ img {
   display: none;
   text-align: center;
   font-weight: bold;
-}
-
-.pbs-footer #pbs-top-button:hover {
   cursor: pointer;
+}
+#pbs-top-button:hover {
   background-color: #43a9ac;
-  /* pbs green */
 }
 
 /**
@@ -384,7 +353,7 @@ img {
   height: 400px;
 }
 .pbs-home-carousel .pbs-slide .pbs-overlay {
-  background-color: rgba(67, 169, 172, 0.8);
+  background-color: rgba(67, 169, 172, 0.9);
   padding: 30px 0px;
   color: #FFFFFF;
   position: absolute;
