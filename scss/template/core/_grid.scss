@@ -1,67 +1,40 @@
-/* ================================== *\
-   universal - flex (height equal)
-\* ================================== */
+/**
+ * Flex (equal height)
+ */
 .pbs-flex-row {
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
 	flex-wrap: wrap;
-}
-.pbs-flex-row::before, .pbs-flex-row::after {
-	width: 0;
-}
-.pbs-flex-row [class*='col-'] {
-	display: flex;
-	flex-direction: column;
-}
-.pbs-flex-item {
-	display: block;
-	height: 100%;
-	-webkit-flex: 1 1 auto;
-	-ms-flex: 1 1 auto;
-	flex: 1 1 auto;
-}
-/* ================================== *\
-   grid for xxl
-\* ================================== */
-@media (max-width: 1365.98px) {
-	.container-fluid {
-		max-width: 1152px;
+	&::before,
+	&::after {
+		width: 0;
 	}
-}
-@media (min-width: 1366px) and (max-width: 1439.98px) {
-	.container-fluid {
-		max-width: 1280px;
+	[class*='col-'] {
+		display: flex;
+		flex-direction: column;
 	}
-}
-@media (min-width: 1440px) {
-	.container-fluid {
-		max-width: 1366px;
+	.pbs-flex-item {
+		display: block;
+		height: 100%;
+		-webkit-flex: 1 1 auto;
+		-ms-flex: 1 1 auto;
+		flex: 1 1 auto;
 	}
 }
 
-/* ================================== *\
-   @media ref
-\* ================================== */
-@media (max-width: 575.98px) {
-
-}
-@media (min-width: 576px) and (max-width: 767.98px) {
-
-}
-@media (min-width: 768px) and (max-width: 991.98px) {
-
-}
-@media (min-width: 992px) and (max-width: 1199.98px) {
-
-}
-@media (min-width: 1200px) and (max-width: 1365.98px) {
-
-}
-@media (min-width: 1366px) and (max-width: 1439.98px) {
-
-}
-@media (min-width: 1440px) {
-
+/**
+ * Extended container
+ */
+.container-fluid {
+	@media (max-width: 1365.98px) {
+			max-width: 1152px;
+	}
+	@media (min-width: 1366px) and (max-width: 1439.98px) {
+			max-width: 1280px;
+	}
+	@media (min-width: 1440px) {
+			max-width: 1366px;
+	}
 }

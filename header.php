@@ -53,15 +53,17 @@
 							<div class="col-auto">
 								<img src="<?php echo get_bloginfo('template_directory') . '/images/core/slogan.png'; ?>" alt="Slogan" class="pbs-slogan">
 							</div>
-							<div class="col" style="text-align: right;">
-								<a href="#" class="btn btn-primary">My Account</a>
+							<div class="col">
+								<div class="float-right">
+									<a href="#" class="btn btn-primary">My Account</a>
+								</div>
 							</div>
 						</div>
 
 						<div class="input-group">
 						  <input type="text" class="form-control" placeholder="Find your nearest branch.." aria-label="Find your nearest branch.." aria-describedby="button-addon2">
 						  <div class="input-group-append">
-						    <button class="btn btn-primary" type="button" id="button-addon2">Search</button>
+						    <button class="btn btn-primary" type="button" id="button-addon2">Search <i class="fa fa-search fa-fw"></i></button>
 						  </div>
 						</div>
 					</div>
