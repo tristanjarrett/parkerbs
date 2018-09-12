@@ -2,7 +2,7 @@
 	<footer class="pbs-footer">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-sm-6 col-lg-3 pbs-col">
+				<div class="col-sm-6 col-lg-3">
 					<h5>My Account</h5>
 					<ul>
 						<li><a href="#">Account Application</a></li>
@@ -14,7 +14,7 @@
 						<img src="<?php echo get_bloginfo( 'template_directory' ) . '/images/core/logo.png'; ?>" alt="Logo" height="100">
 					</a>
 				</div>
-				<div class="col-sm-6 col-lg-3 pbs-col">
+				<div class="col-sm-6 col-lg-3">
 					<h5>Information</h5>
 					<ul>
 						<li><a href="<?php echo get_bloginfo('wpurl') . '/contact-us'; ?>">Contact Us</a></li>
@@ -27,7 +27,7 @@
 						<li><a href="<?php echo get_bloginfo('wpurl') . '/modern-slavery-act'; ?>">Modern Slavery Act</a></li>
 					</ul>
 				</div>
-				<div class="col-sm-6 col-lg-3 pbs-col">
+				<div class="col-sm-6 col-lg-3">
 					<h5>Social Media</h5>
 					<ul>
 						<li><i class="fab fa-fw fa-twitter"></i> <a href="https://twitter.com/helpmebuildit">Twitter</a></li>
@@ -35,7 +35,7 @@
 						<li><i class="fab fa-fw fa-linkedin-in"></i> <a href="https://www.linkedin.com/company/parker-building-supplies-ltd">LinkedIn</a></li>
 					</ul>
 				</div>
-				<div class="col-sm-6 col-lg-3 pbs-col">
+				<div class="col-sm-6 col-lg-3">
 					<h5>Our Location</h5>
 					<ul>
 						<li>Unit J1–J4 Franklin House</li>
