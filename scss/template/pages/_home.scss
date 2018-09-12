@@ -78,9 +78,7 @@
 	}
 	.pbs-home-news-item {
 		background-color: #FFFFFF;
-		margin-bottom: 30px;
-		box-shadow: 2px 2px 5px 0 #C1C1C1;
-		position: relative;
+		border: solid 1px #E1E1E1;
 		.pbs-thumbnail {
 			background-position: center;
 			background-size: cover;
@@ -88,27 +86,25 @@
 		}
 		.pbs-text {
 			padding: 15px;
-			padding-bottom: 61px; /* .pbs-text padding + .pbs-more button height */
 			margin-bottom: 0px;
-			color: #999999;
-			font-weight: bold;
+			color: #666666;
 		}
-		.pbs-more {
-			position: absolute;
-			bottom: 0;
-			width: 100%;
-			a {
-				color: #44A8AB !important;
-				font-weight: bold;
-				display: block;
-				padding: 10px;
-				text-align: right;
-				height: 46px; /* added 2 for the border */
-				border-top: solid 2px #E1E1E1;
-				&:hover {
-					color: #3C999A !important;
-					background-color: #F9F9F9;
-				}
+	}
+	.pbs-more {
+		width: 100%;
+		margin-bottom: 30px;
+		a {
+			background-color: #FFFFFF;
+			color: #44A8AB !important;
+			font-weight: bold;
+			display: block;
+			padding: 15px;
+			text-align: right;
+			border: solid 1px #E1E1E1;
+			border-top: none;
+			&:hover {
+				color: #3C999A !important;
+				background-color: #F9F9F9;
 			}
 		}
 	}
