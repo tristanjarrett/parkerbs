@@ -10,21 +10,21 @@
 						<li><a href="#">View My Account</a></li>
 						<li><a href="#">Password Recovery</a></li>
 					</ul>
-					<a href="<?php echo get_bloginfo('wpurl'); ?>">
+					<a href="<?php echo site_url(); ?>">
 						<img src="<?php echo get_bloginfo( 'template_directory' ) . '/images/core/logo.png'; ?>" alt="Logo" height="100">
 					</a>
 				</div>
 				<div class="col-sm-6 col-lg-3">
 					<h5>Information</h5>
 					<ul>
-						<li><a href="<?php echo get_bloginfo('wpurl') . '/contact-us'; ?>">Contact Us</a></li>
-						<li><a href="<?php echo get_bloginfo('wpurl') . '/about-us'; ?>">About Us</a></li>
-						<li><a href="<?php echo get_bloginfo('wpurl') . '/blog'; ?>">Our Blog</a></li>
-						<li><a href="<?php echo get_bloginfo('wpurl') . '/vacancies'; ?>">Vacancies</a></li>
-						<li><a href="<?php echo get_bloginfo('wpurl') . '/privacy-policy'; ?>">Privacy Policy</a></li>
-						<li><a href="<?php echo get_bloginfo('wpurl') . '/terms-and-conditions'; ?>">Terms & Conditions</a></li>
-						<li><a href="<?php echo get_bloginfo('wpurl') . '/gender-pay-gap'; ?>">Gender Pay Gap</a></li>
-						<li><a href="<?php echo get_bloginfo('wpurl') . '/modern-slavery-act'; ?>">Modern Slavery Act</a></li>
+						<li><a href="<?php echo site_url() . '/contact-us'; ?>">Contact Us</a></li>
+						<li><a href="<?php echo site_url() . '/about-us'; ?>">About Us</a></li>
+						<li><a href="<?php echo site_url() . '/blog'; ?>">Our Blog</a></li>
+						<li><a href="<?php echo site_url() . '/vacancies'; ?>">Vacancies</a></li>
+						<li><a href="<?php echo site_url() . '/privacy-policy'; ?>">Privacy Policy</a></li>
+						<li><a href="<?php echo site_url() . '/terms-and-conditions'; ?>">Terms & Conditions</a></li>
+						<li><a href="<?php echo site_url() . '/gender-pay-gap'; ?>">Gender Pay Gap</a></li>
+						<li><a href="<?php echo site_url() . '/modern-slavery-act'; ?>">Modern Slavery Act</a></li>
 					</ul>
 				</div>
 				<div class="col-sm-6 col-lg-3">
@@ -74,5 +74,5 @@
 
 	<?php wp_footer(); ?>
 
-</body>
+	</body>
 </html>

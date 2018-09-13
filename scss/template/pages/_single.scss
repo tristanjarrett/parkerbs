@@ -6,12 +6,12 @@
 .pbs-post-section {
 	padding-top: 30px;
 	padding-bottom: 10px;
-	background-color: #FFFFFF;
+	background-color: #F7F7F9;
 	.pbs-post-content {
 		background-color: #FFFFFF;
 		padding: 30px;
-		border: solid 1px #E1E1E1;
 		margin-bottom: 30px;
+		border: solid 1px #E1E1E1;
 		p {
 			&:last-child {
 				margin-bottom: 0px;
@@ -60,7 +60,7 @@
 
 // News
 .pbs-post-news {
-	background-color: #F7F7F9;
+	background-color: #FFFFFF;
 	padding-top: 30px;
 	h4 {
 		margin-bottom: 20px;
