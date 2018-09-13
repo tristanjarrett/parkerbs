@@ -45,8 +45,8 @@
 	  register_post_type( 'branch',
 	    array(
 	      'labels' => array(
-	        'name' => __( 'Branches' ),
-	        'singular_name' => __( 'Branch' ),
+	        'name' => __( 'Branches', 'parkerbs' ),
+	        'singular_name' => __( 'Branch', 'parkerbs' ),
 	      ),
 	      'public' => true,
 	      'has_archive' => false,
@@ -67,8 +67,8 @@
 	  register_post_type( 'product',
 	    array(
 	      'labels' => array(
-	        'name' => __( 'Products' ),
-	        'singular_name' => __( 'Product' ),
+	        'name' => __( 'Products', 'parkerbs' ),
+	        'singular_name' => __( 'Product', 'parkerbs' ),
 	      ),
 	      'public' => true,
 	      'has_archive' => false,
@@ -89,8 +89,8 @@
 	  register_post_type( 'vacancy',
 	    array(
 	      'labels' => array(
-	        'name' => __( 'Vacancies' ),
-	        'singular_name' => __( 'Vacancy' ),
+	        'name' => __( 'Vacancies', 'parkerbs' ),
+	        'singular_name' => __( 'Vacancy', 'parkerbs' ),
 	      ),
 	      'public' => true,
 	      'has_archive' => false,
@@ -103,45 +103,3 @@
 	  );
 	}
 	add_action( 'init', 'pbs_post_vacancy' );
-
-	/*
-	 * Creating a function to create our CPT
-	 */
-	function custom_post_type() {
-		$labels = array(
-			'name'                => _x( 'Movies', 'Post Type General Name', 'parkerbs' ),
-			'singular_name'       => _x( 'Movie', 'Post Type Singular Name', 'parkerbs' ),
-			'menu_name'           => __( 'Movies', 'parkerbs' ),
-			'parent_item_colon'   => __( 'Parent Movie', 'parkerbs' ),
-			'all_items'           => __( 'All Movies', 'parkerbs' ),
-			'view_item'           => __( 'View Movie', 'parkerbs' ),
-			'add_new_item'        => __( 'Add New Movie', 'parkerbs' ),
-			'add_new'             => __( 'Add New', 'parkerbs' ),
-			'edit_item'           => __( 'Edit Movie', 'parkerbs' ),
-			'update_item'         => __( 'Update Movie', 'parkerbs' ),
-			'search_items'        => __( 'Search Movie', 'parkerbs' ),
-			'not_found'           => __( 'Not Found', 'parkerbs' ),
-			'not_found_in_trash'  => __( 'Not found in Trash', 'parkerbs' ),
-		);
-		$args = array(
-			'label'               => __( 'movies', 'parkerbs' ),
-			'description'         => __( 'Movie news and reviews', 'parkerbs' ),
-			'labels'              => $labels,
-			'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
-			'taxonomies'          => array( 'genres' ),
-			'hierarchical'        => false,
-			'public'              => true,
-			'show_ui'             => true,
-			'show_in_menu'        => true,
-			'show_in_nav_menus'   => true,
-			'show_in_admin_bar'   => true,
-			'menu_position'       => null,
-			'can_export'          => true,
-			'has_archive'         => true,
-			'exclude_from_search' => false,
-			'publicly_queryable'  => true,
-			'capability_type'     => 'page',
-		);
-		register_post_type( 'movies', $args );
-	}
-	add_action( 'init', 'custom_post_type', 0 );
