@@ -6,11 +6,11 @@
 .pbs-post-section {
 	padding-top: 30px;
 	padding-bottom: 10px;
-	background-color: #F7F7F9;
+	background-color: #FFFFFF;
 	.pbs-post-content {
 		background-color: #FFFFFF;
 		padding: 30px;
-		box-shadow: 2px 2px 5px 0 #C1C1C1;
+		border: solid 1px #E1E1E1;
 		margin-bottom: 30px;
 		p {
 			&:last-child {
@@ -31,11 +31,11 @@
 		}
 		ul {
 			background-color: #FFFFFF;
-			box-shadow: 2px 2px 5px 0 #C1C1C1;
+			border: solid 1px #E1E1E1;
 			margin-bottom: 0px;
 			padding-left: 0px;
 			li {
-				border-bottom: solid 2px #E1E1E1;
+				border-bottom: solid 1px #E1E1E1;
 				list-style-type: none;
 				&:last-child {
 					border-bottom: none;
@@ -43,7 +43,6 @@
 				a {
 					display: block;
 					padding: 15px 15px 15px 10px; /* because there is an invisible border of 5px for hover effects */
-					color: #999999 !important;
 					text-decoration: none;
 					border-left: solid 5px transparent;
 					&:hover {
@@ -52,7 +51,6 @@
 					}
 					.pbs-map-icon {
 						margin-right: 10px;
-						color: #44A8AB;
 					}
 				}
 			}
@@ -62,7 +60,7 @@
 
 // News
 .pbs-post-news {
-	background-color: #FFFFFF;
+	background-color: #F7F7F9;
 	padding-top: 30px;
 	h4 {
 		margin-bottom: 20px;
