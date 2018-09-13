@@ -1,4 +1,4 @@
-<div class="pbs-post-other-news">
+<div class="pbs-post-news">
 	<div class="container-fluid">
 		<h4 class="pbs-heading pbs-font">Recent News</h4>
 	</div>

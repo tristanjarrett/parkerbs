@@ -12,6 +12,23 @@
 
 								<h4><?php the_title(); ?></h4>
 								<p class="text-muted">Posted <i class="far fa-fw fa-calendar-alt"></i> <?php the_date(); ?></p>
+
+								<?php
+								if ( has_tag() ) {
+									// Show the tags if any
+									the_tags();
+								} else {
+									// Do nothing
+								}
+
+								if ( has_category() ) {
+									// Show the category if any
+									the_category();
+								} else {
+									// Do nothig
+								}
+								?>
+
 								<hr>
 								<?php the_content(); ?>
 

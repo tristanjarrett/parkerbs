@@ -1,8 +1,11 @@
-// #1 Custom Styles
+// #1 Import WordPress Required styles
+@import "wordpress/wordpress";
+
+// #2 Custom styles
 @import "template/template";
 
-// #2 Import custom bootstrap alterations
+// #3 Import custom bootstrap alterations
 @import "bootstrap-custom/bootstrap";
 
-// #3 Import bootstrap
+// #4 Import bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";

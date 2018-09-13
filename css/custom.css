@@ -1,4 +1,116 @@
 @charset "UTF-8";
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+}
+
+.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wp-caption {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  max-width: 96%;
+  /* Image does not overflow the content area */
+  padding: 5px 3px 10px;
+  text-align: center;
+}
+
+.wp-caption.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+  margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+  margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+  font-size: 11px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0 4px 5px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+  /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+  background-color: #eee;
+  clip: auto !important;
+  clip-path: none;
+  color: #444;
+  display: block;
+  font-size: 1em;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */
+}
+
 /**
  * Flex (equal height)
  */
@@ -567,48 +679,42 @@ img {
   color: #44A8AB;
 }
 
-.pbs-post-other-news {
+.pbs-post-news {
   background-color: #FFFFFF;
   padding-top: 30px;
 }
-.pbs-post-other-news h4 {
+.pbs-post-news h4 {
   margin-bottom: 20px;
 }
-.pbs-post-other-news .pbs-post-other-news-item {
+.pbs-post-news .pbs-post-news-item {
   background-color: #FFFFFF;
-  margin-bottom: 30px;
-  box-shadow: 2px 2px 5px 0 #C1C1C1;
-  position: relative;
+  border: solid 1px #E1E1E1;
 }
-.pbs-post-other-news .pbs-post-other-news-item .pbs-thumbnail {
+.pbs-post-news .pbs-post-news-item .pbs-thumbnail {
   background-position: center;
   background-size: cover;
   padding-top: 66.66%;
 }
-.pbs-post-other-news .pbs-post-other-news-item .pbs-text {
+.pbs-post-news .pbs-post-news-item .pbs-text {
   padding: 15px;
-  padding-bottom: 61px;
-  /* .pbs-text padding + .pbs-more button height */
   margin-bottom: 0px;
-  color: #999999;
-  font-weight: bold;
+  color: #666666;
 }
-.pbs-post-other-news .pbs-post-other-news-item .pbs-more {
-  position: absolute;
-  bottom: 0;
+.pbs-post-news .pbs-more {
   width: 100%;
+  margin-bottom: 30px;
 }
-.pbs-post-other-news .pbs-post-other-news-item .pbs-more a {
+.pbs-post-news .pbs-more a {
+  background-color: #FFFFFF;
   color: #44A8AB !important;
   font-weight: bold;
   display: block;
-  padding: 10px;
+  padding: 15px;
   text-align: right;
-  height: 46px;
-  /* added 2 for the border */
-  border-top: solid 2px #E1E1E1;
+  border: solid 1px #E1E1E1;
+  border-top: none;
 }
-.pbs-post-other-news .pbs-post-other-news-item .pbs-more a:hover {
+.pbs-post-news .pbs-more a:hover {
   color: #3C999A !important;
   background-color: #F9F9F9;
 }

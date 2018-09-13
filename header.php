@@ -42,7 +42,7 @@
 				<div class="row">
 
 					<div class="col-auto">
-						<a href="<?php echo get_bloginfo('wpurl'); ?>">
+						<a href="<?php echo site_url(); ?>">
 							<img src="<?php echo get_bloginfo('template_directory') . '/images/core/logo.png'; ?>" alt="Logo" class="pbs-logo">
 						</a>
 					</div>
@@ -84,34 +84,34 @@
 		<nav class="pbs-nav collapse navbar-collapse" id="pbsNav">
 			<div class="container-fluid">
 				<ul class="navbar-nav">
-					<a href="<?php echo get_bloginfo('wpurl'); ?>">
+					<a href="<?php echo site_url(); ?>">
 						<li>
 							<span class="d-none d-md-block"><i class="fas fa-fw fa-home fa-2x"></i></span>
 							<span class="d-md-none">Home <i class="fas fa-fw fa-home"></i></span>
 						</li>
 					</a>
-					<a href="<?php echo get_bloginfo('wpurl') . '/branches'; ?>">
+					<a href="<?php echo site_url() . '/branches'; ?>">
 						<li>
 							Branches <i class="fas fa-fw fa-map-marker-alt"></i>
 						</li>
 					</a>
-					<a href="<?php echo get_bloginfo('wpurl') . '/products'; ?>">
+					<a href="<?php echo site_url() . '/products'; ?>">
 						<li>
 							Products <i class="fas fa-fw fa-shopping-cart"></i>
 						</li>
 					</a>
-					<a href="<?php echo get_bloginfo('wpurl') . '/about-us'; ?>">
+					<a href="<?php echo site_url() . '/about-us'; ?>">
 						<li>
 							About Us <i class="fas fa-fw fa-user"></i>
 						</li>
 					</a>
-					<a href="<?php echo get_bloginfo('wpurl') . '/charities-and-communities'; ?>">
+					<a href="<?php echo site_url() . '/charities-and-communities'; ?>">
 						<li>
 							<span class="d-none d-md-block">Charities & <br>Communities <i class="fas fa-fw fa-globe-americas"></i></span>
 							<span class="d-md-none">Communities <i class="fas fa-fw fa-globe-americas"></i></span>
 						</li>
 					</a>
-					<a href="<?php echo get_bloginfo('wpurl') . '/contact-us'; ?>">
+					<a href="<?php echo site_url() . '/contact-us'; ?>">
 						<li>
 							Contact Us <i class="fas fa-fw fa-phone"></i>
 						</li>
