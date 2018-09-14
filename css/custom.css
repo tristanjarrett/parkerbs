@@ -540,7 +540,7 @@ img {
   margin-bottom: 30px;
 }
 .pbs-home-news .pbs-more a {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: #44A8AB !important;
   font-weight: bold;
   display: block;
@@ -550,8 +550,7 @@ img {
   border-top: none;
 }
 .pbs-home-news .pbs-more a:hover {
-  color: #3C999A !important;
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
 }
 
 .pbs-home-logos {
@@ -703,7 +702,7 @@ img {
   margin-bottom: 30px;
 }
 .pbs-post-news .pbs-more a {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: #44A8AB !important;
   font-weight: bold;
   display: block;
@@ -713,8 +712,7 @@ img {
   border-top: none;
 }
 .pbs-post-news .pbs-more a:hover {
-  color: #3C999A !important;
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
 }
 
 /**
