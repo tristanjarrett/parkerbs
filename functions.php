@@ -69,7 +69,9 @@
 		    'supports' => array( 'title', 'editor', 'excerpt', 'thumbnail', 'revisions', 'custom-fields' ),
 			 	'menu_icon' => 'dashicons-location-alt',
  	    	'menu_position' => null,
-				'rewrite' => array('slug' => 'branches'),
+				'rewrite' => array(
+					'slug' => 'branches',
+				),
 	    )
 	  );
 	}
@@ -91,7 +93,9 @@
 		    'supports' => array( 'title', 'editor', 'excerpt', 'thumbnail', 'revisions', 'custom-fields' ),
 			 	'menu_icon' => 'dashicons-cart',
 		    'menu_position' => null,
-				'rewrite' => array('slug' => 'products'),
+				'rewrite' => array(
+					'slug' => 'products',
+				),
 	    )
 	  );
 	}
@@ -113,7 +117,9 @@
 		    'supports' => array( 'title', 'editor', 'excerpt', 'thumbnail', 'revisions', 'custom-fields' ),
 			 	'menu_icon' => 'dashicons-businessman',
  	    	'menu_position' => null,
-				'rewrite' => array('slug' => 'vacancies'),
+				'rewrite' => array(
+					'slug' => 'vacancies',
+				),
 	    )
 	  );
 	}

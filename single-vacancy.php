@@ -16,7 +16,7 @@
           <div class="col-auto">
             <form method="post">
               <input type="text" name="" value="<?php the_title(); ?>" hidden>
-              <button class="btn btn-outline-primary" type="submit">Apply</button>
+              <button class="btn btn-primary float-right" type="submit">Apply</button>
             </form>
           </div>
         </div>
