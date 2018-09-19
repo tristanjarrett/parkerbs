@@ -1,2 +1,1 @@
-# ParkerBS
-Template for WordPress
+# PARKERBS
