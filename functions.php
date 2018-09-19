@@ -113,7 +113,7 @@
 	      ),
 	      'public' => true,
 	      'has_archive' => false,
-			 	'publicly_queryable'  => true,
+			 	'publicly_queryable'  => true, // true because there is a dedicated vacancy "page"
 		    'supports' => array( 'title', 'editor', 'excerpt', 'thumbnail', 'revisions', 'custom-fields' ),
 			 	'menu_icon' => 'dashicons-businessman',
  	    	'menu_position' => null,
