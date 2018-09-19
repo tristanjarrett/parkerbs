@@ -59,18 +59,22 @@
 	<!-- ./footer -->
 
 	<!-- custom js -->
-	<script type="text/javascript" src="<?php echo get_template_directory_uri() . '/js/custom-jquery.js'; ?>"></script>
-	<script type="text/javascript" src="<?php echo get_template_directory_uri() . '/js/custom-javascript.js'; ?>"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri() . '/js/custom.js'; ?>"></script>
 	<!-- ./custom js -->
 
 	<!-- fontawesome icons -->
 	<script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>
 	<!-- ./fontawesome icons -->
 
+	<!-- slick -->
 	<script src="<?php echo get_template_directory_uri() . '/slick/js/slick.min.js'; ?>"></script>
-	<script src="<?php echo get_template_directory_uri() . '/node_modules/jquery/dist/jquery.slim.min.js'; ?>"></script>
-	<script src="<?php echo get_template_directory_uri() . '/node_modules/popper.js/dist/popper.min.js'; ?>"></script>
-	<script src="<?php echo get_template_directory_uri() . '/node_modules/bootstrap/dist/js/bootstrap.min.js'; ?>"></script>
+	<!-- ./slick -->
+
+	<!-- jQuery, Popper.js & Bootstrap -->
+	<script src="<?php echo get_template_directory_uri() . '/js/jquery/jquery.slim.min.js'; ?>"></script>
+	<script src="<?php echo get_template_directory_uri() . '/js/popper.js/popper.min.js'; ?>"></script>
+	<script src="<?php echo get_template_directory_uri() . '/js/bootstrap/bootstrap.min.js'; ?>"></script>
+	<!-- ./jQuery, Popper.js & Bootstrap -->
 
 	<?php wp_footer(); ?>
 
