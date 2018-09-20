@@ -8,12 +8,8 @@
 ehthumbs.db
 Thumbs.db
 
-# WordPress Files #
-##################
-wp-config.php
-wp-content/uploads
-
 # Node.js #
 ###########
 node_modules
+package.json
 package-lock.json
