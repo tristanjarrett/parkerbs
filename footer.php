@@ -67,7 +67,7 @@
 	<!-- ./fontawesome icons -->
 
 	<!-- slick -->
-	<script src="<?php echo get_template_directory_uri() . '/slick/js/slick.min.js'; ?>"></script>
+	<script src="<?php echo get_template_directory_uri() . '/assets/slick/js/slick.min.js'; ?>"></script>
 	<!-- ./slick -->
 
 	<!-- jQuery, Popper.js & Bootstrap -->

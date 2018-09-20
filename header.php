@@ -6,7 +6,7 @@
 	<title><?php pbs_title(); ?></title>
 	<!-- stylesheets -->
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() . '/css/custom.css'; ?>">
-	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() . '/slick/css/slick.min.css'; ?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() . '/assets/slick/css/slick.min.css'; ?>">
 	<!-- google fonts -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Franklin">
 	<!-- icons -->
