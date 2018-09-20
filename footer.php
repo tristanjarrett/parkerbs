@@ -19,7 +19,6 @@
 					<ul>
 						<li><a href="<?php echo site_url() . '/contact-us'; ?>">Contact Us</a></li>
 						<li><a href="<?php echo site_url() . '/about-us'; ?>">About Us</a></li>
-						<li><a href="<?php echo site_url() . '/blog'; ?>">Our Blog</a></li>
 						<li><a href="<?php echo site_url() . '/vacancies'; ?>">Vacancies</a></li>
 						<li><a href="<?php echo site_url() . '/privacy-policy'; ?>">Privacy Policy</a></li>
 						<li><a href="<?php echo site_url() . '/terms-and-conditions'; ?>">Terms & Conditions</a></li>
