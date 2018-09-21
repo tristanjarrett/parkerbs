@@ -1,6 +1,7 @@
 # PARKERBS
 
-### If not already installed then install Node.js (https://nodejs.org/en/)
+### Notes to future developers
+  - If not already installed then install Node.js (https://nodejs.org/en/)
 
 ### Install project dependencies to project root
   - Initiate a Node project: `npm init -yes`
