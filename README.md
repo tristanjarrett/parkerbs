@@ -1,6 +1,6 @@
 # PARKERBS
 
-### Notes to future developers
+### Notes to developers
   - If not already installed then install Node.js (https://nodejs.org/en/)
 
 ### Install project dependencies to project root
