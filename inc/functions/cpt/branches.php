@@ -14,7 +14,6 @@ function pbs_post_branch() {
       'publicly_queryable'  => true,
       'supports' => array(
         'title',
-        'editor',
         'thumbnail'
       ),
       'menu_icon' => 'dashicons-location-alt',
