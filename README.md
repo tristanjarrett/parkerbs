@@ -10,8 +10,7 @@
   - Install Bootstrap: `npm install bootstrap`
   - If not already installed then install Dart Sass: `npm install -g sass`
 
-You should now have a folder called node_modules and within should be the folders Bootstrap, jQuery & Popper.js
-You will also have a file called package.json and package-lock.json
+You should now have a folder called node_modules and within should be the folders Bootstrap, jQuery & Popper.js, you will also have a file called package.json and package-lock.json
 
 ### Compile SCSS (http://sass-lang.com/)
   - Compile once: `sass scss:css`
