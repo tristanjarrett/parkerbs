@@ -7,7 +7,7 @@ function pbs_post_vacancy() {
     array(
       'labels' => array(
         'name' => __( 'Vacancies', 'parkerbs' ),
-        'singular_name' => __( 'Vacancy', 'parkerbs' ),
+        'singular_name' => __( 'Vacancy', 'parkerbs' )
       ),
       'public' => true,
       'has_archive' => false,
@@ -15,15 +15,12 @@ function pbs_post_vacancy() {
       'supports' => array(
         'title',
         'editor',
-        'excerpt',
-        'thumbnail',
-        'revisions',
-        'custom-fields'
+        'thumbnail'
       ),
       'menu_icon' => 'dashicons-businessman',
       'menu_position' => null,
       'rewrite' => array(
-        'slug' => 'vacancies',
+        'slug' => 'vacancies'
       )
     )
   );

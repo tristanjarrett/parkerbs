@@ -7,7 +7,7 @@ function pbs_post_branch() {
     array(
       'labels' => array(
         'name' => __( 'Branches', 'parkerbs' ),
-        'singular_name' => __( 'Branch', 'parkerbs' ),
+        'singular_name' => __( 'Branch', 'parkerbs' )
       ),
       'public' => true,
       'has_archive' => false,
@@ -15,15 +15,12 @@ function pbs_post_branch() {
       'supports' => array(
         'title',
         'editor',
-        'excerpt',
-        'thumbnail',
-        'revisions',
-        'custom-fields'
+        'thumbnail'
       ),
       'menu_icon' => 'dashicons-location-alt',
       'menu_position' => null,
       'rewrite' => array(
-        'slug' => 'branches',
+        'slug' => 'branches'
       )
     )
   );

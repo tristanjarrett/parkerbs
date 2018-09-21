@@ -50,8 +50,8 @@
 								 'orderby'=> 'title',
 								 'order' => 'ASC'
 							 );
-				       $loop = new WP_Query( $args );
-				       while ( $loop->have_posts() ) : $loop->the_post(); ?>
+				       $branches = new WP_Query( $args );
+				       while ( $branches->have_posts() ) : $branches->the_post(); ?>
 				         <li><a href="<?php the_permalink(); ?>"><span class="pbs-map-icon"><i class="fas fa-fw fa-map-marker-alt"></i></span> <?php the_title(); ?></a></li>
 
  								<?php wp_reset_postdata(); ?>

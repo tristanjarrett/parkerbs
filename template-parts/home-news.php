@@ -10,9 +10,9 @@
 			$args = array (
 				'posts_per_page' => 8,
 			);
-			$the_query = new WP_Query($args);
-			if($the_query->have_posts()):
-				while ($the_query->have_posts()) : $the_query->the_post();
+			$latest_news = new WP_Query($args);
+			if($latest_news->have_posts()):
+				while ($latest_news->have_posts()) : $latest_news->the_post();
 			?>
 
 				<div class="col-12 col-sm-6 col-lg-3">

@@ -7,7 +7,7 @@ function pbs_post_product() {
     array(
       'labels' => array(
         'name' => __( 'Products', 'parkerbs' ),
-        'singular_name' => __( 'Product', 'parkerbs' ),
+        'singular_name' => __( 'Product', 'parkerbs' )
       ),
       'public' => true,
       'has_archive' => false,
@@ -15,15 +15,12 @@ function pbs_post_product() {
       'supports' => array(
         'title',
         'editor',
-        'excerpt',
-        'thumbnail',
-        'revisions',
-        'custom-fields'
+        'thumbnail'
       ),
       'menu_icon' => 'dashicons-cart',
       'menu_position' => null,
       'rewrite' => array(
-        'slug' => 'products',
+        'slug' => 'products'
       )
     )
   );

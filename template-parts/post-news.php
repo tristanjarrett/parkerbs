@@ -11,9 +11,9 @@
 				'posts_per_page' => 4,
 				'post__not_in' => array( $post->ID ),
 			);
-			$the_query = new WP_Query($args);
-			if($the_query->have_posts()):
-				while ($the_query->have_posts()) : $the_query->the_post();
+			$recent_news = new WP_Query($args);
+			if($recent_news->have_posts()):
+				while ($recent_news->have_posts()) : $recent_news->the_post();
 			?>
 
 				<div class="col-12 col-sm-6 col-lg-3">

@@ -24,9 +24,9 @@
         'post_type' => 'vacancy',
         'posts_per_page' => -1,
       );
-      $the_query = new WP_Query($args);
-			if($the_query->have_posts()):
-				while ($the_query->have_posts()) : $the_query->the_post();
+      $vacancy_loop = new WP_Query($args);
+			if($vacancy_loop->have_posts()):
+				while ($vacancy_loop->have_posts()) : $vacancy_loop->the_post();
 			?>
 
         <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>

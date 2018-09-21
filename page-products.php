@@ -13,8 +13,8 @@
       <ul>
         <?php
         $args = array( 'post_type' => 'product', 'posts_per_page' => -1, 'orderby'=> 'title', 'order' => 'ASC' );
-        $loop = new WP_Query( $args );
-        while ( $loop->have_posts() ) : $loop->the_post(); ?>
+        $product_loop = new WP_Query( $args );
+        while ( $product_loop->have_posts() ) : $product_loop->the_post(); ?>
         <li class="pbs-products-item">
           <div class="row">
             <div class="col pbs-child">
