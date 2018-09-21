@@ -1,7 +1,8 @@
 # PARKERBS
 
+### If not already installed then install Node.js (https://nodejs.org/en/)
+
 ### Install project dependencies to project root
-  - If not already installed then install Node.js (https://nodejs.org/en/)
   - Initiate a Node project: `npm init -yes`
   - Install Popper.js: `npm install popper.js`
   - Install jQuery: `npm install jquery`
