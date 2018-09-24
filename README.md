@@ -4,7 +4,7 @@
   - If not already installed then install Node.js (https://nodejs.org/en/)
 
 ### Install project dependencies to project root
-  - Initiate a Node project: `npm init -yes`
+  - initialize a Node project: `npm init -yes`
   - Install Popper.js: `npm install popper.js`
   - Install jQuery: `npm install jquery`
   - Install Bootstrap: `npm install bootstrap`
