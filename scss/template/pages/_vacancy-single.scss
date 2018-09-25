@@ -1,7 +1,58 @@
 /**
  * Vacancy page
  */
- 
-.pbs-vacancy-page {
+
+.pbs-vacancy-section {
 	padding-top: 30px;
+	padding-bottom: 10px;
+	background-color: #F7F7F9;
+	.pbs-content {
+		background-color: #FFFFFF;
+		padding: 30px;
+		margin-bottom: 30px;
+		border: solid 1px #E1E1E1;
+		p {
+			&:last-child {
+				margin-bottom: 0px;
+			}
+		}
+	}
+	.pbs-sidebar {
+		position: sticky;
+		position: -webkit-sticky;
+	  position: -moz-sticky;
+	  position: -ms-sticky;
+	  position: -o-sticky;
+		top: 20px;
+		margin-bottom: 30px;
+		@media (max-width: 991px) {
+			display: none;
+		}
+		ul {
+			background-color: #FFFFFF;
+			border: solid 1px #E1E1E1;
+			margin-bottom: 0px;
+			padding-left: 0px;
+			li {
+				border-bottom: solid 1px #E1E1E1;
+				list-style-type: none;
+				&:last-child {
+					border-bottom: none;
+				}
+				a {
+					display: block;
+					padding: 15px 15px 15px 10px; /* because there is an invisible border of 5px for hover effects */
+					text-decoration: none;
+					border-left: solid 5px transparent;
+					&:hover {
+						background-color: #F9F9F9;
+						border-left: solid 5px #44A8AB;
+					}
+					.pbs-map-icon {
+						margin-right: 10px;
+					}
+				}
+			}
+		}
+	}
 }

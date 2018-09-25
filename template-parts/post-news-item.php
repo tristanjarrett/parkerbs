@@ -1,4 +1,4 @@
-<div class="pbs-post-news-item pbs-flex-item">
+<div class="pbs-news-item pbs-flex-item">
 		<?php if ( has_post_thumbnail() ) { ?>
 			<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
 			<div class="pbs-thumbnail" style="background-image: url('<?php echo $thumb['0']; ?>');"></div>

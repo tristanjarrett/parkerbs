@@ -1,36 +1,70 @@
 <?php get_header(); ?>
 
-  <div class="pbs-vacancy-page">
+	<div class="pbs-vacancy-section">
+		<div class="container-fluid">
+			<div class="row">
 
-    <div class="container-fluid">
+				<div class="col-lg-9">
+					<div class="pbs-content">
+						<?php
+						if ( have_posts() ) :
+							while ( have_posts() ) : the_post(); ?>
 
-      <?php
-      if ( have_posts() ) :
-        while ( have_posts() ) : the_post(); ?>
+								<h4><?php the_title(); ?></h4>
+								<p class="text-muted">Posted <i class="far fa-fw fa-calendar-alt"></i> <?php the_date(); ?></p>
 
-        <div class="row">
-          <div class="col">
-            <h4><?php the_title(); ?></h4>
-            <p class="text-muted mb-0">Posted <i class="far fa-fw fa-calendar-alt"></i> <?php the_date(); ?></p>
-          </div>
-          <div class="col-auto">
-            <form method="post">
-              <input type="text" name="<?php the_title(); ?>" value="<?php the_title(); ?>" hidden>
-              <button class="btn btn-primary float-right" type="submit">Apply</button>
-            </form>
-          </div>
-        </div>
-          <hr>
-          <?php the_content(); ?>
+								<?php
+								if ( has_tag() ) {
+									// Show the tags if any
+									the_tags();
+								} else {
+									// Do nothing
+								}
 
-          <?php wp_reset_postdata(); ?>
+								if ( has_category() ) {
+									// Show the category if any
+									the_category();
+								} else {
+									// Do nothig
+								}
+								?>
 
-        <?php endwhile;
-      endif;
-      ?>
+								<hr>
+								<?php the_content(); ?>
 
-    </div>
+								<?php wp_reset_postdata(); ?>
 
-  </div>
+							<?php endwhile;
+						endif;
+						?>
+					</div>
+				</div>
+
+				<div class="col-lg-3">
+					<div class="pbs-sidebar">
+						<ul>
+							<?php
+				       $args = array(
+								 'post_type' => 'vacancy',
+								 'posts_per_page' => -1,
+								 'orderby'=> 'title',
+								 'order' => 'ASC'
+							 );
+				       $branches = new WP_Query( $args );
+				       while ( $branches->have_posts() ) : $branches->the_post(); ?>
+				         <li><a href="<?php the_permalink(); ?>"><span class="pbs-map-icon"><i class="fas fa-fw fa-map-marker-alt"></i></span> <?php the_title(); ?></a></li>
+
+ 								<?php wp_reset_postdata(); ?>
+
+							 <?php
+				       endwhile;
+				   		?>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
 
 <?php get_footer(); ?>
