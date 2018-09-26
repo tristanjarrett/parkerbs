@@ -50,7 +50,7 @@
 				</div>
 			</div>
 			<div class="pbs-copyright">
-				<p><?php echo '&copy;', '&nbsp;', date('Y'), '&nbsp;', 'Parker Building Supplies Limited. All Rights Reserved.'; ?></p>
+				<p><?php echo '&copy;', '&nbsp;', get_the_date('Y'), '&nbsp;', 'Parker Building Supplies Limited. All Rights Reserved.'; ?></p>
 			</div>
 		</div>
 		<span id="pbs-top-button"><i class="fas fa-chevron-up"></i></span>
