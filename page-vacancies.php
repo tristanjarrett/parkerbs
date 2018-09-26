@@ -26,13 +26,15 @@
       );
       $vacancy_loop = new WP_Query($args);
 			if($vacancy_loop->have_posts()):
-				while ($vacancy_loop->have_posts()) : $vacancy_loop->the_post();
+        echo '<ul>';
+          while ($vacancy_loop->have_posts()) : $vacancy_loop->the_post();
 			?>
 
-        <h5><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
+        <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
 
       <?php
-				endwhile;
+				  endwhile;
+        echo '</ul>';
 			endif;
 			?>
 
