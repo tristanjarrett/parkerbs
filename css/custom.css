@@ -629,6 +629,12 @@ img {
           .pbs-vacancy-section .pbs-sidebar ul li a .pbs-map-icon {
             margin-right: 10px; }
 
+/**
+ * Branches page
+ */
+.pbs-branches-page {
+  padding: 30px 0px; }
+
 /*!
  * Bootstrap v4.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
