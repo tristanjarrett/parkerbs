@@ -4,12 +4,12 @@ var infoWindow;
 var locationSelect;
 
 function initMap() {
-    var polegate = {
-        lat: 50.818215,
-        lng: 0.270516
+    var sussex = {
+        lat: 50.941953,
+        lng: 0.184667
     };
     map = new google.maps.Map(document.getElementById('map'), {
-        center: polegate,
+        center: sussex,
         zoom: 11,
         mapTypeId: 'roadmap',
         mapTypeControlOptions: {
