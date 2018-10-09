@@ -102,7 +102,7 @@
 					</a>
 					<a href="<?php echo site_url() . '/about-us'; ?>">
 						<li>
-							About Us <i class="fas fa-fw fa-book"></i>
+							About Us <i class="fas fa-fw fa-align-left"></i>
 						</li>
 					</a>
 					<a href="<?php echo site_url() . '/charities-and-communities'; ?>">
