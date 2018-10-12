@@ -9,11 +9,9 @@
   <div class="pbs-vacancies-page">
     <div class="container-fluid">
 
-      <div class="row">
-
-        <div class="col">
-
           <h4 class="pbs-font pbs-heading">Vacancies</h4>
+
+          <hr>
 
           <?php
       		if ( have_posts() ) :
@@ -41,14 +39,6 @@
             echo '</ul>';
     			endif;
     			?>
-
-        </div>
-
-        <div class="col-auto">
-          right
-        </div>
-
-      </div>
 
     </div>
   </div>
