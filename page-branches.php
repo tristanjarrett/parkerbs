@@ -41,10 +41,12 @@
                 <label class="input-group-text">Radius:</label>
               </div>
               <select id="radiusSelect" label="Radius" class="form-control">
-                <option value="50" selected>50 Miles</option>
-                <option value="30">30 Miles</option>
-                <option value="20">20 Miles</option>
-                <option value="10">10 Miles</option>
+                <option value="5">5 miles</option>
+                <option value="15">15 miles</option>
+                <option value="25" selected>25 miles</option>
+                <option value="50">50 miles</option>
+                <option value="100">100 miles</option>
+                <option value="200">200 miles</option>
               </select>
             </div>
           </div>
