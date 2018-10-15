@@ -45,7 +45,6 @@
                     <span class="text-muted">Job Location</span>
                     <span class="text-muted float-right"><?php echo human_time_diff(get_the_time('U'), current_time('timestamp')) . ' ago'; ?></span>
                   </a>
-
                 </li>
 
               <?php
