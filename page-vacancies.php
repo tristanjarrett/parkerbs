@@ -42,7 +42,7 @@
                 <li class="list-group-item">
                   <a href="<?php the_permalink(); ?>">
                     <p class="mb-0"><?php the_title(); ?></p>
-                    <span class="text-muted">Branch Support Centre</span>
+                    <span class="text-muted">Job Location</span>
                     <span class="text-muted float-right"><?php echo human_time_diff(get_the_time('U'), current_time('timestamp')) . ' ago'; ?></span>
                   </a>
 

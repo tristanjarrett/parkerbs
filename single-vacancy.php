@@ -103,7 +103,15 @@
 							 );
 				       $branches = new WP_Query( $args );
 				       while ( $branches->have_posts() ) : $branches->the_post(); ?>
-				         <li><a href="<?php the_permalink(); ?>"><span class="pbs-icon"><i class="fas fa-fw fa-user"></i></span> <?php the_title(); ?></a></li>
+				        <li>
+									<a href="<?php the_permalink(); ?>" class="d-flex justify-content-start align-items-center">
+										<div class="pbs-icon"><i class="fas fa-fw fa-user-tie"></i></div>
+										<div>
+											<?php the_title(); ?>
+											<span class="d-block text-muted">Job Location</span>
+										</div>
+									</a>
+								</li>
 
  								<?php wp_reset_postdata(); ?>
 
