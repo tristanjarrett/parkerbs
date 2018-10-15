@@ -12,7 +12,7 @@
 
 							<div class="row">
 								<div class="col">
-									<h4><?php the_title(); ?></h4>
+									<h4><?php the_title(); ?> - <?php echo get_post_meta($post->ID, 'custom_input', true); ?></h4>
 									<p class="text-muted">Posted <i class="far fa-fw fa-calendar-alt"></i> <?php the_date(); ?></p>
 								</div>
 
@@ -108,7 +108,7 @@
 										<div class="pbs-icon"><i class="fas fa-fw fa-user-tie"></i></div>
 										<div>
 											<?php the_title(); ?>
-											<span class="d-block text-muted">Job Location</span>
+											<span class="d-block text-muted"><?php echo get_post_meta($post->ID, 'custom_input', true); ?></span>
 										</div>
 									</a>
 								</li>
