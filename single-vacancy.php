@@ -10,8 +10,16 @@
 						if ( have_posts() ) :
 							while ( have_posts() ) : the_post(); ?>
 
-								<h4><?php the_title(); ?></h4>
-								<p class="text-muted">Posted <i class="far fa-fw fa-calendar-alt"></i> <?php the_date(); ?></p>
+							<div class="row">
+								<div class="col">
+									<h4><?php the_title(); ?></h4>
+									<p class="text-muted">Posted <i class="far fa-fw fa-calendar-alt"></i> <?php the_date(); ?></p>
+								</div>
+
+								<div class="col-auto">
+									<a href="#apply-now" class="btn btn-primary">Apply Now</a>
+								</div>
+							</div>
 
 								<?php
 								if ( has_tag() ) {
@@ -39,7 +47,7 @@
 						?>
 					</div>
 
-					<div class="pbs-content">
+					<div class="pbs-content" id="apply-now">
 
 						<form>
 
@@ -63,17 +71,6 @@
 						    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="0844 257 7000" required>
 						  </div>
 
-						  <div class="form-group">
-						    <label for="exampleFormControlSelect1">Example select</label>
-						    <select class="form-control" id="exampleFormControlSelect1">
-						      <option>1</option>
-						      <option>2</option>
-						      <option>3</option>
-						      <option>4</option>
-						      <option>5</option>
-						    </select>
-						  </div>
-
 							<div class="form-group">
 						    <label for="exampleFormControlFile1">Attach CV *</label>
 						    <input type="file" class="form-control-file" id="exampleFormControlFile1" required>
@@ -85,7 +82,7 @@
 						  </div>
 
 							<div class="text-right">
-								<button type="submit" class="btn btn-primary">Apply</button>
+								<button type="submit" class="btn btn-primary">Submit Application</button>
 							</div>
 
 						</form>
