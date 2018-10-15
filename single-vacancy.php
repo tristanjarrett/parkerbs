@@ -49,7 +49,7 @@
 
 					<div class="pbs-content" id="apply-now">
 
-						<form>
+						<form method="post" action="<?php echo get_template_directory_uri() . '/inc/configs/vacancies/send-mail.php'; ?>">
 
 							<div class="form-group">
 						    <label for="">First name *</label>
