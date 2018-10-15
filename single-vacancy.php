@@ -17,7 +17,7 @@
 								</div>
 
 								<div class="col-auto">
-									<a href="#apply-now" class="btn btn-primary">Apply Now</a>
+									<a href="#apply" class="btn btn-primary">Apply Now</a>
 								</div>
 							</div>
 
@@ -47,7 +47,7 @@
 						?>
 					</div>
 
-					<div class="pbs-content" id="apply-now">
+					<div class="pbs-content" id="apply">
 
 						<form method="post" action="<?php echo get_template_directory_uri() . '/inc/configs/vacancies/send-mail.php'; ?>">
 
