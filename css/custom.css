@@ -672,7 +672,7 @@ img {
   background-color: #F9F9F9;
   border-left: solid 5px #44A8AB;
 }
-.pbs-post-section .pbs-sidebar ul li a .pbs-map-icon {
+.pbs-post-section .pbs-sidebar ul li a .pbs-icon {
   margin-right: 10px;
 }
 
@@ -722,16 +722,16 @@ img {
   padding: 30px 0px;
   background-color: #F7F7F9;
 }
-.pbs-vacancies-page .posts ul {
+.pbs-vacancies-page .pbs-posts ul {
   margin: 0;
 }
-.pbs-vacancies-page .posts ul li {
+.pbs-vacancies-page .pbs-posts ul li {
   margin-bottom: 10px;
 }
-.pbs-vacancies-page .posts ul li:last-child {
+.pbs-vacancies-page .pbs-posts ul li:last-child {
   margin-bottom: 0px;
 }
-.pbs-vacancies-page .posts ul li a {
+.pbs-vacancies-page .pbs-posts ul li a {
   display: block;
 }
 
@@ -790,7 +790,7 @@ img {
   background-color: #F9F9F9;
   border-left: solid 5px #44A8AB;
 }
-.pbs-vacancy-section .pbs-sidebar ul li a .pbs-map-icon {
+.pbs-vacancy-section .pbs-sidebar ul li a .pbs-icon {
   margin-right: 10px;
 }
 

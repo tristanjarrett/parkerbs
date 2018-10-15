@@ -38,6 +38,60 @@
 						endif;
 						?>
 					</div>
+
+					<div class="pbs-content">
+
+						<form>
+
+							<div class="form-group">
+						    <label for="">First name *</label>
+						    <input type="text" class="form-control" id="" placeholder="Joe" required>
+						  </div>
+
+							<div class="form-group">
+							  <label for="">Last name *</label>
+							  <input type="text" class="form-control" id="" placeholder="Bloggs" required>
+						  </div>
+
+						  <div class="form-group">
+						    <label for="exampleFormControlInput1">Email address *</label>
+						    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+						  </div>
+
+							<div class="form-group">
+						    <label for="exampleFormControlInput1">Telephone / Mobile *</label>
+						    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="0844 257 7000" required>
+						  </div>
+
+						  <div class="form-group">
+						    <label for="exampleFormControlSelect1">Example select</label>
+						    <select class="form-control" id="exampleFormControlSelect1">
+						      <option>1</option>
+						      <option>2</option>
+						      <option>3</option>
+						      <option>4</option>
+						      <option>5</option>
+						    </select>
+						  </div>
+
+							<div class="form-group">
+						    <label for="exampleFormControlFile1">Attach CV *</label>
+						    <input type="file" class="form-control-file" id="exampleFormControlFile1" required>
+						  </div>
+
+						  <div class="form-group">
+						    <label for="exampleFormControlTextarea1">Notes</label>
+						    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+						  </div>
+
+							<div class="text-right">
+								<button type="submit" class="btn btn-primary">Apply</button>
+							</div>
+
+						</form>
+
+					</div>
+
 				</div>
 
 				<div class="col-lg-3">
@@ -52,7 +106,7 @@
 							 );
 				       $branches = new WP_Query( $args );
 				       while ( $branches->have_posts() ) : $branches->the_post(); ?>
-				         <li><a href="<?php the_permalink(); ?>"><span class="pbs-map-icon"><i class="fas fa-fw fa-map-marker-alt"></i></span> <?php the_title(); ?></a></li>
+				         <li><a href="<?php the_permalink(); ?>"><span class="pbs-icon"><i class="fas fa-fw fa-user"></i></span> <?php the_title(); ?></a></li>
 
  								<?php wp_reset_postdata(); ?>
 

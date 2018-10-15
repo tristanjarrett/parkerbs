@@ -24,7 +24,7 @@
 
           <h4 class="pbs-font pbs-heading mb-3">Current Vacancies</h4>
 
-          <div class="posts">
+          <div class="pbs-posts">
             <ul class="list-group">
 
               <?php
