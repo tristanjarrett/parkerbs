@@ -724,15 +724,20 @@ img {
 }
 .pbs-vacancies-page .pbs-posts ul {
   margin: 0;
+  padding: 0;
 }
 .pbs-vacancies-page .pbs-posts ul li {
   margin-bottom: 10px;
+  list-style-type: none;
 }
 .pbs-vacancies-page .pbs-posts ul li:last-child {
   margin-bottom: 0px;
 }
 .pbs-vacancies-page .pbs-posts ul li a {
   display: block;
+  padding: 15px;
+  background-color: #FFFFFF;
+  border: solid 1px #E1E1E1;
 }
 
 /**

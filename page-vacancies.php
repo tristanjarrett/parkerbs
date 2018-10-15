@@ -25,7 +25,7 @@
           <h4 class="pbs-font pbs-heading mb-3">Current Vacancies</h4>
 
           <div class="pbs-posts">
-            <ul class="list-group">
+            <ul>
 
               <?php
               $args = array(
@@ -39,7 +39,7 @@
                 $vacancy_loop->the_post();
               ?>
 
-                <li class="list-group-item">
+                <li>
                   <a href="<?php the_permalink(); ?>">
                     <p class="mb-0"><?php the_title(); ?></p>
                     <span class="text-muted"><?php echo get_post_meta($post->ID, 'custom_input', true); ?></span>

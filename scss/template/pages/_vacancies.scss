@@ -8,13 +8,18 @@
   .pbs-posts {
     ul {
       margin: 0;
+			padding: 0;
       li {
         margin-bottom: 10px;
+				list-style-type: none;
         &:last-child {
           margin-bottom: 0px;
         }
         a {
           display: block;
+					padding: 15px;
+					background-color: #FFFFFF;
+					border: solid 1px #E1E1E1;
         }
       }
     }
