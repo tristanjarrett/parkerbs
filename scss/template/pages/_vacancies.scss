@@ -11,24 +11,26 @@
 		padding: 30px;
 		margin-bottom: 30px;
 		border: solid 1px #E1E1E1;
+		.pbs-title {
+			padding: 10px 0px;
+			font-weight: bold;
+		}
+		.pbs-posts {
+	    ul {
+	      margin: 0;
+				padding: 0;
+	      li {
+					list-style-type: none;
+					border-top: solid 1px #E1E1E1;
+	        &:last-child {
+	          padding-bottom: 0px;
+	        }
+	        a {
+	          display: block;
+						padding: 10px 0px;
+	        }
+	      }
+	    }
+	  }
 	}
-  .pbs-posts {
-    ul {
-      margin: 0;
-			padding: 0;
-      li {
-        margin-bottom: 10px;
-				list-style-type: none;
-        &:last-child {
-          margin-bottom: 0px;
-        }
-        a {
-          display: block;
-					padding: 15px;
-					background-color: #FFFFFF;
-					border: solid 1px #E1E1E1;
-        }
-      }
-    }
-  }
 }
