@@ -750,8 +750,8 @@ img {
   border: solid 1px #E1E1E1;
 }
 .pbs-vacancies-page .pbs-content .pbs-title {
-  padding-bottom: 10px;
   font-weight: bold;
+  padding: 0px 15px 10px 15px;
 }
 .pbs-vacancies-page .pbs-content .pbs-posts ul {
   margin: 0;
@@ -760,9 +760,13 @@ img {
 .pbs-vacancies-page .pbs-content .pbs-posts ul li {
   list-style-type: none;
   border-top: solid 1px #E1E1E1;
+  padding: 0px 15px;
 }
 .pbs-vacancies-page .pbs-content .pbs-posts ul li:last-child {
   padding-bottom: 0px;
+}
+.pbs-vacancies-page .pbs-content .pbs-posts ul li:nth-child(even) {
+  background-color: #F7F7F9;
 }
 .pbs-vacancies-page .pbs-content .pbs-posts ul li a {
   display: block;
