@@ -24,16 +24,8 @@
 						if ( have_posts() ) :
 							while ( have_posts() ) : the_post(); ?>
 
-							<div class="row">
-								<div class="col">
-									<h4><?php the_title(); ?> - <?php echo get_post_meta($post->ID, 'custom_input', true); ?></h4>
-									<p class="text-muted">Posted <i class="far fa-fw fa-calendar-alt"></i> <?php the_date(); ?></p>
-								</div>
-
-								<div class="col-auto">
-									<a href="#apply" class="btn btn-primary">Apply Now</a>
-								</div>
-							</div>
+								<h4><?php the_title(); ?> - <?php echo get_post_meta($post->ID, 'custom_input', true); ?></h4>
+								<p class="text-muted">Posted <i class="far fa-fw fa-calendar-alt"></i> <?php the_date(); ?></p>
 
 								<?php
 								if ( has_tag() ) {
@@ -61,7 +53,13 @@
 						?>
 					</div>
 
-					<div class="pbs-content" id="apply">
+
+
+					<div class="pbs-content">
+
+						<h4>Apply Now</h4>
+						<p class="text-muted">(<?php the_title(); ?>)</p>
+						<hr>
 
 						<form>
 
@@ -86,14 +84,14 @@
 						  </div>
 
 							<div class="form-group">
-						    <label for="exampleFormControlFile1">Attach CV *</label>
+					   		<label for="exampleFormControlFile1">Attach CV *</label>
 						    <input type="file" class="form-control-file" id="exampleFormControlFile1" required>
-						  </div>
+							</div>
 
 						  <div class="form-group">
-						    <label for="exampleFormControlTextarea1">Notes</label>
-						    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-						  </div>
+						  	<label for="exampleFormControlTextarea1">Notes</label>
+					   		<textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+							</div>
 
 							<div class="text-right">
 								<button type="submit" class="btn btn-primary">Submit Application</button>
