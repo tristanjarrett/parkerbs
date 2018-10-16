@@ -750,7 +750,7 @@ img {
   border: solid 1px #E1E1E1;
 }
 .pbs-vacancies-page .pbs-content .pbs-title {
-  padding: 10px 0px;
+  padding-bottom: 10px;
   font-weight: bold;
 }
 .pbs-vacancies-page .pbs-content .pbs-posts ul {
