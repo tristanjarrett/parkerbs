@@ -50,7 +50,7 @@ add_action( 'init', 'pbs_post_vacancy' );
  function save_detail() {
    global $post;
 
-   if(define('DOING_AUTOSAVE') && DOING_AUTOSAVE) {
+   if(defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) {
      return $post->ID;
    }
 

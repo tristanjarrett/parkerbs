@@ -247,6 +247,26 @@ img {
 }
 
 /**
+ * Breadcrumb
+ */
+.pbs-breadcrumb {
+  background-color: #FFFFFF;
+  border-bottom: solid 1px #E1E1E1;
+}
+.pbs-breadcrumb ul {
+  margin: 0;
+  padding: 0;
+  padding: 10px 0px;
+}
+.pbs-breadcrumb ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+.pbs-breadcrumb ul li:nth-child(even) {
+  padding: 0px 10px;
+}
+
+/**
  * Global header
  */
 .pbs-header {

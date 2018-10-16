@@ -42,7 +42,7 @@
                 <li>
                   <a href="<?php the_permalink(); ?>">
                     <p class="mb-0"><?php the_title(); ?></p>
-                    <span class="text-muted"><?php echo get_post_meta($post->ID, 'custom_input', true); ?></span>
+                    <span class="text-muted">Based in <?php echo get_post_meta($post->ID, 'custom_input', true); ?></span>
                     <span class="text-muted float-right"><?php echo human_time_diff(get_the_time('U'), current_time('timestamp')) . ' ago'; ?></span>
                   </a>
                 </li>

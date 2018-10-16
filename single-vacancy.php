@@ -1,7 +1,21 @@
 <?php get_header(); ?>
 
+	<div class="pbs-breadcrumb">
+		<nav class="container-fluid">
+			<ul>
+				<li><a href="<?php echo site_url(); ?>">Home</a></li>
+				<li>/</li>
+				<li><a href="<?php echo site_url() . '/vacancies'; ?>">Vacancies</a></li>
+				<li>/</li>
+				<li class="text-muted"><?php the_title(); ?></li>
+			</ul>
+		</nav>
+	</div>
+
 	<div class="pbs-vacancy-section">
+
 		<div class="container-fluid">
+
 			<div class="row">
 
 				<div class="col-lg-9">
@@ -49,7 +63,7 @@
 
 					<div class="pbs-content" id="apply">
 
-						<form method="post" action="<?php echo get_template_directory_uri() . '/inc/configs/vacancies/send-mail.php'; ?>">
+						<form>
 
 							<div class="form-group">
 						    <label for="">First name *</label>
@@ -99,7 +113,8 @@
 								 'post_type' => 'vacancy',
 								 'posts_per_page' => -1,
 								 'orderby'=> 'title',
-								 'order' => 'ASC'
+								 'order' => 'ASC',
+								 'post__not_in' => array( $post->ID )
 							 );
 				       $branches = new WP_Query( $args );
 				       while ( $branches->have_posts() ) : $branches->the_post(); ?>

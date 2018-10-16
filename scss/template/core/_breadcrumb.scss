@@ -1,0 +1,19 @@
+/**
+ * Breadcrumb
+ */
+.pbs-breadcrumb {
+  background-color: #FFFFFF;
+  border-bottom: solid 1px #E1E1E1;
+  ul {
+    margin: 0;
+    padding: 0;
+    padding: 10px 0px;
+    li {
+      list-style-type: none;
+      display: inline-block;
+      &:nth-child(even) {
+        padding: 0px 10px;
+      }
+    }
+  }
+}
