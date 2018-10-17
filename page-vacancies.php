@@ -19,80 +19,97 @@
   <div class="pbs-vacancies-page">
     <div class="container-fluid">
 
-      <div class="pbs-content">
+      <div class="row">
+        <div class="col-lg-9">
+          <div class="pbs-content">
 
-        <h4 class="mb-3">Vacancies</h4>
+            <h4 class="mb-3">Vacancies</h4>
 
-        <?php
-      	if ( have_posts() ) :
-      	   while ( have_posts() ) : the_post();
-    		     the_content();
-        		 endwhile;
-           endif;
-        	?>
+            <?php
+          	if ( have_posts() ) :
+          	   while ( have_posts() ) : the_post();
+        		     the_content();
+            		 endwhile;
+               endif;
+            	?>
 
-      </div>
+          </div>
 
-      <div class="pbs-content">
+          <div class="pbs-content">
 
-        <h4 class="mb-3">Current Vacancies</h4>
+            <h4 class="mb-3">Current Vacancies</h4>
 
-        <div class="pbs-title">
-          <div class="row">
-            <div class="col-md">
-              Title
+            <div class="pbs-title">
+              <div class="row">
+                <div class="col-md">
+                  Title
+                </div>
+                <div class="col-md">
+                  Location
+                </div>
+                <div class="col-md text-right">
+                  Posted
+                </div>
+              </div>
             </div>
-            <div class="col-md">
-              Location
+
+            <div class="pbs-posts">
+              <ul>
+
+                <?php
+                $args = array(
+                  'post_type' => 'vacancy',
+                  'posts_per_page' => - 1,
+                );
+                $vacancy_loop = new WP_Query($args);
+
+                if ($vacancy_loop->have_posts()):
+                  while ($vacancy_loop->have_posts()):
+                    $vacancy_loop->the_post();
+                ?>
+
+                <li>
+                  <a href="<?php the_permalink(); ?>">
+
+                    <div class="row">
+                      <div class="col-md">
+                        <?php the_title(); ?>
+                      </div>
+                      <div class="col-md">
+                        <span class="text-muted"><?php echo get_post_meta($post->ID, 'custom_input', true); ?></span>
+                      </div>
+                      <div class="col-md text-right">
+                        <span class="text-muted"></span> <?php echo human_time_diff(get_the_time('U'), current_time('timestamp')) . ' ago'; ?>
+                      </div>
+                    </div>
+
+                  </a>
+                </li>
+
+                <?php
+                  endwhile;
+                endif;
+                ?>
+
+              </ul>
             </div>
-            <div class="col-md text-right">
-              Posted
-            </div>
+
           </div>
         </div>
 
-        <div class="pbs-posts">
-          <ul>
+        <div class="col-lg-3">
+					<div class="pbs-sidebar">
 
-            <?php
-            $args = array(
-              'post_type' => 'vacancy',
-              'posts_per_page' => - 1,
-            );
-            $vacancy_loop = new WP_Query($args);
+            Sidebar
 
-            if ($vacancy_loop->have_posts()):
-              while ($vacancy_loop->have_posts()):
-                $vacancy_loop->the_post();
-            ?>
-
-            <li>
-              <a href="<?php the_permalink(); ?>">
-
-                <div class="row">
-                  <div class="col-md">
-                    <?php the_title(); ?>
-                  </div>
-                  <div class="col-md">
-                    <span class="text-muted"><?php echo get_post_meta($post->ID, 'custom_input', true); ?></span>
-                  </div>
-                  <div class="col-md text-right">
-                    <span class="text-muted"></span> <?php echo human_time_diff(get_the_time('U'), current_time('timestamp')) . ' ago'; ?>
-                  </div>
-                </div>
-
-              </a>
-            </li>
-
-            <?php
-              endwhile;
-            endif;
-            ?>
-
-          </ul>
-        </div>
+					</div>
+				</div>
 
       </div>
+
+
+
+
 
     </div>
   </div>
