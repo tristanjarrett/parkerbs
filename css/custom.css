@@ -787,6 +787,9 @@ img {
   margin-bottom: 30px;
   border: solid 1px #E1E1E1;
 }
+.pbs-vacancy-section .pbs-content .pbs-red {
+  color: red;
+}
 .pbs-vacancy-section .pbs-content p:last-child {
   margin-bottom: 0px;
 }

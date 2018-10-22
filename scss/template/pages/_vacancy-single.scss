@@ -11,6 +11,9 @@
 		padding: 30px;
 		margin-bottom: 30px;
 		border: solid 1px #E1E1E1;
+		.pbs-red {
+			color: red;
+		}
 		p {
 			&:last-child {
 				margin-bottom: 0px;

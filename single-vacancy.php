@@ -58,33 +58,33 @@
 					<div class="pbs-content">
 
 						<h4>Apply Now</h4>
-						<p class="text-muted">(<?php the_title(); ?>)</p>
+						<p class="text-muted"><?php the_title(); ?> - <?php echo get_post_meta($post->ID, 'custom_input', true); ?></p>
 						<hr>
 
 						<form>
 
 							<div class="form-group">
-						    <label for="">First name *</label>
+						    <label for="">First name <span class="pbs-red">*</span></label>
 						    <input type="text" class="form-control" id="" placeholder="Joe" required>
 						  </div>
 
 							<div class="form-group">
-							  <label for="">Last name *</label>
+							  <label for="">Last name <span class="pbs-red">*</span></label>
 							  <input type="text" class="form-control" id="" placeholder="Bloggs" required>
 						  </div>
 
 						  <div class="form-group">
-						    <label for="exampleFormControlInput1">Email address *</label>
+						    <label for="exampleFormControlInput1">Email address <span class="pbs-red">*</span></label>
 						    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
 						  </div>
 
 							<div class="form-group">
-						    <label for="exampleFormControlInput1">Telephone / Mobile *</label>
+						    <label for="exampleFormControlInput1">Telephone / Mobile <span class="pbs-red">*</span></label>
 						    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="0844 257 7000" required>
 						  </div>
 
 							<div class="form-group">
-					   		<label for="exampleFormControlFile1">Attach CV *</label>
+					   		<label for="exampleFormControlFile1">Attach CV <span class="pbs-red">*</span></label>
 						    <input type="file" class="form-control-file" id="exampleFormControlFile1" required>
 							</div>
 
@@ -92,6 +92,8 @@
 						  	<label for="exampleFormControlTextarea1">Notes</label>
 					   		<textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
 							</div>
+
+							<p class="text-right">Fields marked with ( <span class="pbs-red">*</span> ) are required</p>
 
 							<div class="text-right">
 								<button type="submit" class="btn btn-primary">Submit Application</button>
