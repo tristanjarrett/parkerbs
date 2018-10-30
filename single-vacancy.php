@@ -7,7 +7,7 @@
 				<li>/</li>
 				<li><a href="<?php echo site_url() . '/vacancies'; ?>">Vacancies</a></li>
 				<li>/</li>
-				<li class="text-muted"><?php the_title(); ?></li>
+				<li class="text-muted"><?php the_title(); ?> - <?php echo get_post_meta($post->ID, 'custom_input', true); ?></li>
 			</ul>
 		</nav>
 	</div>

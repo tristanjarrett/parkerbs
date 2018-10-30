@@ -20,7 +20,7 @@
 						<li><a href="<?php echo site_url() . '/contact-us'; ?>">Contact Us</a></li>
 						<li><a href="<?php echo site_url() . '/about-us'; ?>">About Us</a></li>
 						<li><a href="<?php echo site_url() . '/vacancies'; ?>">Vacancies</a></li>
-						<li><a href="<?php echo site_url() . '/privacy-policy'; ?>">Privacy Policy</a></li>
+						<li><a href="<?php echo site_url() . '/cookies-and-privacy'; ?>">Cookies & Privacy</a></li>
 						<li><a href="<?php echo site_url() . '/terms-and-conditions'; ?>">Terms & Conditions</a></li>
 						<li><a href="<?php echo site_url() . '/gender-pay-gap'; ?>">Gender Pay Gap</a></li>
 						<li><a href="<?php echo site_url() . '/modern-slavery-act'; ?>">Modern Slavery Act</a></li>
@@ -70,11 +70,11 @@
 	<!-- ./slick -->
 
 	<!-- jQuery, Popper.js & Bootstrap -->
-	<script src="<?php echo get_template_directory_uri() . '/js/jquery/jquery.slim.min.js'; ?>"></script>
-	<script src="<?php echo get_template_directory_uri() . '/js/popper.js/popper.min.js'; ?>"></script>
-	<script src="<?php echo get_template_directory_uri() . '/js/bootstrap/bootstrap.min.js'; ?>"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 	<!-- ./jQuery, Popper.js & Bootstrap -->
-
+	
 	<?php wp_footer(); ?>
 
 	</body>

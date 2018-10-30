@@ -55,7 +55,16 @@
 								</div>
 								<div class="col">
 									<div class="float-right">
-										<a href="#" class="btn btn-primary">My Account</a>
+										<div class="dropdown">
+										  <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										    Account Menu
+										  </a>
+										  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+										    <a class="dropdown-item" href="https://secure.parkerbs.com" target="_blank">Pay Account</a>
+										    <a class="dropdown-item" href="https://account.parkerbs.com">My Account</a>
+										    <a class="dropdown-item" href="<?php echo site_url() . '/account-application'; ?>">Account Application</a>
+										  </div>
+										</div>
 									</div>
 								</div>
 							</div>

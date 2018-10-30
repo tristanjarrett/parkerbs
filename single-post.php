@@ -16,14 +16,14 @@
 								<?php
 								if ( has_tag() ) {
 									// Show the tags if any
-									the_tags();
+									// the_tags();
 								} else {
 									// Do nothing
 								}
 
 								if ( has_category() ) {
 									// Show the category if any
-									the_category();
+									// the_category();
 								} else {
 									// Do nothig
 								}
