@@ -46,7 +46,10 @@
 		<!-- warning -->
 		<div class="container-fluid">
 			<div class="alert alert-warning mt-4 mb-0" role="alert">
-			  <h4 class="alert-heading">Please note:</h4>
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+			    <span aria-hidden="true">&times;</span>
+			  </button>
+				<h4 class="alert-heading">Please note:</h4>
 			  <p>We had a technical error with one of our servers and are working to restore all data, please check back soon.</p>
 			  <hr>
 			  <p class="mb-0">Customer account access is disabled at the moment but you can still pay your account <a href="https://secure.parkerbs.com">here</a>.</p>
