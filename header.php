@@ -1,6 +1,17 @@
 <!doctype html>
 <html lang="en">
 	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121867918-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-121867918-1');
+		</script>
+		<!-- End gtag -->
+
 		<meta charset="<?php bloginfo('charset'); ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 		<title><?php pbs_title(); ?></title>
@@ -31,6 +42,17 @@
 	</head>
 
 	<body>
+
+		<!-- warning -->
+		<div class="container-fluid">
+			<div class="alert alert-warning mt-4 mb-0" role="alert">
+			  <h4 class="alert-heading">Please note:</h4>
+			  <p>We had a technical error with one of our servers and are working to restore all data, please check back soon.</p>
+			  <hr>
+			  <p class="mb-0">Customer account access is disabled at the moment but you can still pay your account <a href="https://secure.parkerbs.com">here</a>.</p>
+			</div>
+		</div>
+		<!-- /warning -->
 
 		<!-- header section -->
 		<div class="navbar-expand-md navbar-light">
