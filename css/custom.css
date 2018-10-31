@@ -272,9 +272,13 @@ img {
 .pbs-header {
   background-color: #FFFFFF;
   padding: 30px 0px;
-  z-index: 9997;
+  z-index: 9999;
   position: relative;
-  box-shadow: 2px 2px 5px 0 #C1C1C1;
+}
+@media (max-width: 767.98px) {
+  .pbs-header {
+    box-shadow: 2px 2px 5px 0 #C1C1C1;
+  }
 }
 .pbs-header img.pbs-logo {
   height: 120px;
@@ -343,7 +347,6 @@ img {
   background-color: #44A8AB;
   white-space: nowrap;
   position: relative;
-  z-index: 9999;
 }
 .pbs-nav ul {
   position: relative;
@@ -471,7 +474,6 @@ img {
 .pbs-home-carousel {
   background-color: #FFFFFF;
   position: relative;
-  z-index: 9999;
 }
 .pbs-home-carousel .pbs-slide {
   background-size: cover;
