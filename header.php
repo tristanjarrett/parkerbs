@@ -99,6 +99,16 @@
 								<span class="d-md-none">Home <i class="fas fa-fw fa-home"></i></span>
 							</li>
 						</a>
+						<a href="https://secure.parkerbs.com" class="d-md-none">
+							<li>
+								Pay Account <i class="fas fa-fw fa-credit-card"></i>
+							</li>
+						</a>
+						<a href="https://account.parkerbs.com" class="d-md-none">
+							<li>
+								My Account <i class="fas fa-fw fa-user"></i>
+							</li>
+						</a>
 						<a href="<?php echo site_url() . '/branches'; ?>">
 							<li>
 								Branches <i class="fas fa-fw fa-map-marker-alt"></i>
