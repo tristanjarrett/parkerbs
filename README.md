@@ -18,4 +18,3 @@ You should now have a folder called node_modules and within should be the folder
 
 ### If you have any issues then feel free to contact me
   - Github: https://github.com/tristanjarrett
-  - Twitter: https://twitter.com/trisjarrett
