@@ -4,7 +4,6 @@
 
 	  <div class="carousel-inner">
 
-
 			<?php
 			$args = array(
 				'post_type' => 'promotion',
@@ -16,12 +15,17 @@
 			if ($promotion_loop->have_posts()):
 				while ($promotion_loop->have_posts()): $promotion_loop->the_post();
 
+					// work around for bootstrap carousel "active" class
 					if ($i == 0) {
-						get_template_part( 'template-parts/home-promotions-slide-active', get_post_format() );
+						echo '<div class="carousel-item active">';
+							get_template_part( 'template-parts/home-promotions-slide', get_post_format() );
+						echo '</div>';
 					} else {
-						get_template_part( 'template-parts/home-promotions-slide', get_post_format() );
+						echo '<div class="carousel-item">';
+							get_template_part( 'template-parts/home-promotions-slide', get_post_format() );
+						echo '</div>';
 					}
-					
+
 					$i++;
 
 				endwhile;
