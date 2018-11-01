@@ -43,7 +43,7 @@
 
 	<body>
 
-		<!-- warning -->
+		<!-- warning --
 		<div class="container-fluid">
 			<div class="alert alert-warning mt-4 mb-0" role="alert">
 				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
