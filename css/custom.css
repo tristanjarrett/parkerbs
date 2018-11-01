@@ -493,6 +493,27 @@ img {
   text-shadow: 1px 1px 1px #666666;
 }
 
+.pbs-home-promotions {
+  background-color: #FFFFFF;
+  position: relative;
+}
+.pbs-home-promotions .pbs-slide {
+  background-size: cover;
+  background-position: center;
+}
+.pbs-home-promotions .pbs-slide .pbs-overlay {
+  background-color: rgba(67, 169, 172, 0.9);
+  padding: 30px 0px;
+  color: #FFFFFF;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.pbs-home-promotions .pbs-slide .pbs-overlay h5 {
+  margin-bottom: 0px;
+  text-shadow: 1px 1px 1px #666666;
+}
+
 .pbs-home-about {
   background-color: #F7F7F9;
   padding: 30px 0px;

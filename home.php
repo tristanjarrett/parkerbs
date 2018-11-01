@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 	<!-- jumbotron -->
-	<?php get_template_part( 'template-parts/home-carousel' ); ?>
+	<?php get_template_part( 'template-parts/home-promotions' ); ?>
 	<!-- ./jumbotron -->
 
 	<!-- about -->
