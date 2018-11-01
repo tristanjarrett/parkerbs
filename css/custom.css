@@ -640,6 +640,15 @@ img {
 }
 
 /**
+ * Page - General
+ */
+.pbs-general-page {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  background-color: #ffffff;
+}
+
+/**
  * Post page
  */
 .pbs-post-section {
