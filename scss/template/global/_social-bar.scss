@@ -1,0 +1,25 @@
+/**
+ * Social Bar
+ */
+
+.pbs-social-bar {
+  background-color: #ffffff;
+  padding: 10px 0px;
+  border-bottom: solid 1px #e1e1e1;
+  position: sticky;
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  top: 0;
+  z-index: 9999;
+  @media (max-width: 767.98px) {
+    display: none;
+  }
+  .pbs-social-icons {
+    a {
+      display: inline-block;
+      margin-right: 10px;
+    }
+  }
+}

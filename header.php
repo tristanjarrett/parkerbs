@@ -43,6 +43,27 @@
 
 	<body>
 
+		<div class="pbs-social-bar">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col">
+						<div class="text-left pbs-social-icons">
+							<a href="https://www.linkedin.com/company/parker-building-supplies-ltd" target="_blank"><i class="fab fa-linkedin-in fa-lg"></i></a>
+							<a href="https://www.facebook.com/helpmebuildit/" target="_blank"><i class="fab fa-facebook-f fa-lg"></i></a>
+							<a href="https://twitter.com/helpmebuildit" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+						</div>
+					</div>
+					<div class="col">
+						<div class="text-right">
+							<a href="#" class="d-inline-block">Login</a>
+							<span> | </span>
+							<a href="#" class="d-inline-block">Register</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<!-- header section -->
 		<div class="navbar-expand-md navbar-light">
 
