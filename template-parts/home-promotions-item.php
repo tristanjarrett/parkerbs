@@ -1,4 +1,4 @@
-<div class="pbs-slide" style="background-image: url('<?php echo get_bloginfo( 'template_directory' ) . '/images/banners/timber.jpg'; ?>');">
+<div class="pbs-slide" style="background-image: url('<?php echo get_bloginfo( 'template_directory' ) . '/images/banners/lorry-front-side.jpg'; ?>');">
 
 	<div class="container-fluid">
 		<div class="pbs-overlay">
@@ -16,10 +16,8 @@
 
 				<div class="col">
 					<div class="pbs-jumbotron">
-					  <h2><?php the_title(); ?></h2>
-					  <p><?php the_content(); ?></p>
-						<hr>
-						<a class="btn btn-primary" href="">Read more</a>
+					  <h3><span class="pbs-title"><?php the_title(); ?></span></h3>
+						<a class="pbs-button" href="">Read more <i class="fas fa-chevron-circle-right fa-fw fa-lg"></i></a>
 					</div>
 				</div>
 
