@@ -18,11 +18,11 @@
 					// work around for bootstrap carousel "active" class
 					if ($i == 0) {
 						echo '<div class="carousel-item active">';
-							get_template_part( 'template-parts/home-promotions-slide', get_post_format() );
+							get_template_part( 'template-parts/home-promotions-item', get_post_format() );
 						echo '</div>';
 					} else {
 						echo '<div class="carousel-item">';
-							get_template_part( 'template-parts/home-promotions-slide', get_post_format() );
+							get_template_part( 'template-parts/home-promotions-item', get_post_format() );
 						echo '</div>';
 					}
 

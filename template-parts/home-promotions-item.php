@@ -1,4 +1,4 @@
-<div class="pbs-slide">
+<div class="pbs-slide" style="background-image: url('<?php echo get_bloginfo( 'template_directory' ) . '/images/banners/timber.jpg'; ?>');">
 
 	<div class="container-fluid">
 		<div class="pbs-overlay">
@@ -22,7 +22,7 @@
 						<a class="btn btn-primary" href="">Read more</a>
 					</div>
 				</div>
-				
+
 			</div>
 
 		</div>

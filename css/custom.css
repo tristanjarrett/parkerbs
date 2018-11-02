@@ -886,11 +886,29 @@ img {
   padding-bottom: 10px;
   background-color: #F7F7F9;
 }
+.pbs-contact-page .pbs-details {
+  background-color: #FFFFFF;
+  padding: 30px;
+  margin-bottom: 30px;
+  border: solid 1px #E1E1E1;
+}
+.pbs-contact-page .pbs-map {
+  margin-bottom: 30px;
+}
+.pbs-contact-page .pbs-map #map {
+  height: 100%;
+}
 .pbs-contact-page .pbs-content {
   background-color: #FFFFFF;
   padding: 30px;
   margin-bottom: 30px;
   border: solid 1px #E1E1E1;
+}
+.pbs-contact-page .pbs-content .pbs-red {
+  color: red;
+}
+.pbs-contact-page .pbs-content p:last-child {
+  margin-bottom: 0px;
 }
 
 /*!

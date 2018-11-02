@@ -6,7 +6,8 @@
 					<h5>My Account</h5>
 					<ul>
 						<li><a href="<?php echo site_url() . '/account-application'; ?>">Account Application</a></li>
-						<li><a href="<?php echo site_url() . '/request-login'; ?>">Request Login</a></li>
+						<!-- <li><a href="<?php echo site_url() . '/request-login'; ?>">Request Login</a></li> -->
+						<li><a href="https://secure.parkerbs.com">Pay Account Online</a></li>
 						<li><a href="https://account.parkerbs.com">View My Account</a></li>
 						<li><a href="https://account.parkerbs.com">Password Recovery</a></li>
 					</ul>
