@@ -4,19 +4,19 @@
 
  // Footer
 .pbs-footer {
-	background-color: #2C3E50;
+	background-color: #2c3e50;
 	padding: 30px 0px 20px 0px;
-	color: #F7F7F7;
-	border-top: solid 5px #44A8AB;
+	color: #f7f7f7;
+	border-top: solid 5px #44a8ab;
 	ul {
 		margin-bottom: 20px;
 		padding-left: 0px;
 		li {
 			list-style-type: none;
 			a {
-				color: #F7F7F7;
+				color: #f7f7f7;
 				&:hover {
-					color: #F7F7F7;
+					color: #f7f7f7;
 				}
 			}
 		}
@@ -27,7 +27,7 @@
 	.pbs-copyright {
 		padding-top: 20px;
 		margin-top: 10px;
-		border-top: solid 2px #E1E1E1;
+		border-top: solid 2px #e1e1e1;
 		@media (max-width: 767px) {
 			text-align: center;
 		}

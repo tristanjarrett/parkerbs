@@ -5,12 +5,12 @@
 .pbs-vacancy-section {
 	padding-top: 30px;
 	padding-bottom: 10px;
-	background-color: #F7F7F9;
+	background-color: #f7f7f9;
 	.pbs-content {
-		background-color: #FFFFFF;
+		background-color: #ffffff;
 		padding: 30px;
 		margin-bottom: 30px;
-		border: solid 1px #E1E1E1;
+		border: solid 1px #e1e1e1;
 		.pbs-red {
 			color: red;
 		}
@@ -32,12 +32,12 @@
 			display: none;
 		}
 		ul {
-			background-color: #FFFFFF;
-			border: solid 1px #E1E1E1;
+			background-color: #ffffff;
+			border: solid 1px #e1e1e1;
 			margin-bottom: 0px;
 			padding-left: 0px;
 			li {
-				border-bottom: solid 1px #E1E1E1;
+				border-bottom: solid 1px #e1e1e1;
 				list-style-type: none;
 				&:last-child {
 					border-bottom: none;
@@ -48,8 +48,8 @@
 					text-decoration: none;
 					border-left: solid 5px transparent;
 					&:hover {
-						background-color: #F9F9F9;
-						border-left: solid 5px #44A8AB;
+						background-color: #f9f9f9;
+						border-left: solid 5px #44a8ab;
 					}
 					.pbs-icon {
 						margin-right: 15px;

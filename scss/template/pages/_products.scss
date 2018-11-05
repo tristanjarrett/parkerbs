@@ -1,16 +1,16 @@
 /**
  * Products page
  */
- 
+
 .pbs-products-section {
 	padding-top: 0px;
-	background-color: #FFFFFF;
+	background-color: #ffffff;
 	ul {
 		margin-bottom: 0px;
 		padding-left: 0px;
 		li.pbs-products-item {
 			padding: 30px 0px;
-			border-bottom: dashed 3px #E1E1E1;
+			border-bottom: dashed 3px #e1e1e1;
 			list-style-type: none;
 			&:nth-child(even) {
 				.row {
@@ -38,7 +38,7 @@
 						height: 250px;
 						background-position: center;
 						background-size: cover;
-						box-shadow: 2px 2px 5px 0 #C1C1C1;
+						box-shadow: 2px 2px 5px 0 #c1c1c1;
 					}
 				}
 			}

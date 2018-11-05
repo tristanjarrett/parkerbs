@@ -4,11 +4,11 @@
 
 // Header
 .pbs-header {
-	background-color: #FFFFFF;
+	background-color: #ffffff;
 	padding: 30px 0px;
 	position: relative;
 	@media (max-width: 767.98px) {
-		box-shadow: 2px 2px 5px 0 #C1C1C1;
+		box-shadow: 2px 2px 5px 0 #c1c1c1;
 	}
 	img {
 		&.pbs-logo {
@@ -42,10 +42,10 @@
 	  border-radius: 0px;
 		cursor: pointer;
 		.pbs-menu-icon {
-			color: #44A8AB;
+			color: #44a8ab;
 			display: block;
 			&:hover {
-				color: #3C999A !important;
+				color: #3c999a !important;
 			}
 		}
 	}

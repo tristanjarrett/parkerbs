@@ -5,13 +5,20 @@
  // Post section
 .pbs-post-section {
 	padding-top: 30px;
-	padding-bottom: 10px;
-	background-color: #F7F7F9;
+	background-color: #f7f7f9;
+	@media (max-width: 767.98px) {
+		background-color: #ffffff;
+	}
 	.pbs-content {
-		background-color: #FFFFFF;
+		background-color: #ffffff;
 		padding: 30px;
 		margin-bottom: 30px;
-		border: solid 1px #E1E1E1;
+		border: solid 1px #e1e1e1;
+		@media (max-width: 767.98px) {
+			background-color: inherit;
+			padding: 0px;
+			border: none;
+		}
 		p {
 			&:last-child {
 				margin-bottom: 0px;
@@ -30,12 +37,12 @@
 			display: none;
 		}
 		ul {
-			background-color: #FFFFFF;
-			border: solid 1px #E1E1E1;
+			background-color: #ffffff;
+			border: solid 1px #e1e1e1;
 			margin-bottom: 0px;
 			padding-left: 0px;
 			li {
-				border-bottom: solid 1px #E1E1E1;
+				border-bottom: solid 1px #e1e1e1;
 				list-style-type: none;
 				&:last-child {
 					border-bottom: none;
@@ -46,8 +53,8 @@
 					text-decoration: none;
 					border-left: solid 5px transparent;
 					&:hover {
-						background-color: #F9F9F9;
-						border-left: solid 5px #44A8AB;
+						background-color: #f9f9f9;
+						border-left: solid 5px #44a8ab;
 					}
 					.pbs-icon {
 						margin-right: 15px;
@@ -60,14 +67,17 @@
 
 // News
 .pbs-post-news {
-	background-color: #FFFFFF;
+	background-color: #ffffff;
 	padding-top: 30px;
+	@media (max-width: 767.98px) {
+		background-color: #f1f1f1;
+	}
 	h4 {
 		margin-bottom: 20px;
 	}
 	.pbs-news-item {
-		background-color: #FFFFFF;
-		border: solid 1px #E1E1E1;
+		background-color: #ffffff;
+		border: solid 1px #e1e1e1;
 		.pbs-thumbnail {
 			background-position: center;
 			background-size: cover;
@@ -84,12 +94,12 @@
 		margin-bottom: 30px;
 		a {
 			background-color: #ffffff;
-			color: #44A8AB !important;
+			color: #44a8ab !important;
 			font-weight: bold;
 			display: block;
 			padding: 15px;
 			text-align: right;
-			border: solid 1px #E1E1E1;
+			border: solid 1px #e1e1e1;
 			border-top: none;
 			&:hover {
 				background-color: #f9f9f9;

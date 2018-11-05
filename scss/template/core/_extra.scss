@@ -1,8 +1,9 @@
 /**
  * Global
  */
+ 
 body {
-	background-color: #FFFFFF;
+	background-color: #ffffff;
 }
 img {
 	user-select: none;
@@ -12,18 +13,18 @@ img {
 	max-width: 100%;
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #D1D1D1;
+  color: #d1d1d1;
   opacity: 1; /* Firefox */
 	text-transform: none;
 	text-overflow: ellipsis;
 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: #D1D1D1;
+  color: #d1d1d1;
 	text-transform: none;
 	text-overflow: ellipsis;
 }
 ::-ms-input-placeholder { /* Microsoft Edge */
-  color: #D1D1D1;
+  color: #d1d1d1;
 	text-transform: none;
 	text-overflow: ellipsis;
 }
@@ -63,7 +64,7 @@ img {
 	margin-bottom: 0px;
 }
 .pbs-heading {
-	color: #44A8AB;
+	color: #44a8ab;
 	text-transform: uppercase;
 }
 .pbs-font {
