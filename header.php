@@ -55,7 +55,7 @@
 					</div>
 					<div class="col">
 						<div class="text-right">
-							<a href="#" class="d-inline-block">Login</a>
+							<a href="https://account.parkerbs.com/site/login" class="d-inline-block">Login <i class="fas fa-user-circle fa-lg"></i></a>
 						</div>
 					</div>
 				</div>
@@ -89,7 +89,7 @@
 											<button onclick="myFunction()" class="btn btn-primary dropbtn">Account Menu <i class="fas fa-chevron-down fa-fw"></i></button>
 										  <div id="myDropdown" class="pbs-dropdown-content">
 										    <a href="https://secure.parkerbs.com" target="_blank">Pay Account</a>
-										    <a href="https://account.parkerbs.com">My Account</a>
+										    <a href="https://account.parkerbs.com/site/login">My Account</a>
 										    <a href="<?php echo site_url() . '/account-application'; ?>">Account Application</a>
 										  </div>
 										</div>
