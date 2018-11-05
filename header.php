@@ -56,8 +56,6 @@
 					<div class="col">
 						<div class="text-right">
 							<a href="#" class="d-inline-block">Login</a>
-							<span> | </span>
-							<a href="#" class="d-inline-block">Register</a>
 						</div>
 					</div>
 				</div>
