@@ -97,28 +97,6 @@
 								</div>
 							</div>
 
-							<script type="text/javascript">
-								// Add class to display menu
-								function myFunction() {
-									document.getElementById("myDropdown").classList.toggle("pbs-show");
-								}
-
-								// Close the dropdown if the user clicks outside of it
-								window.onclick = function(event) {
-								  if (!event.target.matches('.dropbtn')) {
-
-								    var dropdowns = document.getElementsByClassName("pbs-dropdown-content");
-								    var i;
-								    for (i = 0; i < dropdowns.length; i++) {
-								      var openDropdown = dropdowns[i];
-								      if (openDropdown.classList.contains('pbs-show')) {
-								        openDropdown.classList.remove('pbs-show');
-								      }
-								    }
-								  }
-								}
-							</script>
-
 							<div class="input-group">
 							  <input type="text" class="form-control" placeholder="Find your nearest branch.." aria-label="Find your nearest branch.." aria-describedby="button-addon2">
 							  <div class="input-group-append">

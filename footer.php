@@ -58,6 +58,28 @@
 	</footer>
 	<!-- ./footer -->
 
+	<script type="text/javascript">
+		// Add class to display menu
+		function myFunction() {
+			document.getElementById("myDropdown").classList.toggle("pbs-show");
+		}
+
+		// Close the dropdown if the user clicks outside of it
+		window.onclick = function(event) {
+			if (!event.target.matches('.dropbtn')) {
+
+				var dropdowns = document.getElementsByClassName("pbs-dropdown-content");
+				var i;
+				for (i = 0; i < dropdowns.length; i++) {
+					var openDropdown = dropdowns[i];
+					if (openDropdown.classList.contains('pbs-show')) {
+						openDropdown.classList.remove('pbs-show');
+					}
+				}
+			}
+		}
+	</script>
+
 	<!-- custom js -->
 	<script type="text/javascript" src="<?php echo get_template_directory_uri() . '/js/custom.js'; ?>"></script>
 	<!-- ./custom js -->
