@@ -311,7 +311,37 @@ img {
     margin-bottom: 11px;
   }
 }
-.pbs-header .pbs-menu-btn {
+.pbs-header .pbs-dropdown {
+  position: relative;
+  display: inline-block;
+}
+.pbs-header .pbs-dropdown .pbs-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #44a8ab;
+  overflow: auto;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  right: 0;
+}
+.pbs-header .pbs-dropdown .pbs-dropdown-content a {
+  display: block;
+  color: #ffffff;
+  padding: 0.375rem 0.75rem;
+  border-bottom: solid 2px #3d9699;
+  text-decoration: none;
+}
+.pbs-header .pbs-dropdown .pbs-dropdown-content a:hover {
+  background-color: #3d9699;
+}
+.pbs-header .pbs-dropdown .pbs-dropdown-content a:last-child {
+  border-bottom: none;
+}
+.pbs-header .pbs-dropdown .pbs-show {
+  display: block;
+}
+.pbs-header .pbs-mobile-menu-btn {
   padding: 0px !important;
   font-size: inherit;
   line-height: 1;
@@ -320,11 +350,11 @@ img {
   border-radius: 0px;
   cursor: pointer;
 }
-.pbs-header .pbs-menu-btn .pbs-menu-icon {
+.pbs-header .pbs-mobile-menu-btn .pbs-icon {
   color: #44a8ab;
   display: block;
 }
-.pbs-header .pbs-menu-btn .pbs-menu-icon:hover {
+.pbs-header .pbs-mobile-menu-btn .pbs-icon:hover {
   color: #3c999a !important;
 }
 @media (max-width: 767.98px) {
@@ -994,12 +1024,6 @@ img {
   padding-top: 30px;
   padding-bottom: 10px;
   background-color: #ffffff;
-}
-.pbs-account-application-page .pbs-content ul {
-  padding: 0;
-}
-.pbs-account-application-page .pbs-content ul li {
-  list-style-type: none;
 }
 .pbs-account-application-page .pbs-content .pbs-download {
   max-width: 250px;

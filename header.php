@@ -87,19 +87,39 @@
 								</div>
 								<div class="col">
 									<div class="float-right">
-										<div class="dropdown">
-										  <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										    Account Menu
-										  </a>
-										  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
-										    <a class="dropdown-item" href="https://secure.parkerbs.com" target="_blank">Pay Account</a>
-										    <a class="dropdown-item" href="https://account.parkerbs.com">My Account</a>
-										    <a class="dropdown-item" href="<?php echo site_url() . '/account-application'; ?>">Account Application</a>
+										<div class="pbs-dropdown">
+											<button onclick="myFunction()" class="btn btn-primary dropbtn">Account Menu <i class="fas fa-chevron-down fa-fw"></i></button>
+										  <div id="myDropdown" class="pbs-dropdown-content">
+										    <a href="https://secure.parkerbs.com" target="_blank">Pay Account</a>
+										    <a href="https://account.parkerbs.com">My Account</a>
+										    <a href="<?php echo site_url() . '/account-application'; ?>">Account Application</a>
 										  </div>
 										</div>
 									</div>
 								</div>
 							</div>
+
+							<script type="text/javascript">
+								// Add class to display menu
+								function myFunction() {
+									document.getElementById("myDropdown").classList.toggle("pbs-show");
+								}
+
+								// Close the dropdown if the user clicks outside of it
+								window.onclick = function(event) {
+								  if (!event.target.matches('.dropbtn')) {
+
+								    var dropdowns = document.getElementsByClassName("pbs-dropdown-content");
+								    var i;
+								    for (i = 0; i < dropdowns.length; i++) {
+								      var openDropdown = dropdowns[i];
+								      if (openDropdown.classList.contains('pbs-show')) {
+								        openDropdown.classList.remove('pbs-show');
+								      }
+								    }
+								  }
+								}
+							</script>
 
 							<div class="input-group">
 							  <input type="text" class="form-control" placeholder="Find your nearest branch.." aria-label="Find your nearest branch.." aria-describedby="button-addon2">
@@ -110,8 +130,8 @@
 						</div>
 
 						<div class="col-auto d-md-none">
-							<button class="pbs-menu-btn" type="button" data-toggle="collapse" data-target="#pbsNav">
-								<span class="pbs-menu-icon"><i class="fas fa-bars fa-3x"></i></span>
+							<button class="pbs-mobile-menu-btn" type="button" data-toggle="collapse" data-target="#pbsNav">
+								<span class="pbs-icon"><i class="fas fa-bars fa-3x"></i></span>
 							</button>
 						</div>
 

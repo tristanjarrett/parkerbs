@@ -24,7 +24,7 @@
         <p>If you are interested in applying for an account with us, then please download an application form and post it to address below or you can email the completed form to <a href="mailto:creditcontrol@parkerbs.com">creditcontrol@parkerbs.com</a></p>
 
         <label><strong>Address:</strong></label>
-        <ul>
+        <ul class="list-unstyled">
           <li>Credit Control</li>
           <li>Parker Building Supplies Ltd</li>
           <li>Unit J1-J4 Franklin House</li>

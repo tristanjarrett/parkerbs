@@ -33,7 +33,39 @@
 			}
 		}
 	}
-	.pbs-menu-btn {
+	// desktop dropdown
+	.pbs-dropdown {
+		position: relative;
+		display: inline-block;
+		.pbs-dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #44a8ab;
+			overflow: auto;
+			width: 100%;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 9999;
+			right: 0;
+			a {
+				display: block;
+				color: #ffffff;
+				padding: 0.375rem 0.75rem;
+				border-bottom: solid 2px darken(#44a8ab, 5%);
+				text-decoration: none;
+				&:hover {
+					background-color: darken(#44a8ab, 5%);
+				}
+				&:last-child {
+					border-bottom: none;
+				}
+			}
+		}
+		.pbs-show {
+			display: block;
+		}
+	}
+	// mobile menu
+	.pbs-mobile-menu-btn {
 	  padding: 0px !important;
 	  font-size: inherit;
 	  line-height: 1;
@@ -41,7 +73,7 @@
 	  border: 0px solid transparent;
 	  border-radius: 0px;
 		cursor: pointer;
-		.pbs-menu-icon {
+		.pbs-icon {
 			color: #44a8ab;
 			display: block;
 			&:hover {
