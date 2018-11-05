@@ -68,7 +68,7 @@
 
       </div>
 
-      <div class="pbs-content">
+      <!-- <div class="pbs-content">
 
         <h4>Contact Us</h4>
         <hr>
@@ -108,7 +108,7 @@
 
         </form>
 
-      </div>
+      </div> -->
 
       <?php
       if ( have_posts() ) :
