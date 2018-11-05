@@ -17,7 +17,7 @@
             <h5>Branch Support Centre</h5>
 
             <label>Address:</label>
-            <ul>
+            <ul class="list-unstyled">
               <li>Unit J1-J4 Franklin House</li>
               <li>Chaucer Business Park</li>
               <li>Dittons Road</li>

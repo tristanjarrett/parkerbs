@@ -1,0 +1,17 @@
+/**
+ * Account Application page
+ */
+
+.pbs-account-application-page {
+	padding-top: 30px;
+	padding-bottom: 10px;
+	background-color: #ffffff;
+	.pbs-content {
+		ul {
+			padding: 0;
+			li {
+				list-style-type: none;
+			}
+		}
+	}
+}

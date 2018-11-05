@@ -247,26 +247,6 @@ img {
 }
 
 /**
- * Breadcrumb
- */
-.pbs-breadcrumb {
-  background-color: #ffffff;
-  border-bottom: solid 1px #e1e1e1;
-}
-.pbs-breadcrumb ul {
-  margin: 0;
-  padding: 0;
-  padding: 10px 15px;
-}
-.pbs-breadcrumb ul li {
-  list-style-type: none;
-  display: inline-block;
-}
-.pbs-breadcrumb ul li:nth-child(even) {
-  padding: 0px 10px;
-}
-
-/**
  * Social Bar
  */
 .pbs-social-bar {
@@ -490,6 +470,26 @@ img {
 }
 #pbs-top-button:hover {
   background-color: #43a9ac;
+}
+
+/**
+ * Breadcrumb
+ */
+.pbs-breadcrumb {
+  background-color: #ffffff;
+  border-bottom: solid 1px #e1e1e1;
+}
+.pbs-breadcrumb ul {
+  margin: 0;
+  padding: 0;
+  padding: 10px 15px;
+}
+.pbs-breadcrumb ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+.pbs-breadcrumb ul li:nth-child(even) {
+  padding: 0px 10px;
 }
 
 /**
@@ -960,6 +960,21 @@ img {
 }
 .pbs-contact-page .pbs-content p:last-child {
   margin-bottom: 0px;
+}
+
+/**
+ * Account Application page
+ */
+.pbs-account-application-page {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  background-color: #ffffff;
+}
+.pbs-account-application-page .pbs-content ul {
+  padding: 0;
+}
+.pbs-account-application-page .pbs-content ul li {
+  list-style-type: none;
 }
 
 /*!

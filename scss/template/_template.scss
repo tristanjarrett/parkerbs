@@ -2,13 +2,13 @@
 @import "core/variables";
 @import "core/grid";
 @import "core/extra";
-@import "core/breadcrumb";
 
 // #2 Import global styles
 @import "global/social-bar";
 @import "global/header";
 @import "global/nav";
 @import "global/footer";
+@import "global/breadcrumb";
 
 // #3 Import page styles
 @import "pages/home";
@@ -20,3 +20,4 @@
 @import "pages/vacancy-single";
 @import "pages/branches";
 @import "pages/contact-us";
+@import "pages/account-application";
