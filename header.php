@@ -156,6 +156,11 @@
 								Pay Account <i class="fas fa-fw fa-credit-card"></i>
 							</li>
 						</a>
+						<a href="<?php echo site_url() . '/account-application'; ?>" class="d-md-none">
+							<li>
+								Account Application <i class="fas fa-fw fa-file"></i>
+							</li>
+						</a>
 						<a href="https://account.parkerbs.com" class="d-md-none">
 							<li>
 								My Account <i class="fas fa-fw fa-user"></i>
