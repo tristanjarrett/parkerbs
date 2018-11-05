@@ -318,7 +318,7 @@ img {
 .pbs-header .pbs-dropdown .pbs-dropdown-content {
   display: none;
   position: absolute;
-  background-color: #44a8ab;
+  background-color: #f9f9f9;
   overflow: auto;
   width: 100%;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -327,13 +327,13 @@ img {
 }
 .pbs-header .pbs-dropdown .pbs-dropdown-content a {
   display: block;
-  color: #ffffff;
+  color: #000000;
   padding: 0.375rem 0.75rem;
-  border-bottom: solid 2px #3d9699;
+  border-bottom: solid 1px #e1e1e1;
   text-decoration: none;
 }
 .pbs-header .pbs-dropdown .pbs-dropdown-content a:hover {
-  background-color: #3d9699;
+  background-color: #ececec;
 }
 .pbs-header .pbs-dropdown .pbs-dropdown-content a:last-child {
   border-bottom: none;
@@ -797,7 +797,7 @@ img {
   position: -moz-sticky;
   position: -ms-sticky;
   position: -o-sticky;
-  top: 20px;
+  top: 65px;
   margin-bottom: 30px;
 }
 @media (max-width: 991px) {
@@ -902,17 +902,13 @@ img {
 .pbs-vacancies-page .pbs-content .pbs-posts ul li {
   list-style-type: none;
   border-top: solid 1px #e1e1e1;
-  padding: 0px 15px;
+  padding: 10px 0px;
 }
 .pbs-vacancies-page .pbs-content .pbs-posts ul li:last-child {
   padding-bottom: 0px;
 }
-.pbs-vacancies-page .pbs-content .pbs-posts ul li:nth-child(even) {
-  background-color: #f7f7f9;
-}
 .pbs-vacancies-page .pbs-content .pbs-posts ul li a {
   display: block;
-  padding: 10px 0px;
 }
 
 /**
@@ -941,7 +937,7 @@ img {
   position: -moz-sticky;
   position: -ms-sticky;
   position: -o-sticky;
-  top: 20px;
+  top: 65px;
   margin-bottom: 30px;
 }
 @media (max-width: 991px) {

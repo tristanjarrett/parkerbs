@@ -22,16 +22,12 @@
 	      li {
 					list-style-type: none;
 					border-top: solid 1px #e1e1e1;
-					padding: 0px 15px;
+					padding: 10px 0px;
 	        &:last-child {
 	          padding-bottom: 0px;
 	        }
-					&:nth-child(even) {
-						background-color: #f7f7f9;
-					}
 	        a {
 	          display: block;
-						padding: 10px 0px;
 	        }
 	      }
 	    }
