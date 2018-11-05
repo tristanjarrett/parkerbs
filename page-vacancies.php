@@ -24,7 +24,7 @@
           <div class="pbs-content">
 
             <h4 class="mb-3">Vacancies</h4>
-
+            <hr>
             <?php
           	if ( have_posts() ) :
           	   while ( have_posts() ) : the_post();
@@ -38,20 +38,6 @@
           <div class="pbs-content">
 
             <h4 class="mb-3">Current Vacancies</h4>
-
-            <div class="pbs-title">
-              <div class="row">
-                <div class="col-md">
-                  Title
-                </div>
-                <div class="col-md">
-                  Location
-                </div>
-                <div class="col-md text-right">
-                  Posted
-                </div>
-              </div>
-            </div>
 
             <div class="pbs-posts">
               <ul>

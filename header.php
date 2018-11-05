@@ -55,7 +55,7 @@
 					</div>
 					<div class="col">
 						<div class="text-right">
-							<a href="https://account.parkerbs.com/site/login" class="d-inline-block">Login <i class="fas fa-user-circle fa-lg"></i></a>
+							<a href="https://account.parkerbs.com/site/login" class="d-inline-block"><i class="fas fa-sign-in-alt fa-fw"></i> Sign In</a>
 						</div>
 					</div>
 				</div>
