@@ -40,9 +40,11 @@
         <div class="row">
           <div class="col">
             <h5>Credit Account Application Form</h5>
+            <a href="#" class="pbs-download"><img src="<?php echo get_bloginfo( 'template_directory' ) . '/images/core/pdf-download.png'; ?>" alt="Download (Credit Account)"></a>
           </div>
           <div class="col">
             <h5>Cash Account Application Form</h5>
+            <a href="#" class="pbs-download"><img src="<?php echo get_bloginfo( 'template_directory' ) . '/images/core/pdf-download.png'; ?>" alt="Download (Cash Account)"></a>
           </div>
         </div>
 
