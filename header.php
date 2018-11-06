@@ -88,9 +88,9 @@
 										<div class="pbs-dropdown">
 											<button onclick="myFunction()" class="btn btn-primary dropbtn">Account Menu <i class="fas fa-chevron-down fa-fw"></i></button>
 										  <div id="myDropdown" class="pbs-dropdown-content">
-										    <a href="https://secure.parkerbs.com" target="_blank">Pay Account</a>
-										    <a href="https://account.parkerbs.com/site/login">My Account</a>
-										    <a href="<?php echo site_url() . '/account-application'; ?>">Account Application</a>
+												<a href="https://secure.parkerbs.com" target="_blank">Pay Account</a>
+											  <a href="https://account.parkerbs.com/site/login">My Account</a>
+											  <a href="<?php echo site_url() . '/account-application'; ?>">Account Application</a>
 										  </div>
 										</div>
 									</div>
