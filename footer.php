@@ -58,6 +58,7 @@
 	</footer>
 	<!-- ./footer -->
 
+	<!-- desktop dropdown -->
 	<script type="text/javascript">
 		// Add class to display menu
 		function myFunction() {
