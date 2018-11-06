@@ -84,6 +84,6 @@
 
   </div>
 
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDagz5CIW3v5ckslNnQ6W5tup9s_YuBvRw&callback=initMap"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApilxOfvQdJIGCHisZVe6xODnyL5f_YYY&callback=initMap"></script>
 
 <?php get_footer(); ?>
