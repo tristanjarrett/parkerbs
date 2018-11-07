@@ -58,6 +58,28 @@
 	</footer>
 	<!-- ./footer -->
 
+	<!-- store finder script -->
+	<script type="text/javascript">
+		(function(){
+		  var addr = document.getElementById('gadgetAddress');
+		  addr.addEventListener('keypress', function(event) {
+		    if (event.keyCode == 13 && addr.value != "") {
+		    	event.preventDefault();
+		      gotoMapPage();
+		    }
+		  })
+		})();
+
+		function gotoMapPage() {
+		  var address = document.getElementById("gadgetAddress").value;
+		  var radius = document.getElementById("gadgetRadius").value;
+		  var baseURL = "https://account.parkerbs.com/store-locator?";
+		  var searchGadgetURL = "";
+		  searchGadgetURL += baseURL + "address=" + address + "&radius=" + radius;
+		  window.location = searchGadgetURL;
+		}
+	</script>
+
 	<!-- desktop dropdown -->
 	<script type="text/javascript">
 		// Add class to display menu

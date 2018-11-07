@@ -98,9 +98,10 @@
 							</div>
 
 							<div class="input-group">
-							  <input type="text" class="form-control" placeholder="Find your nearest branch.." aria-label="Find your nearest branch.." aria-describedby="button-addon2">
-							  <div class="input-group-append">
-							    <button class="btn btn-primary" type="button" id="button-addon2">Search <i class="fa fa-search fa-fw"></i></button>
+							  <input id="gadgetAddress" type="text" class="form-control" placeholder="Find your nearest branch.." aria-label="Find your nearest branch.." aria-describedby="button-addon2">
+								<input id="gadgetRadius" type="hidden" value="200" />
+								<div class="input-group-append">
+							    <button class="btn btn-primary" type="button" id="gadgetAddressSubmit" onclick="gotoMapPage()">Search <i class="fa fa-search fa-fw"></i></button>
 							  </div>
 							</div>
 						</div>
