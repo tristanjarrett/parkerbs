@@ -3,5 +3,76 @@
  */
 
 .pbs-branch-page {
-	padding: 30px 0px;
+	background-color: #ffffff;
+	.pbs-branch-header {
+		padding-top: 15px;
+		padding-left: 15px;
+		padding-right: 15px;
+		.pbs-branch-image {
+			height: 400px;
+			background-size: cover;
+			background-position: center;
+		}
+	}
+	.pbs-branch-section {
+		padding-top: 30px;
+		padding-bottom: 10px;
+		.pbs-title {
+			text-decoration: underline;
+		}
+		.pbs-content {
+			padding-top: 30px;
+			padding-bottom: 50px;
+			margin-bottom: 50px;
+			border-bottom: dashed 3px #e1e1e1;
+			p:last-child {
+				margin-bottom: 0px;
+			}
+		}
+		.pbs-manager {
+			margin-bottom: 20px;
+			padding-right: 10%;
+			@media (max-width: 767.98px) {
+				padding-right: 0;
+			}
+			.pbs-manager-image {
+				display: block;
+		    width: 100%;
+		    padding-top: 100%;
+		    background-position: center;
+		    background-size: cover;
+		    border: solid 3px #43ABAC;
+		    border-radius: 50%;
+				margin-bottom: 20px;
+			}
+			.pbs-manager-quote {
+				color: #44a8ab;
+			}
+		}
+		.pbs-branch {
+			margin-bottom: 20px;
+			.pbs-full-name {
+				font-weight: bold;
+			}
+			.pbs-job-title {
+				color: #666666;
+			}
+			.pbs-address {
+
+			}
+			.pbs-phone {
+
+			}
+			.pbs-email {
+
+			}
+		}
+		.pbs-map {
+			margin-bottom: 20px;
+			#map {
+				width: 100%;
+				padding-top: 100%;
+			}
+		}
+	}
 }
