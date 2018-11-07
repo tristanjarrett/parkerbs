@@ -16,6 +16,9 @@
     margin-bottom: 30px;
     #map {
       height: 100%;
+      @media (max-width: 767.98px) {
+        height: 400px;
+      }
     }
   }
 

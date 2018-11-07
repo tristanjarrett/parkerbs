@@ -512,7 +512,7 @@ img {
 .pbs-breadcrumb ul {
   margin: 0;
   padding: 0;
-  padding: 10px 15px;
+  padding: 10px 0px;
 }
 .pbs-breadcrumb ul li {
   list-style-type: none;
@@ -981,6 +981,13 @@ img {
 }
 
 /**
+ * Single branch page
+ */
+.pbs-branch-page {
+  padding: 30px 0px;
+}
+
+/**
  * Contact Us page
  */
 .pbs-contact-page {
@@ -999,6 +1006,11 @@ img {
 }
 .pbs-contact-page .pbs-map #map {
   height: 100%;
+}
+@media (max-width: 767.98px) {
+  .pbs-contact-page .pbs-map #map {
+    height: 400px;
+  }
 }
 .pbs-contact-page .pbs-content {
   background-color: #ffffff;

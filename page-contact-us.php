@@ -10,9 +10,20 @@
 
     <div class="container-fluid">
 
-      <div class="row">
+      <?php
+      if ( have_posts() ) :
+        while ( have_posts() ) :
+
+          the_post();
+      		the_content();
+
+    		endwhile;
+      endif;
+      ?>
+
+      <div class="row pbs-flex-row">
         <div class="col-md-6 col-lg-4">
-          <div class="pbs-details">
+          <div class="pbs-details pbs-flex-item">
 
             <h5>Branch Support Centre</h5>
 
@@ -44,7 +55,8 @@
         </div>
 
         <div class="col-md-6 col-lg-8">
-          <div class="pbs-map">
+          <div class="pbs-map pbs-flex-item">
+
             <div id="map"></div>
         		<script>
         		   function initMap() {
@@ -53,7 +65,7 @@
         					 lng: 0.270578
         				 };
         		     var map = new google.maps.Map(document.getElementById('map'), {
-        		       zoom: 14,
+        		       zoom: 16,
         		       center: office
         		     });
         		     var marker = new google.maps.Marker({
@@ -62,13 +74,13 @@
         		     });
         		   }
         		</script>
-        		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApilxOfvQdJIGCHisZVe6xODnyL5f_YYY&callback=initMap"></script>
+        		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVbThXjHYwhVVB4O8i9Ct-9smvVgDRMvA&callback=initMap"></script>
           </div>
         </div>
 
       </div>
 
-      <!-- <div class="pbs-content">
+      <div class="pbs-content">
 
         <h4>Contact Us</h4>
         <hr>
@@ -108,18 +120,7 @@
 
         </form>
 
-      </div> -->
-
-      <?php
-      if ( have_posts() ) :
-        while ( have_posts() ) :
-
-          the_post();
-      		the_content();
-
-    		endwhile;
-      endif;
-      ?>
+      </div>
 
   	</div>
 
