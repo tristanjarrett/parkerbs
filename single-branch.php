@@ -5,7 +5,7 @@
 			<ul>
 				<li><a href="<?php echo site_url(); ?>">Home</a></li>
 				<li>/</li>
-				<li><a href="<?php echo site_url() . '/branches'; ?>">Branches</a></li>
+				<li><a href="https://account.parkerbs.com/store-locator">Branches</a></li>
 				<li>/</li>
 				<li class="text-muted"><?php the_title(); ?></li>
 			</ul>
