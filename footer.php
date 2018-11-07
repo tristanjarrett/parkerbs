@@ -8,7 +8,7 @@
 						<li><a href="<?php echo site_url() . '/account-application'; ?>">Account Application</a></li>
 						<!-- <li><a href="<?php echo site_url() . '/request-login'; ?>">Request Login</a></li> -->
 						<li><a href="https://secure.parkerbs.com">Pay Account Online</a></li>
-						<li><a href="https://account.parkerbs.com/site/login">View My Account</a></li>
+						<li><a href="https://account.parkerbs.com/site/login?ReturnUrl=/account/my-account?t=MyAccount">View My Account</a></li>
 						<li><a href="https://account.parkerbs.com/account/password-recovery">Password Recovery</a></li>
 					</ul>
 					<a href="<?php echo site_url(); ?>">
@@ -18,7 +18,7 @@
 				<div class="col-sm-6 col-lg-3">
 					<h5>Information</h5>
 					<ul>
-						<li><a href="<?php echo site_url() . '/contact-us'; ?>">Contact Us</a></li>
+						<li><a href="https://account.parkerbs.com/contact-us">Contact Us</a></li>
 						<li><a href="<?php echo site_url() . '/about-us'; ?>">About Us</a></li>
 						<li><a href="<?php echo site_url() . '/vacancies'; ?>">Vacancies</a></li>
 						<li><a href="<?php echo site_url() . '/cookies-and-privacy'; ?>">Cookies & Privacy</a></li>
