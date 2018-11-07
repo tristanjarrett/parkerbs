@@ -144,7 +144,7 @@
 							</li>
 						</a>
 
-						<a href="<?php echo site_url() . '/branches'; ?>">
+						<a href="https://account.parkerbs.com/store-locator">
 							<li>
 								Branches <i class="fas fa-fw fa-map-marker-alt"></i>
 							</li>
@@ -165,7 +165,7 @@
 								<span class="d-md-none">Communities <i class="fas fa-fw fa-globe-americas"></i></span>
 							</li>
 						</a>
-						<a href="<?php echo site_url() . '/contact-us'; ?>">
+						<a href="https://account.parkerbs.com/contact-us">
 							<li>
 								Contact Us <i class="fas fa-fw fa-phone"></i>
 							</li>

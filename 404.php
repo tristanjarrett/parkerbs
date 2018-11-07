@@ -9,7 +9,7 @@
 				<h1>Oops!</h1>
 
 				<h3>Sorry we couldn't seem to find the page you requested.</h3>
-				
+
 				<h5>Error code: 404 (page not found)</h5>
 
 				<hr>
@@ -18,8 +18,8 @@
 
 				<ul>
 					<li><a href="<?php echo get_bloginfo('wpurl'); ?>">Return Home</a></li>
-					<li><a href="<?php echo get_bloginfo('wpurl') . '/contact-us'; ?>">Contact Us</a></li>
-					<li><a href="<?php echo get_bloginfo('wpurl') . '/branches'; ?>">Store Finder</a></li>
+					<li><a href="https://account.parkerbs.com/contact-us">Contact Us</a></li>
+					<li><a href="https://account.parkerbs.com/store-locator">Store Finder</a></li>
 				</ul>
 
 			</div>
