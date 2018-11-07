@@ -8,8 +8,8 @@
 						<li><a href="<?php echo site_url() . '/account-application'; ?>">Account Application</a></li>
 						<!-- <li><a href="<?php echo site_url() . '/request-login'; ?>">Request Login</a></li> -->
 						<li><a href="https://secure.parkerbs.com">Pay Account Online</a></li>
-						<li><a href="https://account.parkerbs.com">View My Account</a></li>
-						<li><a href="https://account.parkerbs.com">Password Recovery</a></li>
+						<li><a href="https://account.parkerbs.com/site/login">View My Account</a></li>
+						<li><a href="https://account.parkerbs.com/account/password-recovery">Password Recovery</a></li>
 					</ul>
 					<a href="<?php echo site_url(); ?>">
 						<img src="<?php echo get_bloginfo( 'template_directory' ) . '/images/core/logo.png'; ?>" alt="Logo" height="100">
