@@ -7,7 +7,7 @@
         <div class="pbs-block">
           <img src="<?php echo get_bloginfo( 'template_directory' ) . '/images/brand/logo/building.png'; ?>" alt="building" width="100%">
           <div class="pbs-block-back" style="background-image: url('<?php echo get_bloginfo( 'template_directory' ) . '/images/brand/thumb/building.jpg'; ?>');">
-            <a href="#" class="pbs-more">More info <i class="fas fa-fw fa-chevron-circle-right fa-lg"></i></a>
+            <a href="<?php echo site_url() . '/products#building'; ?>" class="pbs-more">More info <i class="fas fa-fw fa-chevron-circle-right fa-lg"></i></a>
           </div>
         </div>
       </div>
@@ -15,7 +15,7 @@
         <div class="pbs-block">
           <img src="<?php echo get_bloginfo( 'template_directory' ) . '/images/brand/logo/kitchens.png'; ?>" alt="kitchens" width="100%">
           <div class="pbs-block-back" style="background-image: url('<?php echo get_bloginfo( 'template_directory' ) . '/images/brand/thumb/kitchens.jpg'; ?>');">
-            <a href="#" class="pbs-more">More info <i class="fas fa-fw fa-chevron-circle-right fa-lg"></i></a>
+            <a href="<?php echo site_url() . '/products#kitchens'; ?>" class="pbs-more">More info <i class="fas fa-fw fa-chevron-circle-right fa-lg"></i></a>
           </div>
         </div>
       </div>
@@ -23,7 +23,7 @@
         <div class="pbs-block">
           <img src="<?php echo get_bloginfo( 'template_directory' ) . '/images/brand/logo/plumbing.png'; ?>" alt="plumbing" width="100%">
           <div class="pbs-block-back" style="background-image: url('<?php echo get_bloginfo( 'template_directory' ) . '/images/brand/thumb/plumbing.jpg'; ?>');">
-            <a href="#" class="pbs-more">More info <i class="fas fa-fw fa-chevron-circle-right fa-lg"></i></a>
+            <a href="<?php echo site_url() . '/products#plumbing'; ?>" class="pbs-more">More info <i class="fas fa-fw fa-chevron-circle-right fa-lg"></i></a>
           </div>
         </div>
       </div>
@@ -31,7 +31,7 @@
         <div class="pbs-block">
           <img src="<?php echo get_bloginfo( 'template_directory' ) . '/images/brand/logo/joinery.png'; ?>" alt="joinery" width="100%">
           <div class="pbs-block-back" style="background-image: url('<?php echo get_bloginfo( 'template_directory' ) . '/images/brand/thumb/joinery.jpg'; ?>');">
-            <a href="#" class="pbs-more">More info <i class="fas fa-fw fa-chevron-circle-right fa-lg"></i></a>
+            <a href="<?php echo site_url() . '/products#joinery'; ?>" class="pbs-more">More info <i class="fas fa-fw fa-chevron-circle-right fa-lg"></i></a>
           </div>
         </div>
       </div>
@@ -39,7 +39,7 @@
         <div class="pbs-block">
           <img src="<?php echo get_bloginfo( 'template_directory' ) . '/images/brand/logo/ironmongery.png'; ?>" alt="ironmongery" width="100%">
           <div class="pbs-block-back" style="background-image: url('<?php echo get_bloginfo( 'template_directory' ) . '/images/brand/thumb/ironmongery.jpg'; ?>');">
-            <a href="#" class="pbs-more">More info <i class="fas fa-fw fa-chevron-circle-right fa-lg"></i></a>
+            <a href="<?php echo site_url() . '/products#ironmongery'; ?>" class="pbs-more">More info <i class="fas fa-fw fa-chevron-circle-right fa-lg"></i></a>
           </div>
         </div>
       </div>
