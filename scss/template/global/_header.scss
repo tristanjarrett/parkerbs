@@ -65,19 +65,23 @@
 		}
 	}
 	// mobile menu
-	.pbs-mobile-menu-btn {
-	  padding: 0px !important;
-	  font-size: inherit;
-	  line-height: 1;
-	  background-color: transparent;
-	  border: 0px solid transparent;
-	  border-radius: 0px;
-		cursor: pointer;
-		.pbs-icon {
-			color: #44a8ab;
-			display: block;
-			&:hover {
-				color: #3c999a !important;
+	.pbs-mobile-menu {
+		a,
+		button {
+			padding: 0px !important;
+		  font-size: inherit;
+		  line-height: 1;
+		  background-color: transparent;
+		  border: 0px solid transparent;
+		  border-radius: 0px;
+			cursor: pointer;
+			.pbs-icon {
+				color: #44a8ab;
+				display: block;
+				margin-left: 10px;
+				&:hover {
+					color: #3c999a !important;
+				}
 			}
 		}
 	}

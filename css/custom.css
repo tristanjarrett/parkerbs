@@ -341,7 +341,8 @@ img {
 .pbs-header .pbs-dropdown .pbs-show {
   display: block;
 }
-.pbs-header .pbs-mobile-menu-btn {
+.pbs-header .pbs-mobile-menu a,
+.pbs-header .pbs-mobile-menu button {
   padding: 0px !important;
   font-size: inherit;
   line-height: 1;
@@ -350,11 +351,14 @@ img {
   border-radius: 0px;
   cursor: pointer;
 }
-.pbs-header .pbs-mobile-menu-btn .pbs-icon {
+.pbs-header .pbs-mobile-menu a .pbs-icon,
+.pbs-header .pbs-mobile-menu button .pbs-icon {
   color: #44a8ab;
   display: block;
+  margin-left: 10px;
 }
-.pbs-header .pbs-mobile-menu-btn .pbs-icon:hover {
+.pbs-header .pbs-mobile-menu a .pbs-icon:hover,
+.pbs-header .pbs-mobile-menu button .pbs-icon:hover {
   color: #3c999a !important;
 }
 @media (max-width: 767.98px) {

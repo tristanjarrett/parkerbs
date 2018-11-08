@@ -96,9 +96,14 @@
 						</div>
 
 						<div class="col-auto d-md-none">
-							<button class="pbs-mobile-menu-btn" type="button" data-toggle="collapse" data-target="#pbsNav">
-								<span class="pbs-icon"><i class="fas fa-bars fa-3x"></i></span>
-							</button>
+							<span class="pbs-mobile-menu">
+
+								<a href="https://account.parkerbs.com/site/login?ReturnUrl=/account/my-account?t=MyAccount" class="pbs-icon"><i class="fas fa-sign-in-alt fa-3x"></i></a>
+
+								<button type="button" data-toggle="collapse" data-target="#pbsNav">
+									<span class="pbs-icon"><i class="fas fa-bars fa-3x"></i></span>
+								</button>
+							</span>
 						</div>
 
 					</div>
