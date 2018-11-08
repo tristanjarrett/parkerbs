@@ -41,12 +41,13 @@
             <div class="pbs-manager">
               <span class="pbs-manager-image" style="background-image: url('<?php the_field('manager_image') ?>')"></span>
               <p class="pbs-manager-quote">"<?php the_field("manager_quote"); ?>"</p>
+              <p class="pbs-manager-quote-name">- <?php the_field("first_name"); ?></p>
             </div>
           </div>
           <div class="col-md">
             <div class="pbs-branch">
 
-              <div class="pbs-full-name"><?php the_field("full_name"); ?></div>
+              <div class="pbs-full-name"><?php the_field("first_name"); echo " "; the_field("last_name"); ?></div>
               <div class="pbs-job-title"><?php the_field("job_title"); ?></div>
               <br>
               <div class="pbs-address">
