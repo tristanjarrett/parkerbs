@@ -17,6 +17,7 @@ function pbs_post_product() {
         'editor',
         'thumbnail'
       ),
+      'taxonomies'  => array( 'category' ),
       'menu_icon' => 'dashicons-cart',
       'menu_position' => null,
       'rewrite' => array(
@@ -26,3 +27,5 @@ function pbs_post_product() {
   );
 }
 add_action( 'init', 'pbs_post_product' );
+
+// ****************************************
