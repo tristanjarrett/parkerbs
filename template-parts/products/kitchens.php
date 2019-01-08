@@ -1,4 +1,4 @@
-<h4 class="pbs-heading pbs-font">Kitchens</h4>
+<h4>Kitchens</h4>
 
 <div class="row">
   <?php

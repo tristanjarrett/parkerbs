@@ -1,4 +1,4 @@
-<h4 class="pbs-heading pbs-font">Joinery</h4>
+<h4>Joinery</h4>
 
 <div class="row">
   <?php
