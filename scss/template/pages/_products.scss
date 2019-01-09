@@ -3,14 +3,14 @@
  */
 
 .pbs-products-section {
-  padding-top: 20px;
   h4 {
     margin-bottom: 1rem;
   }
   .pbs-item {
     padding: 1rem;
     border: solid 1px #e1e1e1;
-    margin-bottom: 1rem;
+    margin-bottom: 30px;
+    background-color: #ffffff;
     .pbs-thumbnail {
       background-position: center;
       background-size: cover;
@@ -21,5 +21,25 @@
       margin-top: 1rem;
       text-align: center;
     }
+  }
+  .pbs-building {
+    padding-top: 30px;
+    background-color: #ffffff;
+  }
+  .pbs-kitchens {
+    padding-top: 30px;
+    background-color: #f7f7f9;
+  }
+  .pbs-plumbing {
+    padding-top: 30px;
+    background-color: #ffffff;
+  }
+  .pbs-joinery {
+    padding-top: 30px;
+    background-color: #f7f7f9;
+  }
+  .pbs-ironmongery {
+    padding-top: 30px;
+    background-color: #ffffff;
   }
 }

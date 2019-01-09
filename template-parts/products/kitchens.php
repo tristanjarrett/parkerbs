@@ -18,10 +18,10 @@
         <?php if ( has_post_thumbnail() ) { ?>
           <?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
           <div class="pbs-thumbnail" style="background-image: url('<?php echo $thumb['0']; ?>')"></div>
-          <?php } else { ?>
-          <div class="pbs-thumbnail" style="background-image: url('<?php echo get_bloginfo( 'template_directory' ) . '/images/core/thumbnail.svg'; ?>');"></div>
+        <?php } else { ?>
+          <div class="pbs-thumbnail" style="background-image: url('<?php echo get_bloginfo( 'template_directory' ) . '/images/core/logo.png'; ?>');"></div>
         <?php } ?>
-        <h5 class="pbs-title"><?php the_title(); ?></h5>
+        <h5 class="pbs-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
       </div>
     </div>
 

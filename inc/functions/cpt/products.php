@@ -11,7 +11,7 @@ function pbs_post_product() {
       ),
       'public' => true,
       'has_archive' => false,
-      'publicly_queryable'  => false,
+      'publicly_queryable'  => true,
       'supports' => array(
         'title',
         'editor',

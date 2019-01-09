@@ -716,16 +716,14 @@ img {
 /**
  * Products page
  */
-.pbs-products-section {
-  padding-top: 20px;
-}
 .pbs-products-section h4 {
   margin-bottom: 1rem;
 }
 .pbs-products-section .pbs-item {
   padding: 1rem;
   border: solid 1px #e1e1e1;
-  margin-bottom: 1rem;
+  margin-bottom: 30px;
+  background-color: #ffffff;
 }
 .pbs-products-section .pbs-item .pbs-thumbnail {
   background-position: center;
@@ -736,6 +734,35 @@ img {
 .pbs-products-section .pbs-item .pbs-title {
   margin-top: 1rem;
   text-align: center;
+}
+.pbs-products-section .pbs-building {
+  padding-top: 30px;
+  background-color: #ffffff;
+}
+.pbs-products-section .pbs-kitchens {
+  padding-top: 30px;
+  background-color: #f7f7f9;
+}
+.pbs-products-section .pbs-plumbing {
+  padding-top: 30px;
+  background-color: #ffffff;
+}
+.pbs-products-section .pbs-joinery {
+  padding-top: 30px;
+  background-color: #f7f7f9;
+}
+.pbs-products-section .pbs-ironmongery {
+  padding-top: 30px;
+  background-color: #ffffff;
+}
+
+/**
+ * Vacancy page
+ */
+.pbs-product-section {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  background-color: #f7f7f9;
 }
 
 /**
