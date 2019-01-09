@@ -18,45 +18,45 @@
 
   <div class="pbs-products-section">
 
-      <!-- building -->
-      <div id="building" class="pbs-building">
-        <div class="container-fluid">
-          <?php get_template_part( 'template-parts/products/building' ); ?>
-        </div>
+    <!-- building -->
+    <div id="building" class="pbs-building">
+      <div class="container-fluid">
+        <?php get_template_part( 'template-parts/products/building' ); ?>
       </div>
-      <!-- ./building -->
+    </div>
+    <!-- ./building -->
 
-      <!-- kitchens -->
-      <div id="kitchens" class="pbs-kitchens">
-        <div class="container-fluid">
-          <?php get_template_part( 'template-parts/products/kitchens' ); ?>
-        </div>
+    <!-- kitchens -->
+    <div id="kitchens" class="pbs-kitchens">
+      <div class="container-fluid">
+        <?php get_template_part( 'template-parts/products/kitchens' ); ?>
       </div>
-      <!-- ./kitchens -->
+    </div>
+    <!-- ./kitchens -->
 
-      <!-- plumbing -->
-      <div id="plumbing" class="pbs-plumbing">
-        <div class="container-fluid">
-          <?php get_template_part( 'template-parts/products/plumbing' ); ?>
-        </div>
+    <!-- plumbing -->
+    <div id="plumbing" class="pbs-plumbing">
+      <div class="container-fluid">
+        <?php get_template_part( 'template-parts/products/plumbing' ); ?>
       </div>
-      <!-- ./plumbing -->
+    </div>
+    <!-- ./plumbing -->
 
-      <!-- joinery -->
-      <div id="joinery" class="pbs-joinery">
-        <div class="container-fluid">
-          <?php get_template_part( 'template-parts/products/joinery' ); ?>
-        </div>
+    <!-- joinery -->
+    <div id="joinery" class="pbs-joinery">
+      <div class="container-fluid">
+        <?php get_template_part( 'template-parts/products/joinery' ); ?>
       </div>
-      <!-- ./joinery -->
+    </div>
+    <!-- ./joinery -->
 
-      <!-- ironmongery -->
-      <div id="ironmongery" class="pbs-ironmongery">
-        <div class="container-fluid">
-          <?php get_template_part( 'template-parts/products/ironmongery' ); ?>
-        </div>
+    <!-- ironmongery -->
+    <div id="ironmongery" class="pbs-ironmongery">
+      <div class="container-fluid">
+        <?php get_template_part( 'template-parts/products/ironmongery' ); ?>
       </div>
-      <!-- ./ironmongery -->
+    </div>
+    <!-- ./ironmongery -->
 
   </div>
 
