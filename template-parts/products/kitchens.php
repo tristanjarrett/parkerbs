@@ -1,5 +1,3 @@
-<h4>Kitchens</h4>
-
 <div class="row pbs-flex-row">
   <?php
   $args = array(

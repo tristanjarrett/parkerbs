@@ -716,8 +716,8 @@ img {
 /**
  * Products page
  */
-.pbs-products-section h4 {
-  margin-bottom: 1rem;
+.pbs-products-section .pbs-cat-title {
+  margin-bottom: 20px;
 }
 .pbs-products-section .pbs-item {
   padding: 1rem;

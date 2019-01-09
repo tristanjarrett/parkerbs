@@ -1,5 +1,3 @@
-<h4>Building Supplies</h4>
-
 <div class="row pbs-flex-row">
   <?php
   $args = array(

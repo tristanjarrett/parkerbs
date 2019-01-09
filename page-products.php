@@ -21,6 +21,7 @@
     <!-- building -->
     <div id="building" class="pbs-building">
       <div class="container-fluid">
+        <h3 class="pbs-cat-title">Building Supplies</h3>
         <?php get_template_part( 'template-parts/products/building' ); ?>
       </div>
     </div>
@@ -29,6 +30,7 @@
     <!-- kitchens -->
     <div id="kitchens" class="pbs-kitchens">
       <div class="container-fluid">
+        <h3 class="pbs-cat-title">Kitchens</h3>
         <?php get_template_part( 'template-parts/products/kitchens' ); ?>
       </div>
     </div>
@@ -37,6 +39,7 @@
     <!-- plumbing -->
     <div id="plumbing" class="pbs-plumbing">
       <div class="container-fluid">
+        <h3 class="pbs-cat-title">Plumbing Supplies</h3>
         <?php get_template_part( 'template-parts/products/plumbing' ); ?>
       </div>
     </div>
@@ -45,6 +48,7 @@
     <!-- joinery -->
     <div id="joinery" class="pbs-joinery">
       <div class="container-fluid">
+        <h3 class="pbs-cat-title">Joinery</h3>
         <?php get_template_part( 'template-parts/products/joinery' ); ?>
       </div>
     </div>
@@ -53,6 +57,7 @@
     <!-- ironmongery -->
     <div id="ironmongery" class="pbs-ironmongery">
       <div class="container-fluid">
+        <h3 class="pbs-cat-title">Ironmongery</h3>
         <?php get_template_part( 'template-parts/products/ironmongery' ); ?>
       </div>
     </div>

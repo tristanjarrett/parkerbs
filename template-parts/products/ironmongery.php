@@ -1,5 +1,3 @@
-<h4>Ironmongery</h4>
-
 <div class="row pbs-flex-row">
   <?php
   $args = array(
