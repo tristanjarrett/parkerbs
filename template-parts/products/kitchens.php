@@ -14,11 +14,11 @@
     <div class="col-6 col-md-4 col-lg-3">
       <div class="pbs-item pbs-flex-item">
         <?php if ( has_post_thumbnail() ) { ?>
-          <?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
-          <div class="pbs-thumbnail" style="background-image: url('<?php echo $thumb['0']; ?>')"></div>
-        <?php } else { ?>
-          <div class="pbs-thumbnail" style="background-image: url('<?php echo get_bloginfo( 'template_directory' ) . '/images/core/logo.png'; ?>');"></div>
-        <?php } ?>
+    			<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
+    			<div class="pbs-thumbnail" style="background-image: url('<?php echo $thumb['0']; ?>');"></div>
+    			<?php } else { ?>
+    			<div class="pbs-thumbnail" style="background-image: url('<?php echo get_bloginfo( 'template_directory' ) . '/images/core/thumbnail.svg'; ?>');"></div>
+    		<?php } ?>
         <h5 class="pbs-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
       </div>
     </div>
