@@ -17,7 +17,7 @@
 		<div class="container-fluid">
 			<h3><?php the_title(); ?></h3>
 			<hr>
-			
+
 			<?php
 			if ( have_posts() ) :
 				while ( have_posts() ) : the_post();
@@ -25,6 +25,17 @@
 				endwhile;
 			endif;
 			?>
+
+		</div>
+
+	</div>
+
+	<div class="pbs-contact-section">
+
+		<div class="container-fluid">
+
+			<p>Please contact your local branch for more information on <?php the_title(); ?>.</p>
+			<a href="https://account.parkerbs.com/store-locator" class="btn btn-primary">Find your nearest branch</a>
 
 		</div>
 
