@@ -21,7 +21,9 @@ function pbs_post_vacancy() {
       'menu_position' => null,
       'rewrite' => array(
         'slug' => 'vacancies'
-      )
+      ),
+      'capability_type' => array('pbs_vacancy', 'pbs_vacancies'),
+      'map_meta_cap' => true
     )
   );
 }
@@ -55,4 +57,42 @@ function save_detail() {
   }
 
   update_post_meta($post->ID, 'custom_input', $_POST["custom_input"]);
+}
+
+/**
+ * Add role
+ */
+add_role(
+  'pbs_vacancy_manager', 'Vacancy Manager',
+    array(
+      'read' => true,
+      'edit_posts' => false,
+      'delete_posts' => false,
+      'publish_posts' => false,
+      'upload_files' => true,
+    )
+);
+
+/**
+ * Add role perms
+ */
+add_action('admin_init', 'add_pbs_vacancy_manager_caps', 999);
+function add_pbs_vacancy_manager_caps() {
+  // Add the roles you'd like to administer the custom post types
+  $roles = array('pbs_vacancy_manager', 'editor', 'administrator');
+  // Loop through each role and assign capabilities
+  foreach($roles as $the_role) {
+    $role = get_role($the_role);
+    $role->add_cap( 'read' );
+	  $role->add_cap( 'read_pbs_vacancy');
+	  $role->add_cap( 'read_private_pbs_vacancies' );
+	  $role->add_cap( 'edit_pbs_vacancy' );
+	  $role->add_cap( 'edit_pbs_vacancies' );
+	  $role->add_cap( 'edit_others_pbs_vacancies' );
+	  $role->add_cap( 'edit_published_pbs_vacancies' );
+	  $role->add_cap( 'publish_pbs_vacancies' );
+	  $role->add_cap( 'delete_others_pbs_vacancies' );
+	  $role->add_cap( 'delete_private_pbs_vacancies' );
+	  $role->add_cap( 'delete_published_pbs_vacancies' );
+  }
 }
