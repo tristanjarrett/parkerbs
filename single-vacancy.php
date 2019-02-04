@@ -107,6 +107,7 @@
 
 				<div class="col-lg-3">
 					<div class="pbs-sidebar">
+						<h4 class="text-center mb-3 pbs-font pbs-heading">More Vacancies</h4>
 						<ul>
 							<?php
 				       $args = array(
@@ -117,21 +118,26 @@
 								 'post__not_in' => array( $post->ID )
 							 );
 				       $branches = new WP_Query( $args );
-				       while ( $branches->have_posts() ) : $branches->the_post(); ?>
-				        <li>
-									<a href="<?php the_permalink(); ?>" class="d-flex justify-content-start align-items-center">
-										<div class="pbs-icon"><i class="fas fa-fw fa-user-tie"></i></div>
-										<div>
-											<?php the_title(); ?>
-											<span class="d-block text-muted"><?php echo get_post_meta($post->ID, 'custom_input', true); ?></span>
-										</div>
-									</a>
-								</li>
+							 if ( $branches->have_posts() ) {
+					       while ( $branches->have_posts() ) : $branches->the_post(); ?>
+					        <li>
+										<a href="<?php the_permalink(); ?>" class="d-flex justify-content-start align-items-center">
+											<div class="pbs-icon"><i class="fas fa-fw fa-user-tie"></i></div>
+											<div>
+												<?php the_title(); ?>
+												<span class="d-block text-muted">Location - <?php echo get_post_meta($post->ID, 'custom_input', true); ?></span>
+											</div>
+										</a>
+									</li>
 
- 								<?php wp_reset_postdata(); ?>
+	 								<?php wp_reset_postdata(); ?>
 
-							 <?php
-				       endwhile;
+								 <?php
+					       endwhile;
+							 }
+							else {
+								echo "<span class='p-3 d-block'>Sorry, this is the only vacancy available at this time.</span>";
+							}
 				   		?>
 						</ul>
 					</div>
