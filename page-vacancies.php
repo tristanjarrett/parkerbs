@@ -23,13 +23,14 @@
 
         <h4 class="mb-3 pbs-font pbs-heading">Vacancies</h4>
         <hr>
+        <p>Parker Building suppliers are always keen to speak with new talent interested in joining our teams across our branches and Branch Support Centre. Please see our current vacancies. </p>
         <?php
         if ( have_posts() ) :
-           while ( have_posts() ) : the_post();
-             the_content();
-             endwhile;
-           endif;
-          ?>
+          while ( have_posts() ) : the_post();
+            the_content();
+          endwhile;
+        endif;
+        ?>
 
       </div>
 
@@ -86,7 +87,7 @@
             <?php
               endwhile;
             else:
-              echo '<div class="alert alert-warning" role="alert">Sorry, we currently have no vacancies listed. Please check back soon.</div>';
+              echo '<div class="alert alert-warning" role="alert">Thank you for your interest in joining Parker Building Supplies. There are no vacancy positions at present however, we are always keen to hear from applicants who are interested in discussing future roles. Please contact <strong>Will Postlethwaite – Recruitment Business Partner – <a href="mailto:will.postlethwaite@parkerbs.com">will.postlethwaite@parkerbs.com</a></strong></div>';
             endif;
             ?>
 
