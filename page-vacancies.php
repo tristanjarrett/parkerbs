@@ -73,7 +73,7 @@
             <?php
               endwhile;
             else:
-              echo "Sorry, we currently have no vacancies listed.";
+              echo '<div class="alert alert-warning" role="alert">Sorry, we currently have no vacancies listed. Please check back soon.</div>';
             endif;
             ?>
 
