@@ -43,8 +43,10 @@ function custom_metabox_field() {
 
   $data = get_post_custom($post->ID);
   $val = isset($data['custom_input']) ? esc_attr($data['custom_input'][0]) : '';
+  $val2 = wp_create_nonce(plugin_basename(__FILE__).$post->ID);
 
   echo '<input type="text" name="custom_input" id="custom_input" class="widefat" placeholder="Branch name" value="'.$val.'" required />';
+  echo '<input type="hidden" name="prevent_delete_meta_movetotrash" id="prevent_delete_meta_movetotrash" value="'.$val2.'" />';
 }
 
 add_action( 'save_post', 'save_detail' );
@@ -54,6 +56,10 @@ function save_detail() {
 
   if(defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) {
     return $post->ID;
+  }
+
+  if (!wp_verify_nonce($_POST['prevent_delete_meta_movetotrash'], plugin_basename(__FILE__).$post->ID)) {
+    return $post_id;
   }
 
   update_post_meta($post->ID, 'custom_input', $_POST["custom_input"]);
