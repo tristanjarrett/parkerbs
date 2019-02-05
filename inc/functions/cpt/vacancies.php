@@ -75,7 +75,7 @@ add_role(
       'edit_posts' => false,
       'delete_posts' => false,
       'publish_posts' => false,
-      'upload_files' => true,
+      'upload_files' => false,
     )
 );
 
