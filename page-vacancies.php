@@ -47,8 +47,21 @@
             );
             $vacancy_loop = new WP_Query($args);
 
-            if ($vacancy_loop->have_posts()):
-              while ($vacancy_loop->have_posts()):
+            if ($vacancy_loop->have_posts()): ?>
+
+            <div class="row mb-2">
+              <div class="col-md">
+                <span class="text-muted"><u>Position</u></span>
+              </div>
+              <div class="col-md">
+                <span class="text-muted"><u>Location</u></span>
+              </div>
+              <div class="col-md text-right">
+                <span class="text-muted"><u>Posted</u></span>
+              </div>
+            </div>
+
+            <?php  while ($vacancy_loop->have_posts()):
                 $vacancy_loop->the_post();
             ?>
 
@@ -60,7 +73,7 @@
                     <?php the_title(); ?>
                   </div>
                   <div class="col-md">
-                    <span class="text-muted"><?php echo get_post_meta($post->ID, 'custom_input', true); ?></span>
+                    <span><?php echo get_post_meta($post->ID, 'custom_input', true); ?></span>
                   </div>
                   <div class="col-md text-right">
                     <span class="text-muted"></span> <?php echo human_time_diff(get_the_time('U'), current_time('timestamp')) . ' ago'; ?>
