@@ -118,7 +118,7 @@
 								 'post__not_in' => array( $post->ID )
 							 );
 				       $branches = new WP_Query( $args );
-							 if ( $branches->have_posts() ) {
+							 if ( $branches->have_posts() ):
 					       while ( $branches->have_posts() ) : $branches->the_post(); ?>
 					        <li>
 										<a href="<?php the_permalink(); ?>" class="d-flex justify-content-start align-items-center">
@@ -134,10 +134,9 @@
 
 								 <?php
 					       endwhile;
-							 }
-							else {
+							else:
 								echo "<span class='p-3 d-block'>Sorry, this is the only vacancy available at this time.</span>";
-							}
+							endif;
 				   		?>
 						</ul>
 					</div>

@@ -4,13 +4,10 @@
 
 .pbs-vacancies-page {
 	padding-top: 30px;
-	padding-bottom: 10px;
-  background-color: #f7f7f9;
+  background-color: #ffffff;
 	.pbs-content {
 		background-color: #ffffff;
-		padding: 30px;
 		margin-bottom: 30px;
-		border: solid 1px #e1e1e1;
 		.pbs-title {
 			font-weight: bold;
 			padding: 0px 15px 10px 15px;
@@ -22,12 +19,12 @@
 	      li {
 					list-style-type: none;
 					border-top: solid 1px #e1e1e1;
-					padding: 10px 0px;
-	        &:last-child {
-	          padding-bottom: 0px;
-	        }
+					&:last-child {
+						border-bottom: solid 1px #e1e1e1;
+					}
 	        a {
 	          display: block;
+						padding: 12px 0px;
 	        }
 	      }
 	    }

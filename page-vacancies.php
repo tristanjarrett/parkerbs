@@ -21,7 +21,7 @@
 
       <div class="pbs-content">
 
-        <h4 class="mb-3">Vacancies</h4>
+        <h4 class="mb-3 pbs-font pbs-heading">Vacancies</h4>
         <hr>
         <?php
         if ( have_posts() ) :
@@ -35,7 +35,7 @@
 
       <div class="pbs-content">
 
-        <h4 class="mb-3">Current Vacancies</h4>
+        <h5 class="mb-3">Current Vacancies</h5>
 
         <div class="pbs-posts">
           <ul>
@@ -43,7 +43,7 @@
             <?php
             $args = array(
               'post_type' => 'vacancy',
-              'posts_per_page' => - 1,
+              'posts_per_page' => -1,
             );
             $vacancy_loop = new WP_Query($args);
 
@@ -72,6 +72,8 @@
 
             <?php
               endwhile;
+            else:
+              echo "Sorry, we currently have no vacancies listed.";
             endif;
             ?>
 
