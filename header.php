@@ -149,9 +149,9 @@
 								Products <i class="fas fa-fw fa-shopping-cart"></i>
 							</li>
 						</a>
-						<a href="<?php echo site_url() . '/about-us'; ?>">
+						<a href="<?php echo site_url() . '/vacancies'; ?>">
 							<li>
-								About Us <i class="fas fa-fw fa-align-left"></i>
+								Careers <i class="fas fa-fw fa-id-badge"></i>
 							</li>
 						</a>
 						<a href="<?php echo site_url() . '/charities-and-communities'; ?>">

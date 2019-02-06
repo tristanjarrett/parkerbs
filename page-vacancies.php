@@ -21,7 +21,7 @@
 
       <div class="pbs-content">
 
-        <h4 class="mb-3 pbs-font pbs-heading">Vacancies</h4>
+        <h4 class="mb-3 pbs-font pbs-heading">Careers</h4>
         <hr>
         <p>Parker Building suppliers are always keen to speak with new talent interested in joining our teams across our branches and Branch Support Centre. Please see our current vacancies. </p>
         <?php
