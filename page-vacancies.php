@@ -52,13 +52,13 @@
 
             <div class="row mb-2">
               <div class="col-md">
-                <span class="text-muted"><u>Position</u></span>
+                <span class="text-muted"><strong>Position</strong></span>
               </div>
               <div class="col-md">
-                <span class="text-muted"><u>Location</u></span>
+                <span class="text-muted"><strong>Location</strong></span>
               </div>
               <div class="col-md text-right">
-                <span class="text-muted"><u>Posted</u></span>
+                <span class="text-muted"><strong>Posted</strong></span>
               </div>
             </div>
 
