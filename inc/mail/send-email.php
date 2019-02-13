@@ -4,7 +4,7 @@
   $response = "";
 
   //function to generate response
-  function my_contact_form_generate_response($type, $message){
+  function generate_response($type, $message){
 
     global $response;
 
@@ -29,7 +29,6 @@
   $lname   = $_POST['message_lname'];
   $email   = $_POST['message_email'];
   $number  = $_POST['message_number'];
-  $resume  = $_POST['message_resume'];
   $message = $_POST['message_text'];
   $human   = $_POST['message_human'];
 
@@ -46,20 +45,20 @@
 
   if(!$human == 0) {
     if($human != 2) {
-      my_contact_form_generate_response("error", $not_human); //not human!
+      generate_response("error", $not_human); //not human!
     }
     else {
       $sent = wp_mail($to, $subject, $body, $headers, $attachments);
       if($sent) {
-        my_contact_form_generate_response("success", $message_sent); //message sent!
+        generate_response("success", $message_sent); //message sent!
       }
       else {
-        my_contact_form_generate_response("error", $message_unsent); //message wasn't sent
+        generate_response("error", $message_unsent); //message wasn't sent
       }
     }
   }
   elseif($_POST['submitted']) {
-    my_contact_form_generate_response("error", $missing_content);
+    generate_response("error", $missing_content);
   }
 
 ?>
