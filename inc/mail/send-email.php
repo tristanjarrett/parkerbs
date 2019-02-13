@@ -4,7 +4,7 @@
   $response = "";
 
   // function to generate response
-  function generate_response($type, $message){
+  function generate_response($type, $message) {
 
     global $response;
 
