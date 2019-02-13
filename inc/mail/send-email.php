@@ -43,7 +43,6 @@
   $headers     = 'From: '. $email . "\r\n" . 'Reply-To: ' . $email . "\r\n";
   $body        = "First name: " . $fname . "\n" . "Last name: " . $lname. "\n" . "Email: " . $email. "\n" . "Contact number: " . $number . "\n" . "Notes: " . $message . "\n";
   $attachments = array(WP_CONTENT_DIR . "/uploads/" . $_FILES["message_resume"]["name"]);
-  //$attachments = array(WP_CONTENT_DIR . '/uploads/test-cv.txt');
 
   if(!$human == 0) {
     if($human != 2) {
