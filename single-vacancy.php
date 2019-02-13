@@ -64,41 +64,41 @@
 						<p class="text-muted"><?php the_title(); ?> - <?php echo get_post_meta($post->ID, 'custom_input', true); ?></p>
 						<hr>
 
-						<form action="<?php the_permalink(); ?>" method="post">
+						<form action="<?php the_permalink(); ?>" method="post" enctype="multipart/form-data">
 
 							<div class="form-row">
 								<div class="form-group col-md-6">
-							    <label for="">First name <span class="pbs-red">*</span></label>
+							    <label for="message_fname">First name <span class="pbs-red">*</span></label>
 							    <input type="text" class="form-control" name="message_fname" value="<?php echo esc_attr($_POST['message_fname']); ?>" placeholder="Joe" required>
 							  </div>
 								<div class="form-group col-md-6">
-							    <label for="">Last name <span class="pbs-red">*</span></label>
+							    <label for="message_lname">Last name <span class="pbs-red">*</span></label>
 							    <input type="text" class="form-control" name="message_lname" value="<?php echo esc_attr($_POST['message_lname']); ?>" placeholder="Bloggs" required>
 							  </div>
 							</div>
 
 						  <div class="form-group">
-						    <label for="">Email address <span class="pbs-red">*</span></label>
+						    <label for="message_email">Email address <span class="pbs-red">*</span></label>
 						    <input type="email" class="form-control" name="message_email" value="<?php echo esc_attr($_POST['message_email']); ?>" placeholder="name@example.com" required>
 						  </div>
 
 							<div class="form-group">
-								<label for="">Contact number <span class="pbs-red">*</span></label>
+								<label for="message_number">Contact number <span class="pbs-red">*</span></label>
 								<input type="text" class="form-control" name="message_number" value="<?php echo esc_attr($_POST['message_number']); ?>" placeholder="0844 257 7000" required>
 							</div>
 
 							<div class="form-group">
-					   		<label for="">Attach CV <span class="pbs-red">*</span></label>
-						    <input type="file" class="form-control-file" name="message_resume" value="<?php echo esc_attr($_POST['message_resume']); ?>" accept=".doc, .docx, .pdf, .txt, .pages" required>
+					   		<label for="message_resume">Attach CV <span class="pbs-red">*</span></label>
+						    <input type="file" class="form-control-file" name="message_resume" value="<?php echo esc_attr($_POST['message_resume']); ?>" required>
 							</div>
 
 						  <div class="form-group">
-						  	<label for="">Notes</label>
+						  	<label for="message_text">Notes</label>
 					   		<textarea class="form-control" name="message_text" rows="8"><?php echo esc_textarea($_POST['message_text']); ?></textarea>
 							</div>
 
 							<div class="form-group">
-								<label for="">Human verification <span class="pbs-red">*</span></label>
+								<label for="message_human">Human verification <span class="pbs-red">*</span></label>
 								<div class="form-row align-items-center">
 									<div class="col col-md-auto">
 										<input type="text" class="form-control" name="message_human" placeholder="What number" required>
