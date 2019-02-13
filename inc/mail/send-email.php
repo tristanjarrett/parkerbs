@@ -1,7 +1,5 @@
 <?php
 
-  move_uploaded_file($_FILES["message_resume"]["tmp_name"], WP_CONTENT_DIR . '/uploads/' . basename($_FILES['message_resume']['name']));
-
   //response generation function
   $response = "";
 
@@ -34,6 +32,9 @@
   $resume  = $_POST['message_resume'];
   $message = $_POST['message_text'];
   $human   = $_POST['message_human'];
+
+  // necessary for sending attachment
+  move_uploaded_file($_FILES["message_resume"]["tmp_name"], WP_CONTENT_DIR . '/uploads/' . basename($_FILES['message_resume']['name']));
 
   //php mailer variables
   //$to = get_option('admin_email');
