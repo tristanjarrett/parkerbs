@@ -37,7 +37,7 @@
 
   //php mailer variables
   //$to = get_option('admin_email');
-  $to          = "tristan.jarrett@parkerbs.com";
+  $to          = "webcareers@parkerbs.com";
   $subject     = "Application for " . get_the_title() . " at " . get_post_meta($post->ID, 'custom_input', true) . " via the website";
   $headers     = 'From: '. $email . "\r\n" . 'Reply-To: ' . $email . "\r\n";
   $body        = "First name: " . $fname . "\n" . "Last name: " . $lname. "\n" . "Email: " . $email. "\n" . "Contact number: " . $number . "\n" . "Notes: " . $message . "\n";
