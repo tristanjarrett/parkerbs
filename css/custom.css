@@ -136,21 +136,11 @@ a img.aligncenter {
 }
 
 /**
- * Extended container
+ * Restrict container
  */
-@media (max-width: 1365.98px) {
+@media (min-width: 1200px) {
   .container-fluid {
-    max-width: 1152px;
-  }
-}
-@media (min-width: 1366px) and (max-width: 1439.98px) {
-  .container-fluid {
-    max-width: 1280px;
-  }
-}
-@media (min-width: 1440px) {
-  .container-fluid {
-    max-width: 1366px;
+    max-width: 1170px;
   }
 }
 
