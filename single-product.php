@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 	<div class="pbs-breadcrumb">
-		<nav class="container-fluid">
+		<nav class="container">
 			<ul>
 				<li><a href="<?php echo site_url(); ?>">Home</a></li>
 				<li>/</li>
@@ -14,7 +14,7 @@
 
 	<div class="pbs-product-section">
 
-		<div class="container-fluid">
+		<div class="container">
 			<h3><?php the_title(); ?></h3>
 			<hr>
 
@@ -32,7 +32,7 @@
 
 	<div class="pbs-contact-section">
 
-		<div class="container-fluid">
+		<div class="container">
 
 			<p>Please contact your local branch for more information on <?php the_title(); ?>.</p>
 			<a href="https://account.parkerbs.com/store-locator" class="btn btn-primary">Find your nearest branch</a>

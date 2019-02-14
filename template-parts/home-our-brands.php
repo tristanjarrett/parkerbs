@@ -1,5 +1,5 @@
 <div class="pbs-home-brands">
-  <div class="container-fluid">
+  <div class="container">
   	<h4 class="pbs-heading pbs-font">Our Brands</h4>
     <p class="pbs-focus-p">We have five specialist divisions covering the complete range of building materials, plumbing supplies, kitchens, joinery and architectural ironmongery - over 10,000 products all at competitive prices. Just click on one of the sections below to find out more. Our 15 heavy side branches are supplemented by specialist divisions - click below to find your nearest relevant branch or use our store finder.</p>
     <div class="row">

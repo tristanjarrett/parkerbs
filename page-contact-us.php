@@ -8,7 +8,7 @@
 
   <div class="pbs-contact-page">
 
-    <div class="container-fluid">
+    <div class="container">
 
       <?php
       if ( have_posts() ) :

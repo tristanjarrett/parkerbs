@@ -8,7 +8,7 @@
 
   <div class="pbs-account-application-page">
 
-    <div class="container-fluid">
+    <div class="container">
 			<h3><?php the_title(); ?></h3>
 			<hr>
 			<?php

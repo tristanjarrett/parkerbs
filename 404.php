@@ -2,7 +2,7 @@
 
 	<div class="pbs-404-section">
 
-		<div class="container-fluid">
+		<div class="container">
 
 			<div class="col pbs-404-text">
 

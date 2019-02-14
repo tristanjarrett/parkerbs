@@ -1,6 +1,6 @@
 <div class="pbs-slide" style="background-image: url('<?php echo get_bloginfo( 'template_directory' ) . '/images/banners/lorry-front-side.jpg'; ?>');">
 
-	<div class="container-fluid">
+	<div class="container">
 		<div class="pbs-overlay">
 
 			<div class="row d-flex align-items-center">

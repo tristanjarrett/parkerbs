@@ -6,11 +6,11 @@
 
 	    <div class="carousel-item active">
 				<div class="pbs-slide" style="background-image: url('<?php echo get_bloginfo( 'template_directory' ) . '/images/banners/timber.jpg'; ?>');">
-					<div class="container-fluid">
+					<div class="container">
 
 					</div>
 					<div class="pbs-overlay">
-						<div class="container-fluid">
+						<div class="container">
 							<h5>Building Sussex and Kent’s future, one brick and block at a time.</h5>
 						</div>
 					</div>
@@ -19,11 +19,11 @@
 
 	    <div class="carousel-item">
 				<div class="pbs-slide" style="background-image: url('<?php echo get_bloginfo( 'template_directory' ) . '/images/banners/lorry-front-side.jpg'; ?>');">
-					<div class="container-fluid">
+					<div class="container">
 
 					</div>
 					<div class="pbs-overlay">
-						<div class="container-fluid">
+						<div class="container">
 							<h5>Building Sussex and Kent’s future, one brick and block at a time.</h5>
 						</div>
 					</div>

@@ -7,7 +7,7 @@
 <?php get_header(); ?>
 
   <div class="pbs-breadcrumb">
-    <nav class="container-fluid">
+    <nav class="container">
       <ul>
         <li><a href="<?php echo site_url(); ?>">Home</a></li>
         <li>/</li>
@@ -17,7 +17,7 @@
   </div>
 
   <div class="pbs-vacancies-page">
-    <div class="container-fluid">
+    <div class="container">
 
       <div class="pbs-content">
 

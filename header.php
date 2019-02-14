@@ -33,7 +33,7 @@
 	<body>
 
 		<div class="pbs-social-bar">
-			<div class="container-fluid">
+			<div class="container">
 				<div class="row">
 					<div class="col">
 						<div class="text-left pbs-social-icons">
@@ -56,7 +56,7 @@
 
 			<!-- main header -->
 			<header class="pbs-header">
-				<div class="container-fluid">
+				<div class="container">
 
 					<div class="row">
 
@@ -114,7 +114,7 @@
 
 			<!-- main navigation -->
 			<nav class="pbs-nav collapse navbar-collapse" id="pbsNav">
-				<div class="container-fluid">
+				<div class="container">
 					<ul class="navbar-nav">
 						<a href="<?php echo site_url(); ?>">
 							<li>
