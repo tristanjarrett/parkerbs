@@ -1,6 +1,6 @@
 	<!-- footer -->
 	<footer class="pbs-footer">
-		<div class="container">
+		<div class="container-fluid">
 			<div class="row">
 				<div class="col-sm-6 col-lg-3">
 					<h5>My Account</h5>

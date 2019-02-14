@@ -2,7 +2,7 @@
 
 	<div class="pbs-general-page">
 
-		<div class="container">
+		<div class="container-fluid">
 			<h3><?php the_title(); ?></h3>
 			<hr>
 			<?php

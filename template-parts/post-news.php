@@ -1,9 +1,9 @@
 <div class="pbs-post-news">
-	<div class="container">
+	<div class="container-fluid">
 		<h4 class="pbs-heading pbs-font">Recent News</h4>
 	</div>
 
-	<div class="container">
+	<div class="container-fluid">
 		<div class="row pbs-flex-row">
 
 			<?php
