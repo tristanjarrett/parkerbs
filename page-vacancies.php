@@ -36,7 +36,7 @@
 
       <div class="pbs-content">
 
-        <h5 class="mb-3">Current Vacancies</h5>
+        <h5 class="mb-3">Current Vacancies (<?php echo wp_count_posts('vacancy')->publish; ?>)</h5>
 
         <div class="pbs-posts">
           <ul>
