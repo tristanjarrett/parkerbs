@@ -120,50 +120,50 @@
 						<a href="<?php echo site_url(); ?>">
 							<li>
 								<span class="d-none d-md-block"><i class="fas fa-fw fa-home fa-2x"></i></span>
-								<span class="d-md-none">Home <i class="fas fa-fw fa-home"></i></span>
+								<span class="d-md-none">Home</i></span>
 							</li>
 						</a>
 
 						<a href="https://secure.parkerbs.com" class="d-md-none">
 							<li>
-								Pay Account <i class="fas fa-fw fa-credit-card"></i>
+								<span>Pay Account</span>
 							</li>
 						</a>
 						<a href="<?php echo site_url() . '/account-application'; ?>" class="d-md-none">
 							<li>
-								Account Application <i class="fas fa-fw fa-file"></i>
+								<span>Account Application</span>
 							</li>
 						</a>
 						<a href="https://account.parkerbs.com" class="d-md-none">
 							<li>
-								My Account <i class="fas fa-fw fa-user"></i>
+								<span>My Account</span>
 							</li>
 						</a>
 
 						<a href="https://account.parkerbs.com/store-locator">
 							<li>
-								Branches <i class="fas fa-fw fa-map-marker-alt"></i>
+								<span>Branches</span>
 							</li>
 						</a>
 						<a href="<?php echo site_url() . '/products'; ?>">
 							<li>
-								Products <i class="fas fa-fw fa-shopping-cart"></i>
+								<span>Products</span>
 							</li>
 						</a>
 						<a href="<?php echo site_url() . '/vacancies'; ?>">
 							<li>
-								Careers <i class="fas fa-fw fa-id-badge"></i>
+								<span>Careers</span>
 							</li>
 						</a>
 						<a href="<?php echo site_url() . '/charities-and-communities'; ?>">
 							<li>
-								<span class="d-none d-md-block">Charities & <br>Communities <i class="fas fa-fw fa-globe-americas"></i></span>
-								<span class="d-md-none">Communities <i class="fas fa-fw fa-globe-americas"></i></span>
+								<span class="d-none d-md-block">Charities & <br>Communities</span>
+								<span class="d-md-none">Charities & Communities</span>
 							</li>
 						</a>
 						<a href="https://account.parkerbs.com/contact-us">
 							<li>
-								Contact Us <i class="fas fa-fw fa-phone"></i>
+								Contact Us
 							</li>
 						</a>
 					</ul>
