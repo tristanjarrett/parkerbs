@@ -27,7 +27,8 @@
 		<meta name="msapplication-TileColor" content="#ffffff">
 		<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri() . '/images/core/icons/ms-icon-144x144.png'; ?>">
 		<meta name="theme-color" content="#ffffff">
-		<?php wp_head();?>
+		<?php echo pbs_linkedin_meta(); ?>
+		<?php wp_head(); ?>
 	</head>
 
 	<body>

@@ -6,6 +6,7 @@ include 'inc/functions/core/page-title.php';
 include 'inc/functions/core/jquery.php';
 include 'inc/functions/core/post-options.php';
 include 'inc/functions/core/comments.php';
+include 'inc/functions/core/careers.php';
 
 /**
  * include custom post types
