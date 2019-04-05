@@ -18,7 +18,7 @@
 				<div class="col-sm-6 col-lg-3">
 					<h5>Information</h5>
 					<ul>
-						<li><a href="https://account.parkerbs.com/contact-us">Contact Us</a></li>
+						<li><a href="<?php echo site_url() . '/contact-us'; ?>">Contact Us</a></li>
 						<li><a href="<?php echo site_url() . '/about-us'; ?>">About Us</a></li>
 						<li><a href="<?php echo site_url() . '/vacancies'; ?>">Vacancies</a></li>
 						<li><a href="<?php echo site_url() . '/cookies-and-privacy'; ?>">Cookies & Privacy</a></li>
@@ -38,7 +38,7 @@
 				<div class="col-sm-6 col-lg-3">
 					<h5>Our Location</h5>
 					<ul>
-						<li>Unit J1–J4 Franklin House</li>
+						<li>Unit J1 Franklin House</li>
 						<li>Chaucer Business Park</li>
 						<li>Dittons Road</li>
 						<li>Polegate</li>
