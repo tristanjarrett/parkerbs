@@ -1,3 +1,4 @@
+<?php include 'inc/mail/send-email-contact.php'; ?>
 <?php
 /**
  * Use the page slug "contact-us"
@@ -9,6 +10,8 @@
   <div class="pbs-contact-page">
 
     <div class="container-fluid">
+
+      <?php echo $response; ?>
 
       <?php
       if ( have_posts() ) :
@@ -84,37 +87,91 @@
         <h4>Contact Us</h4>
         <hr>
 
-        <form>
+        <form action="<?php the_permalink(); ?>" method="post" enctype="multipart/form-data">
 
-          <div class="form-group">
-            <label for="">First name <span class="pbs-red">*</span></label>
-            <input type="text" class="form-control" id="" placeholder="Joe" required>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="message_fname">First name <span class="pbs-red">*</span></label>
+              <input type="text" class="form-control" name="message_fname" value="<?php echo esc_attr($_POST['message_fname']); ?>" placeholder="Joe" required>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="message_lname">Last name <span class="pbs-red">*</span></label>
+              <input type="text" class="form-control" name="message_lname" value="<?php echo esc_attr($_POST['message_lname']); ?>" placeholder="Bloggs" required>
+            </div>
           </div>
 
           <div class="form-group">
-            <label for="">Last name <span class="pbs-red">*</span></label>
-            <input type="text" class="form-control" id="" placeholder="Bloggs" required>
+            <label for="message_email">Email address <span class="pbs-red">*</span></label>
+            <input type="email" class="form-control" name="message_email" value="<?php echo esc_attr($_POST['message_email']); ?>" placeholder="name@example.com" required>
           </div>
 
           <div class="form-group">
-            <label for="exampleFormControlInput1">Email address <span class="pbs-red">*</span></label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+            <label for="message_number">Contact number <span class="pbs-red">*</span></label>
+            <input type="text" class="form-control" name="message_number" value="<?php echo esc_attr($_POST['message_number']); ?>" placeholder="0844 257 7000" required>
           </div>
 
           <div class="form-group">
-            <label for="exampleFormControlInput1">Telephone / Mobile <span class="pbs-red">*</span></label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="0844 257 7000" required>
+            <label for="message_branch">To help us direct your query, please select your preferred/nearest branch. <span class="pbs-red">*</span></label>
+            <select class="form-control" name="message_branch" required>
+              <option selected disabled>Please select</option>
+              <option value="info@parkerbs.com">Branch Support Centre</option>
+              <option disabled>-----</option>
+              <?php
+				       $args = array(
+								 'post_type' => 'branch',
+								 'posts_per_page' => -1,
+								 'orderby'=> 'title',
+								 'order' => 'ASC'
+							 );
+				       $branches = new WP_Query( $args );
+				       while ( $branches->have_posts() ) : $branches->the_post(); ?>
+
+				         <option value="<?php the_field("email"); ?>"><?php the_title(); ?></option>
+
+              <?php
+                 wp_reset_postdata();
+
+				       endwhile;
+				   		?>
+            </select>
           </div>
 
           <div class="form-group">
-            <label for="exampleFormControlTextarea1">Notes</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+            <label for="message_account">Do you have an account with us? <span class="pbs-red">*</span></label>
+            <select class="form-control" name="message_account" required>
+              <option selected disabled>Please select</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message_acc_no">Account number (Optional)</label>
+            <input class="form-control" type="number" name="message_acc_no" value="<?php echo esc_attr($_POST['message_acc_no']); ?>" placeholder="0001234">
+          </div>
+
+          <div class="form-group">
+            <label for="message_text">Message <span class="pbs-red">*</span></label>
+            <textarea class="form-control" name="message_text" rows="8" required><?php echo esc_textarea($_POST['message_text']); ?></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="message_human">Human verification <span class="pbs-red">*</span></label>
+            <div class="form-row align-items-center">
+              <div class="col col-md-auto">
+                <input type="text" class="form-control" name="message_human" placeholder="What number" required>
+              </div>
+              <div class="col">
+                <span>+ 3 = 5</span>
+              </div>
+            </div>
           </div>
 
           <p class="text-right">Fields marked with ( <span class="pbs-red">*</span> ) are required</p>
 
           <div class="text-right">
-            <button type="submit" class="btn btn-primary">Send</button>
+            <input type="hidden" name="submitted" value="1">
+            <button type="submit" class="btn btn-primary">Submit Message</button>
           </div>
 
         </form>
