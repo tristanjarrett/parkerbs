@@ -18,7 +18,7 @@
 
 				<ul>
 					<li><a href="<?php echo get_bloginfo('wpurl'); ?>">Return Home</a></li>
-					<li><a href="https://account.parkerbs.com/contact-us">Contact Us</a></li>
+					<li><a href="<?php echo site_url() . '/contact-us'; ?>">Contact Us</a></li>
 					<li><a href="https://account.parkerbs.com/store-locator">Store Finder</a></li>
 				</ul>
 
