@@ -29,9 +29,9 @@
 
             <hr>
 
-            <label>Address:</label>
+            <label><strong>Address:</strong></label>
             <ul class="list-unstyled">
-              <li>Unit J1-J4 Franklin House</li>
+              <li>Unit J1 Franklin House</li>
               <li>Chaucer Business Park</li>
               <li>Dittons Road</li>
               <li>Polegate</li>
@@ -39,16 +39,15 @@
               <li>BN26 6JF</li>
             </ul>
 
-            <label>Contact:</label>
+            <label><strong>Contact:</strong></label>
             <ul class="list-unstyled">
               <li><a href="tel:08442577000">0844 257 7000</a></li>
               <li><a href="mailto:info@parkerbs.com">info@parkerbs.com</a></li>
             </ul>
 
-            <label>Office Hours:</label>
+            <label><strong>Office Hours:</strong></label>
             <ul class="list-unstyled">
               <li>Mon - Fri (7:00am to 5:30pm)</li>
-              <li>Sat (8am to 12:30pm)</li>
             </ul>
 
           </div>
