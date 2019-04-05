@@ -1,4 +1,4 @@
-<?php include 'inc/mail/send-email.php'; ?>
+<?php include 'inc/mail/send-email-jobs.php'; ?>
 <?php get_header(); ?>
 
 	<div class="pbs-breadcrumb">
