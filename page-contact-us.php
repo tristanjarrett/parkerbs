@@ -45,7 +45,7 @@
             <label><strong>Contact:</strong></label>
             <ul class="list-unstyled">
               <li><a href="tel:08442577000">0844 257 7000</a></li>
-              <li><a href="mailto:info@parkerbs.com">info@parkerbs.com</a></li>
+              <li><a href="mailto:enquiries@parkerbs.com">enquiries@parkerbs.com</a></li>
             </ul>
 
             <label><strong>Office Hours:</strong></label>
@@ -126,7 +126,7 @@
 				       $branches = new WP_Query( $args );
 				       while ( $branches->have_posts() ) : $branches->the_post(); ?>
 
-				         <option value="<?php the_field("email"); ?>"><?php the_title(); ?></option>
+				         <option value="<?php the_field('email'); ?>"><?php the_title(); ?></option>
 
               <?php
                  wp_reset_postdata();
