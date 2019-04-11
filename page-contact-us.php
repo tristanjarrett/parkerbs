@@ -39,7 +39,7 @@
               <li>Dittons Road</li>
               <li>Polegate</li>
               <li>East Sussex</li>
-              <li>BN26 6JF</li>
+              <li>BN26 6QH</li>
             </ul>
 
             <label><strong>Contact:</strong></label>

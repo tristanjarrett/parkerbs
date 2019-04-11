@@ -43,7 +43,7 @@
 						<li>Dittons Road</li>
 						<li>Polegate</li>
 						<li>East Sussex</li>
-						<li>BN26 6JF</li>
+						<li>BN26 6QH</li>
 						<br>
 						<li><i class="fas fa-fw fa-phone"></i> <a href="tel:08442577000">0844 257 7000</a></li>
 						<li><i class="far fa-fw fa-envelope"></i> <a href="mailto:enquiries@parkerbs.com">enquiries@parkerbs.com</a></li>
