@@ -87,7 +87,7 @@
             <?php
               endwhile;
             else:
-              echo '<div class="alert alert-warning" role="alert">Thank you for your interest in joining Parker Building Supplies. There are no vacancy positions at present however, we are always keen to hear from applicants who are interested in discussing future roles. Please contact <strong>Will Postlethwaite – Recruitment Business Partner – <a href="mailto:will.postlethwaite@parkerbs.com">will.postlethwaite@parkerbs.com</a></strong></div>';
+              echo '<div class="alert alert-warning" role="alert">Thank you for your interest in joining Parker Building Supplies. There are no vacancy positions at present however, we are always keen to hear from applicants who are interested in discussing future roles. Please contact <strong><a href="mailto:recruitment@parkerbs.com">recruitment@parkerbs.com</a></strong></div>';
             endif;
             ?>
 

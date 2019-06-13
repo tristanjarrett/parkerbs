@@ -23,7 +23,7 @@
   $not_human       = "Human verification incorrect. Please try again.";
   $missing_content = "Please complete all required fields.";
   $email_invalid   = "Email address invalid.";
-  $message_unsent  = "An error occurred, please try again. If this continues then please report it to <a href='mailto:info@parkerbs.com'>info@parkerbs.com</a>";
+  $message_unsent  = "An error occurred, please try again. If this continues then please report it to <a href='mailto:enquiries@parkerbs.com'>enquiries@parkerbs.com</a>";
   $message_sent    = "Thank you, your application has been submitted.";
 
   // user posted variables
@@ -38,7 +38,7 @@
   move_uploaded_file($_FILES["message_resume"]["tmp_name"], WP_CONTENT_DIR . '/uploads/' . basename($_FILES['message_resume']['name']));
 
   // php mailer variables
-  $to          = "webcareers@parkerbs.com";
+  $to          = "recruitment@parkerbs.com";
   $subject     = "Application for " . get_the_title() . " at " . get_post_meta($post->ID, 'custom_input', true) . " via the website";
   $headers     = 'From: '. $email . "\r\n" . 'Reply-To: ' . $email . "\r\n";
   $body        = "First name: " . $fname . "\n" . "Last name: " . $lname. "\n" . "Email: " . $email. "\n" . "Contact number: " . $number . "\n" . "Notes: " . $message . "\n";

@@ -21,7 +21,7 @@
   $not_human       = "Human verification incorrect. Please try again.";
   $missing_content = "Please complete all required fields.";
   $email_invalid   = "Email address invalid.";
-  $message_unsent  = "An error occurred, please try again. If this continues then please report it to <a href='mailto:info@parkerbs.com'>info@parkerbs.com</a>";
+  $message_unsent  = "An error occurred, please try again. If this continues then please report it to <a href='mailto:enquiries@parkerbs.com'>enquiries@parkerbs.com</a>";
   $message_sent    = "Thank you, your message has been sent successfully. We will be in touch soon.";
 
   // user posted variables
