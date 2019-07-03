@@ -27,55 +27,25 @@
 
 // Promotion Carousel
 .pbs-home-promotions {
-	background-color: #ffffff;
-	position: relative;
-	.pbs-slide {
-		background-size: cover;
-		background-position: center;
-		background-color: #cccccc;
-		.pbs-overlay {
-			padding: 50px 30px;
-			.pbs-featured {
-				height: 250px;
-				width: auto;
-				@media (max-width: 767.98px) {
-					height: 180px;
-				}
-				@media (min-width: 768px) and (max-width: 991.98px) {
-					height: 200px;
-				}
-				@media (min-width: 992px) and (max-width: 1199.98px) {
-					height: 220px;
-				}
-			}
-			.pbs-jumbotron {
-				color: #333333;
-				.pbs-title {
-					background-color: rgba(0, 0, 0, 0.6);
-					color: #ffffff;
-					padding: 15px;
-					text-shadow: 1px 1px 1px #666666;
-					display: inline-block;
-				}
-				.pbs-button {
-					padding: 15px;
-					display: inline-block;
-					background-color: rgba(67, 169, 172, 0.8);
-					color: #ffffff !important;
-					text-shadow: 1px 1px 1px #666666;
-					font-weight: bold;
-					&:hover {
-						background-color: #44a8ab;
-					}
-				}
-			}
-			.row {
-				@media (max-width: 767.98px) {
-					flex-direction: row-reverse;
-				}
-			}
-		}
-	}
+  background-color: #FFFFFF;
+  position: relative;
+  .pbs-slide {
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    .pbs-overlay {
+      background-color: rgba(67, 169, 172, 0.9);
+      padding: 30px 0px;
+      color: #FFFFFF;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      h5 {
+        margin-bottom: 0px;
+        text-shadow: 1px 1px 1px #666666;
+      }
+    }
+  }
 }
 
 // About
