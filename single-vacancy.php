@@ -142,7 +142,7 @@
 											<div class="pbs-icon"><i class="fas fa-fw fa-user-tie"></i></div>
 											<div>
 												<?php the_title(); ?>
-												<span class="d-block text-muted">Location - <?php echo get_post_meta($post->ID, 'custom_input', true); ?></span>
+												<span class="d-block text-muted"><?php echo get_post_meta($post->ID, 'custom_input', true); ?></span>
 											</div>
 										</a>
 									</li>
