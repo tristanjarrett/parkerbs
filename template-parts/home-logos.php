@@ -6,6 +6,7 @@
 		<div class="slide"><img src="<?php echo get_bloginfo( 'template_directory' ) . '/images/suppliers/arborforest.jpg'; ?>" alt="arborforest"></div>
 		<div class="slide"><img src="<?php echo get_bloginfo( 'template_directory' ) . '/images/suppliers/celcon.jpg'; ?>" alt="celcon"></div>
 		<div class="slide"><img src="<?php echo get_bloginfo( 'template_directory' ) . '/images/suppliers/cemex.jpg'; ?>" alt="cemex"></div>
+		<div class="slide"><img src="<?php echo get_bloginfo( 'template_directory' ) . '/images/suppliers/day.jpg'; ?>" alt="day"></div>
 		<div class="slide"><img src="<?php echo get_bloginfo( 'template_directory' ) . '/images/suppliers/dewalt.jpg'; ?>" alt="dewalt"></div>
 		<div class="slide"><img src="<?php echo get_bloginfo( 'template_directory' ) . '/images/suppliers/faithfull.jpg'; ?>" alt="faithfull"></div>
 		<div class="slide"><img src="<?php echo get_bloginfo( 'template_directory' ) . '/images/suppliers/fakro.jpg'; ?>" alt="fakro"></div>
