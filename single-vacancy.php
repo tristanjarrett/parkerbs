@@ -97,6 +97,11 @@
 					   		<textarea class="form-control" name="message_text" rows="8"><?php echo esc_textarea($_POST['message_text']); ?></textarea>
 							</div>
 
+							<div class="form-check form-group">
+						    <input type="checkbox" class="form-check-input" id="pbsAcceptTerms" required>
+						    <label class="form-check-label" for="pbsAcceptTerms">I have read and I agree to the <a href="#">use of my information as detailed here</a> <span class="pbs-red">*</span></label>
+						  </div>
+
 							<div class="form-group">
 								<label for="message_human">Human verification <span class="pbs-red">*</span></label>
 								<div class="form-row align-items-center">
