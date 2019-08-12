@@ -1081,6 +1081,20 @@ img {
   padding: 20px 0px;
 }
 
+/**
+ * Case Studies page
+ */
+.pbs-case-studies-page {
+  padding: 30px 0px;
+}
+
+/**
+ * Case Study page
+ */
+.pbs-case-study-page {
+  padding: 30px 0px;
+}
+
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors

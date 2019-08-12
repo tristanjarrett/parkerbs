@@ -11,9 +11,10 @@ include 'inc/functions/core/careers.php';
 /**
  * include custom post types
  */
-include 'inc/functions/cpt/promotions.php';
 include 'inc/functions/cpt/branches.php';
+include 'inc/functions/cpt/case-studies.php';
 include 'inc/functions/cpt/products.php';
+include 'inc/functions/cpt/promotions.php';
 include 'inc/functions/cpt/vacancies.php';
 
 /**
