@@ -155,10 +155,9 @@
 								<span>Careers</span>
 							</li>
 						</a>
-						<a href="<?php echo site_url() . '/charities-and-communities'; ?>">
+						<a href="<?php echo site_url() . '/case-studies'; ?>">
 							<li>
-								<span class="d-none d-md-block">Charities & <br>Communities</span>
-								<span class="d-md-none">Charities & Communities</span>
+								<span>Case Studies</span>
 							</li>
 						</a>
 						<a href="<?php echo site_url() . '/contact-us'; ?>">
