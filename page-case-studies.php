@@ -13,8 +13,7 @@
 	<div class="pbs-case-studies-page">
 
 		<div class="container-fluid">
-			<h3><?php the_title(); ?></h3>
-			<hr>
+			<h3 class="mb-3"><?php the_title(); ?></h3>
 			<div class="mb-4">
 				<?php
 				if ( have_posts() ) :
@@ -28,39 +27,38 @@
 			<?php
 			 $args = array(
 				 'post_type' => 'case-study',
-				 'posts_per_page' => -1,
-				 'orderby'=> 'title',
-				 'order' => 'ASC'
+				 'posts_per_page' => -1
 			 );
 			 $case_studies = new WP_Query( $args );
 			 while ( $case_studies->have_posts() ) : $case_studies->the_post(); ?>
 
-				<div class="row mb-4">
-					<div class="col-sm-3 mb-4">
+			 <div class="pbs_single">
+				<div class="row">
+					<div class="col-md-3 mb-4">
 
 					<a href="<?php the_permalink(); ?>">
 						<?php if ( has_post_thumbnail() ) { ?>
 							<?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
-							<img src="<?php echo $thumb['0']; ?>" alt="">
+							<img src="<?php echo $thumb['0']; ?>" alt="" class="pbs_thumb">
 							<?php } else { ?>
-							<img src="<?php echo get_bloginfo( 'template_directory' ) . '/images/core/thumbnail.svg'; ?>" alt="">
+							<img src="<?php echo get_bloginfo( 'template_directory' ) . '/images/core/thumbnail.svg'; ?>" alt="" class="pbs_thumb">
 						<?php } ?>
 					</a>
 
 					</div>
-					<div class="col-sm-9">
-						<p class="text-muted"><?php the_date(); ?></p>
+					<div class="col-md-9">
+						<p class="text-muted"><?php echo get_the_date(); ?></p>
 						<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-						<span class="mb-3" style="display: block; text-overflow: ellipsis; word-wrap: break-word; overflow: hidden; max-height: 12em; line-height: 1.6em;">
+						<div class="pbs_preview">
 							<?php the_content(); ?>
-						</span>
+						</div>
 
-						<a href="<?php the_permalink(); ?>" class="btn btn-primary">Read more</a>
+						<a href="<?php the_permalink(); ?>" class="btn btn-primary">Read more <i class="fas fa-fw fa-chevron-circle-right fa-lg"></i></a>
 
 					</div>
 				</div>
 
-
+			</div>
 
 				<?php wp_reset_postdata(); ?>
 
