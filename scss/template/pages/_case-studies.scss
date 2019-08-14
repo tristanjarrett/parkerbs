@@ -20,6 +20,9 @@
 			max-height: 12em;
 			line-height: 1.5em;
 			margin-bottom: 1rem;
+			img {
+				display: none;
+			}
 			p {
 				margin-bottom: 1.5em; // to prevent text being cut in half if there is a paragraph
 			}

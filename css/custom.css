@@ -1105,6 +1105,9 @@ img {
   line-height: 1.5em;
   margin-bottom: 1rem;
 }
+.pbs-case-studies-page .pbs_single .pbs_preview img {
+  display: none;
+}
 .pbs-case-studies-page .pbs_single .pbs_preview p {
   margin-bottom: 1.5em;
 }
@@ -1117,6 +1120,9 @@ img {
  */
 .pbs-case-study-page {
   padding: 30px 0px;
+}
+.pbs-case-study-page img {
+  height: auto;
 }
 
 /*!
