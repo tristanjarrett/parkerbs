@@ -17,7 +17,7 @@
 		<div class="container-fluid">
 
 			<div class="pbs-content">
-				<h3><?php the_title(); ?></h3>
+				<h3 class="pbs-title"><?php the_title(); ?></h3>
 				<hr>
 
 				<?php
