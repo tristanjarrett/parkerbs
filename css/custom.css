@@ -1093,8 +1093,9 @@ img {
   border-top: solid 1px #e1e1e1;
 }
 .pbs-case-studies-page .pbs_single .pbs_thumb {
-  width: 100%;
-  height: auto;
+  padding-top: 66.66%;
+  background-position: center;
+  background-size: cover;
 }
 .pbs-case-studies-page .pbs_single .pbs_preview {
   display: block;
@@ -1108,11 +1109,14 @@ img {
 .pbs-case-studies-page .pbs_single .pbs_preview img {
   display: none;
 }
+.pbs-case-studies-page .pbs_single .pbs_preview ul {
+  display: none;
+}
+.pbs-case-studies-page .pbs_single .pbs_preview figure {
+  display: none;
+}
 .pbs-case-studies-page .pbs_single .pbs_preview p {
   margin-bottom: 1.5em;
-}
-.pbs-case-studies-page .pbs_single .pbs_preview::after {
-  content: "[...]";
 }
 
 /**
@@ -1123,6 +1127,44 @@ img {
 }
 .pbs-case-study-page img {
   height: auto;
+}
+
+/**
+ * Archives page
+ */
+.pbs-archives-page {
+  padding: 30px 0px;
+}
+.pbs-archives-page .pbs_single {
+  padding-top: 2rem;
+  margin-top: 2rem;
+  border-top: solid 1px #e1e1e1;
+}
+.pbs-archives-page .pbs_single .pbs_thumb {
+  padding-top: 66.66%;
+  background-position: center;
+  background-size: cover;
+}
+.pbs-archives-page .pbs_single .pbs_preview {
+  display: block;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow: hidden;
+  max-height: 12em;
+  line-height: 1.5em;
+  margin-bottom: 1rem;
+}
+.pbs-archives-page .pbs_single .pbs_preview img {
+  display: none;
+}
+.pbs-archives-page .pbs_single .pbs_preview ul {
+  display: none;
+}
+.pbs-archives-page .pbs_single .pbs_preview figure {
+  display: none;
+}
+.pbs-archives-page .pbs_single .pbs_preview p {
+  margin-bottom: 1.5em;
 }
 
 /*!

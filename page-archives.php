@@ -10,7 +10,7 @@
 		</nav>
 	</div>
 
-	<div class="pbs-case-studies-page">
+	<div class="pbs-archives-page">
 
 		<div class="container-fluid">
 			<h3 class="mb-3"><?php the_title(); ?></h3>
@@ -26,8 +26,7 @@
 
 			<?php
 			 $args = array(
-				 'post_type' => 'case-study',
-				 'posts_per_page' => -1
+				 'posts_per_page' => -1,
 			 );
 			 $case_studies = new WP_Query( $args );
 			 while ( $case_studies->have_posts() ) : $case_studies->the_post(); ?>

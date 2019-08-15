@@ -21,6 +21,7 @@
 						<li><a href="<?php echo site_url() . '/contact-us'; ?>">Contact Us</a></li>
 						<li><a href="<?php echo site_url() . '/about-us'; ?>">About Us</a></li>
 						<li><a href="<?php echo site_url() . '/case-studies'; ?>">Case Studies</a></li>
+						<li><a href="<?php echo site_url() . '/archives'; ?>">Archives</a></li>
 						<li><a href="<?php echo site_url() . '/charities-and-communities'; ?>">Charities & Communities</a></li>
 						<li><a href="<?php echo site_url() . '/vacancies'; ?>">Careers</a></li>
 						<li><a href="<?php echo site_url() . '/terms-and-conditions'; ?>">Terms & Conditions</a></li>
