@@ -99,7 +99,7 @@
 
 							<div class="form-check form-group">
 						    <input type="checkbox" class="form-check-input" id="pbsAcceptTerms" required>
-						    <label class="form-check-label" for="pbsAcceptTerms">I have read and I agree to the <a href="#">use of my information as detailed here</a> <span class="pbs-red">*</span></label>
+						    <label class="form-check-label" for="pbsAcceptTerms">I have read and I agree to <a href="<?php echo get_bloginfo( 'template_directory' ) . '/files/legal/gdpr-data-privacy.pdf'; ?>" target="_blank">the use of my personal information as detailed here</a> <span class="pbs-red">*</span></label>
 						  </div>
 
 							<div class="form-group">
