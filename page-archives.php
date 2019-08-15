@@ -48,7 +48,7 @@
 					<div class="col-md-9">
 						<p class="text-muted"><?php echo get_the_date(); ?></p>
 						<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-						<div class="pbs_preview">
+						<div class="pbs_preview pt-1">
 							<?php the_content(); ?>
 						</div>
 
