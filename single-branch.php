@@ -72,6 +72,32 @@
                   <span>E: <a href="mailto:<?php the_field("email_plumbing"); ?>"><?php the_field("email_plumbing"); ?></a></span>
                 <?php endif; ?>
 
+                <?php if( get_field('ironmongery_details') ): ?>
+                  <br><br>
+                  <strong>Ironmongery Departent: </strong>
+                  <br>
+                  <span>T: <a href="tel:<?php the_field("phone_ironmongery"); ?>"><?php the_field("phone_ironmongery"); ?></a></span>
+                  <br>
+                  <span>E: <a href="mailto:<?php the_field("email_ironmongery"); ?>"><?php the_field("email_ironmongery"); ?></a></span>
+                <?php endif; ?>
+
+                <?php if( get_field('joinery_details') ): ?>
+                  <br><br>
+                  <strong>Joinery Departent: </strong>
+                  <br>
+                  <span>T: <a href="tel:<?php the_field("phone_joinery"); ?>"><?php the_field("phone_joinery"); ?></a></span>
+                  <br>
+                  <span>E: <a href="mailto:<?php the_field("email_joinery"); ?>"><?php the_field("email_joinery"); ?></a></span>
+                <?php endif; ?>
+
+                <?php if( get_field('kitchens_details') ): ?>
+                  <br><br>
+                  <strong>Kitchens Departent: </strong>
+                  <br>
+                  <span>T: <a href="tel:<?php the_field("phone_kitchens"); ?>"><?php the_field("phone_kitchens"); ?></a></span>
+                  <br>
+                  <span>E: <a href="mailto:<?php the_field("email_kitchens"); ?>"><?php the_field("email_kitchens"); ?></a></span>
+                <?php endif; ?>
 
               </div>
               <br>
