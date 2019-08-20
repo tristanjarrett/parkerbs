@@ -21,7 +21,8 @@ function pbs_post_casestudy() {
       'menu_position' => null,
       'rewrite' => array(
         'slug' => 'case-studies'
-      )
+      ),
+      'show_in_rest' => true,
     )
   );
 }
