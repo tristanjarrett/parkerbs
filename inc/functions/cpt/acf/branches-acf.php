@@ -2,7 +2,7 @@
 /**
  * ACP options for Branches
  */
- 
+
 if( function_exists('acf_add_local_field_group') ):
 
 acf_add_local_field_group(array(
@@ -178,6 +178,66 @@ acf_add_local_field_group(array(
 			'type' => 'email',
 			'instructions' => '',
 			'required' => 1,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'placeholder' => '',
+			'prepend' => '',
+			'append' => '',
+		),
+    array(
+			'key' => 'field_5d5bfa7c09fab',
+			'label' => 'Plumbing Details',
+			'name' => 'plumbing_details',
+			'type' => 'true_false',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'choices' => array(
+			),
+			'allow_custom' => 0,
+			'default_value' => array(
+			),
+			'layout' => 'vertical',
+			'toggle' => 0,
+			'return_format' => 'value',
+			'save_custom' => 0,
+		),
+    array(
+			'key' => 'field_5d5bfa9f09fac',
+			'label' => 'Phone Plumbing',
+			'name' => 'phone_plumbing',
+			'type' => 'text',
+			'instructions' => 'Phone Number',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'placeholder' => '',
+			'prepend' => '',
+			'append' => '',
+			'maxlength' => '',
+		),
+    array(
+			'key' => 'field_5d5bfac209fad',
+			'label' => 'Email Plumbing',
+			'name' => 'email_plumbing',
+			'type' => 'email',
+			'instructions' => '',
+			'required' => 0,
 			'conditional_logic' => 0,
 			'wrapper' => array(
 				'width' => '',

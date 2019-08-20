@@ -62,6 +62,17 @@
                 <span>T: <a href="tel:<?php the_field("phone"); ?>"><?php the_field("phone"); ?></a></span>
                 <br>
                 <span>E: <a href="mailto:<?php the_field("email"); ?>"><?php the_field("email"); ?></a></span>
+
+                <?php if( get_field('plumbing_details') ): ?>
+                  <br><br>
+                  <strong>Plumbing Departent: </strong>
+                  <br>
+                  <span>T: <a href="tel:<?php the_field("phone_plumbing"); ?>"><?php the_field("phone_plumbing"); ?></a></span>
+                  <br>
+                  <span>E: <a href="mailto:<?php the_field("email_plumbing"); ?>"><?php the_field("email_plumbing"); ?></a></span>
+                <?php endif; ?>
+
+
               </div>
               <br>
               <div class="pbs-opening-hours">
