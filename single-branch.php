@@ -65,7 +65,7 @@
 
                 <?php if( get_field('plumbing_details') ): ?>
                   <br><br>
-                  <strong>Plumbing Departent: </strong>
+                  <strong>Plumbing Department: </strong>
                   <br>
                   <span>T: <a href="tel:<?php the_field("phone_plumbing"); ?>"><?php the_field("phone_plumbing"); ?></a></span>
                   <br>
@@ -74,7 +74,7 @@
 
                 <?php if( get_field('ironmongery_details') ): ?>
                   <br><br>
-                  <strong>Ironmongery Departent: </strong>
+                  <strong>Ironmongery Department: </strong>
                   <br>
                   <span>T: <a href="tel:<?php the_field("phone_ironmongery"); ?>"><?php the_field("phone_ironmongery"); ?></a></span>
                   <br>
@@ -83,7 +83,7 @@
 
                 <?php if( get_field('joinery_details') ): ?>
                   <br><br>
-                  <strong>Joinery Departent: </strong>
+                  <strong>Joinery Department: </strong>
                   <br>
                   <span>T: <a href="tel:<?php the_field("phone_joinery"); ?>"><?php the_field("phone_joinery"); ?></a></span>
                   <br>
@@ -92,7 +92,7 @@
 
                 <?php if( get_field('kitchens_details') ): ?>
                   <br><br>
-                  <strong>Kitchens Departent: </strong>
+                  <strong>Kitchens Department: </strong>
                   <br>
                   <span>T: <a href="tel:<?php the_field("phone_kitchens"); ?>"><?php the_field("phone_kitchens"); ?></a></span>
                   <br>
