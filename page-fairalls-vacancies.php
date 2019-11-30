@@ -1,6 +1,6 @@
 <?php
 /**
- * Use the page slug "vacancies"
+ * Use the page slug "fairalls-vacancies"
  */
  ?>
 
@@ -39,7 +39,7 @@
         $argsCount = array(
           'post_type' => 'vacancy',
           'post_status' => 'publish',
-          'category_name' => 'parkers',
+          'category_name' => 'fairalls',
           'numberposts' => -1
         );
         $postNum = count( get_posts( $argsCount ) );
@@ -54,7 +54,7 @@
             $args = array(
               'post_type' => 'vacancy',
               'posts_per_page' => 10,
-              'category_name' => 'parkers',
+              'category_name' => 'fairalls',
               'paged' => get_query_var('paged') ? get_query_var('paged') : 1
             );
             $vacancy_loop = new WP_Query($args);
@@ -130,11 +130,11 @@
         <h4 class="mb-3 pbs-font pbs-heading">More Careers from Parker Group</h4>
         <div class="row">
           <div class="col-md-4">
-            <div class="pbs-item pbs-fairalls">
+            <div class="pbs-item pbs-parkers">
               <div class="pbs-img-back">
-                <div class="pbs-img" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/images/group/fairalls-logo.png');"></div>
+                <div class="pbs-img" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/images/group/parkers-logo.png');"></div>
               </div>
-              <a href="<?php echo site_url() . '/fairalls-vacancies'; ?>">See Vacancies <i class="fas fa-fw fa-chevron-circle-right fa-lg"></i></a>
+              <a href="<?php echo site_url() . '/vacancies'; ?>">See Vacancies <i class="fas fa-fw fa-chevron-circle-right fa-lg"></i></a>
             </div>
           </div>
           <div class="col-md-4">

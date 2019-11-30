@@ -10,7 +10,7 @@ function pbs_post_vacancy() {
         'singular_name' => __( 'Vacancy', 'parkerbs' )
       ),
       'public' => true,
-      'has_archive' => false,
+      'has_archive' => true,
       'publicly_queryable'  => true,
       'supports' => array(
         'title',
@@ -20,8 +20,9 @@ function pbs_post_vacancy() {
       'menu_icon' => 'dashicons-businessman',
       'menu_position' => null,
       'rewrite' => array(
-        'slug' => 'vacancies'
+        'slug' => 'vacancy'
       ),
+      'taxonomies' => array( 'category' ),
       'capability_type' => array('pbs_vacancy', 'pbs_vacancies'),
       'map_meta_cap' => true
     )

@@ -4,7 +4,47 @@
 
 .pbs-vacancies-page {
 	padding-top: 30px;
-  background-color: #ffffff;
+	background-color: #ffffff;
+	.pbs-group {
+		margin-bottom: 1rem;
+		.pbs-item {
+			margin-bottom: 1rem;
+			border: solid 1px #e1e1e1;
+			&.pbs-parkers {
+				background-color: #44a8ab;
+			}
+			&.pbs-stamco {
+				background-color: #f9f9f9;
+			}
+			&.pbs-fairalls {
+				background-color: #006231;
+			}
+			&.pbs-chandlers {
+				background-color: #00652e;
+			}
+			.pbs-img-back {
+				padding: 1rem;
+			}
+			.pbs-img {
+				width: 100%;
+				padding-bottom: 50%;
+				background-position: center;
+				background-size: contain;
+				background-repeat: no-repeat;
+			}
+		}
+		a {
+			display: block;
+			background-color: #ffffff;
+			border-top: solid 1px #e1e1e1;
+			padding: 1rem;
+			text-align: right;
+			font-weight: bold;
+			&:hover {
+				background-color: #f9f9f9;
+			}
+		}
+	}
 	.pbs-content {
 		background-color: #ffffff;
 		margin-bottom: 30px;
@@ -29,5 +69,28 @@
 	      }
 	    }
 	  }
+	}
+	.my-pagination {
+		padding-top: 2rem;
+		text-align: right;
+		.my-item {
+			border: solid 1px #e1e1e1;
+			display: inline-block;
+			border-radius: .25rem;
+			color: #44a8ab;
+			span,
+			a {
+				display: inline-block;
+				padding: .25rem .75rem;
+				border-right: solid 1px #e1e1e1;
+				margin-left: -4px;
+				&:last-child {
+					border-right: none;
+				}
+				&:first-child {
+					margin-left: 0;
+				}
+			}
+		}
 	}
 }

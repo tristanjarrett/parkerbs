@@ -856,6 +856,46 @@ img {
   padding-top: 30px;
   background-color: #ffffff;
 }
+.pbs-vacancies-page .pbs-group {
+  margin-bottom: 1rem;
+}
+.pbs-vacancies-page .pbs-group .pbs-item {
+  margin-bottom: 1rem;
+  border: solid 1px #e1e1e1;
+}
+.pbs-vacancies-page .pbs-group .pbs-item.pbs-parkers {
+  background-color: #44a8ab;
+}
+.pbs-vacancies-page .pbs-group .pbs-item.pbs-stamco {
+  background-color: #f9f9f9;
+}
+.pbs-vacancies-page .pbs-group .pbs-item.pbs-fairalls {
+  background-color: #006231;
+}
+.pbs-vacancies-page .pbs-group .pbs-item.pbs-chandlers {
+  background-color: #00652e;
+}
+.pbs-vacancies-page .pbs-group .pbs-item .pbs-img-back {
+  padding: 1rem;
+}
+.pbs-vacancies-page .pbs-group .pbs-item .pbs-img {
+  width: 100%;
+  padding-bottom: 50%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.pbs-vacancies-page .pbs-group a {
+  display: block;
+  background-color: #ffffff;
+  border-top: solid 1px #e1e1e1;
+  padding: 1rem;
+  text-align: right;
+  font-weight: bold;
+}
+.pbs-vacancies-page .pbs-group a:hover {
+  background-color: #f9f9f9;
+}
 .pbs-vacancies-page .pbs-content {
   background-color: #ffffff;
   margin-bottom: 30px;
@@ -878,6 +918,31 @@ img {
 .pbs-vacancies-page .pbs-content .pbs-posts ul li a {
   display: block;
   padding: 12px 0px;
+}
+.pbs-vacancies-page .my-pagination {
+  padding-top: 2rem;
+  text-align: right;
+}
+.pbs-vacancies-page .my-pagination .my-item {
+  border: solid 1px #e1e1e1;
+  display: inline-block;
+  border-radius: 0.25rem;
+  color: #44a8ab;
+}
+.pbs-vacancies-page .my-pagination .my-item span,
+.pbs-vacancies-page .my-pagination .my-item a {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-right: solid 1px #e1e1e1;
+  margin-left: -4px;
+}
+.pbs-vacancies-page .my-pagination .my-item span:last-child,
+.pbs-vacancies-page .my-pagination .my-item a:last-child {
+  border-right: none;
+}
+.pbs-vacancies-page .my-pagination .my-item span:first-child,
+.pbs-vacancies-page .my-pagination .my-item a:first-child {
+  margin-left: 0;
 }
 
 /**

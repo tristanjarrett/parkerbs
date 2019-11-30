@@ -6,7 +6,7 @@
 			<ul>
 				<li><a href="<?php echo site_url(); ?>">Home</a></li>
 				<li>/</li>
-				<li><a href="<?php echo site_url() . '/vacancies'; ?>">Vacancies</a></li>
+				<li><a href="<?php echo site_url() . '/fairalls-vacancies'; ?>">Vacancies</a></li>
 				<li>/</li>
 				<li class="text-muted"><?php the_title(); ?> - <?php echo get_post_meta($post->ID, 'custom_input', true); ?></li>
 			</ul>
@@ -117,7 +117,7 @@
 								 'orderby'=> 'title',
 								 'order' => 'ASC',
 								 'post__not_in' => array( $post->ID ),
-								 'category_name' => 'parkers'
+								 'category_name' => 'fairalls'
 							 );
 				       $branches = new WP_Query( $args );
 							 if ( $branches->have_posts() ):
