@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 		<title><?php pbs_title(); ?></title>
 		<!-- stylesheets -->
-		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() . '/css/custom.css'; ?>">
+		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() . '/css/custom.css?date-' . date('hdmy'); ?>">
 		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() . '/assets/slick/css/slick.min.css'; ?>">
 		<!-- google fonts -->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Franklin">
