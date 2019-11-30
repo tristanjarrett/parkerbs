@@ -4,6 +4,7 @@
 		<div class="slide"><img src="<?php echo get_bloginfo( 'template_directory' ) . '/images/suppliers/aliaxis.jpg'; ?>" alt="aliaxis"></div>
 		<div class="slide"><img src="<?php echo get_bloginfo( 'template_directory' ) . '/images/suppliers/alutec.jpg'; ?>" alt="alutec"></div>
 		<div class="slide"><img src="<?php echo get_bloginfo( 'template_directory' ) . '/images/suppliers/arborforest.jpg'; ?>" alt="arborforest"></div>
+		<div class="slide"><img src="<?php echo get_bloginfo( 'template_directory' ) . '/images/suppliers/bereco.jpg'; ?>" alt="bereco"></div>
 		<div class="slide"><img src="<?php echo get_bloginfo( 'template_directory' ) . '/images/suppliers/celcon.jpg'; ?>" alt="celcon"></div>
 		<div class="slide"><img src="<?php echo get_bloginfo( 'template_directory' ) . '/images/suppliers/cemex.jpg'; ?>" alt="cemex"></div>
 		<div class="slide"><img src="<?php echo get_bloginfo( 'template_directory' ) . '/images/suppliers/day.jpg'; ?>" alt="day"></div>
