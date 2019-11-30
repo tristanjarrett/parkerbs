@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+	<?php get_template_part( 'template-parts/header-content' ); ?>
+
 	<div class="pbs-404-section">
 
 		<div class="container-fluid">
@@ -27,5 +29,7 @@
 		</div>
 
 	</div>
+
+	<?php get_template_part( 'template-parts/footer-content' ); ?>
 
 <?php get_footer(); ?>

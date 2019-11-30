@@ -7,6 +7,8 @@
 
 <?php get_header(); ?>
 
+  <?php get_template_part( 'template-parts/header-content' ); ?>
+
   <div class="pbs-contact-page">
 
     <div class="container-fluid">
@@ -181,5 +183,7 @@
   	</div>
 
   </div>
+
+  <?php get_template_part( 'template-parts/footer-content' ); ?>
 
 <?php get_footer(); ?>

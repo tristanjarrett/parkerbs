@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+	<?php get_template_part( 'template-parts/header-content' ); ?>
+
 	<!-- jumbotron -->
 	<?php get_template_part( 'template-parts/home-promotions' ); ?>
 	<!-- ./jumbotron -->
@@ -19,5 +21,7 @@
 	<!-- logos -->
 	<?php get_template_part( 'template-parts/home-logos' ); ?>
 	<!-- ./logos -->
+
+	<?php get_template_part( 'template-parts/footer-content' ); ?>
 
 <?php get_footer(); ?>

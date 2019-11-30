@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+	<?php get_template_part( 'template-parts/header-content' ); ?>
+
 	<div class="pbs-post-section">
 		<div class="container-fluid">
 			<div class="row">
@@ -68,5 +70,7 @@
 	</div>
 
 	<?php get_template_part( 'template-parts/post-news' ); ?>
+
+	<?php get_template_part( 'template-parts/footer-content' ); ?>
 
 <?php get_footer(); ?>
