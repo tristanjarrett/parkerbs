@@ -1,6 +1,8 @@
 <?php include 'inc/mail/send-email-jobs.php'; ?>
 <?php get_header(); ?>
 
+	<?php get_template_part( 'template-parts/group/stamco-header' ); ?>
+
 	<div class="pbs-breadcrumb">
 		<nav class="container-fluid">
 			<ul>
@@ -97,7 +99,7 @@
 
 							<div class="text-right">
 								<input type="hidden" name="submitted" value="1">
-								<button type="submit" class="btn btn-primary">Submit Application</button>
+								<button type="submit" class="btn btn-stamco">Submit Application</button>
 							</div>
 
 						</form>
@@ -108,7 +110,7 @@
 
 				<div class="col-lg-3">
 					<div class="pbs-sidebar">
-						<h4 class="text-center mb-3 pbs-font pbs-heading">More Vacancies</h4>
+						<h4 class="text-center mb-3 pbs-font pbs-stamco-heading">More Vacancies</h4>
 						<ul>
 							<?php
 				       $args = array(
@@ -147,5 +149,7 @@
 			</div>
 		</div>
 	</div>
+
+	<?php get_template_part( 'template-parts/group/stamco-footer' ); ?>
 
 <?php get_footer(); ?>

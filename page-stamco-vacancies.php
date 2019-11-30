@@ -6,6 +6,8 @@
 
 <?php get_header(); ?>
 
+  <?php get_template_part( 'template-parts/group/stamco-header' ); ?>
+
   <div class="pbs-breadcrumb">
     <nav class="container-fluid">
       <ul>
@@ -21,7 +23,7 @@
 
       <div class="pbs-content">
 
-        <h4 class="mb-3 pbs-font pbs-heading">Careers</h4>
+        <h4 class="mb-3 pbs-font pbs-stamco-heading">Careers</h4>
         <hr>
         <?php
         if ( have_posts() ) :
@@ -127,7 +129,7 @@
       </div>
 
       <div class="pbs-group">
-        <h4 class="mb-3 pbs-font pbs-heading">More Careers from Parker Group</h4>
+        <h4 class="mb-3 pbs-font pbs-stamco-heading">More Careers from Parker Group</h4>
         <div class="row">
           <div class="col-md-4">
             <div class="pbs-item pbs-fairalls">
@@ -158,5 +160,7 @@
 
     </div>
   </div>
+
+  <?php get_template_part( 'template-parts/group/stamco-footer' ); ?>
 
 <?php get_footer(); ?>

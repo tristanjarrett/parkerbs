@@ -94,3 +94,66 @@
 		}
 	}
 }
+
+
+// Stamco
+.pbs-stamco-page {
+	.pbs-stamco-header {
+		padding: 1rem 0;
+		border-bottom: solid 1px #e1e1e1;
+	}
+	.pbs-stamco-footer {
+		padding: 1rem 0;
+		background-color: #00497f;
+		color: #ffffff;
+	}
+	.pbs-stamco-heading {
+		color: #00497f;
+		text-transform: uppercase;
+	}
+	a {
+		color: #00497f !important;
+	}
+}
+
+// Chandlers
+.pbs-chandlers-page {
+	.pbs-chandlers-header {
+		padding: 1rem 0;
+		background-color: #00652e;
+		color: #ffffff;
+	}
+	.pbs-chandlers-footer {
+		padding: 1rem 0;
+		background-color: #00652e;
+		color: #ffffff;
+	}
+	.pbs-chandlers-heading {
+		color: #00652e;
+		text-transform: uppercase;
+	}
+	a {
+		color: #00652e !important;
+	}
+}
+
+// Fairalls
+.pbs-fairalls-page {
+	.pbs-fairalls-header {
+		padding: 1rem 0;
+		background-color: #006231;
+		color: #ffffff;
+	}
+	.pbs-fairalls-footer {
+		padding: 1rem 0;
+		background-color: #006231;
+		color: #ffffff;
+	}
+	.pbs-fairalls-heading {
+		color: #006231;
+		text-transform: uppercase;
+	}
+	a {
+		color: #006231 !important;
+	}
+}
