@@ -1,8 +1,10 @@
-        <footer class="pbs-stamco-footer">
-            <div class="container-fluid">
-                <span>&copy; <?php echo date('Y'); ?> Stamco Building Supplies. All Rights Reserved.</span>
-            </div>
-        </footer>
+            <footer class="pbs-stamco-footer">
+                <div class="container-fluid">
+                    <span>&copy; <?php echo date('Y'); ?> Stamco Building Supplies. All Rights Reserved.</span>
+                </div>
+            </footer>
+
+        </div>
     
         <!-- store finder script -->
         <script type="text/javascript">

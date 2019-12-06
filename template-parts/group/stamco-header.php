@@ -13,10 +13,12 @@
 		<?php wp_head(); ?>
 	</head>
 
-	<body class="pbs-stamco-page">
+	<body>
+
+		<div class="pbs-stamco-page">
  
-        <header class="pbs-stamco-header">
-            <div class="container-fluid">
-                <a href="https://www.stamco.co.uk/"><img src="<?php echo get_bloginfo('template_directory'); ?>/images/group/stamco-logo.svg" alt="Stamco" height="80px" width="auto"></a>
-            </div>
-        </header>
+			<header class="pbs-stamco-header">
+				<div class="container-fluid">
+					<a href="https://www.stamco.co.uk/"><img src="<?php echo get_bloginfo('template_directory'); ?>/images/group/stamco-logo.svg" alt="Stamco" height="80px" width="auto"></a>
+				</div>
+			</header>

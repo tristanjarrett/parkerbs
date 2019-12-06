@@ -13,10 +13,12 @@
 		<?php wp_head(); ?>
 	</head>
 
-	<body class="pbs-fairalls-page">
+	<body>
+
+		<div class="pbs-fairalls-page">
   
-        <header class="pbs-fairalls-header">
-            <div class="container-fluid">
-                <a href="https://fairalls.uk/"><img src="<?php echo get_bloginfo('template_directory'); ?>/images/group/fairalls-logo.png" alt="Fairalls" height="80px" width="auto"></a>
-            </div>
-        </header>
+			<header class="pbs-fairalls-header">
+				<div class="container-fluid">
+					<a href="https://fairalls.uk/"><img src="<?php echo get_bloginfo('template_directory'); ?>/images/group/fairalls-logo.png" alt="Fairalls" height="80px" width="auto"></a>
+				</div>
+			</header>
