@@ -6,7 +6,7 @@
 	<div class="pbs-breadcrumb">
 		<nav class="container-fluid">
 			<ul>
-				<li><a href="<?php echo site_url(); ?>">Home</a></li>
+				<li><a href="https://fairalls.uk/">Home</a></li>
 				<li>/</li>
 				<li><a href="<?php echo site_url() . '/fairalls-vacancies'; ?>">Vacancies</a></li>
 				<li>/</li>

@@ -11,7 +11,7 @@
   <div class="pbs-breadcrumb">
     <nav class="container-fluid">
       <ul>
-        <li><a href="<?php echo site_url(); ?>">Home</a></li>
+        <li><a href="https://fairalls.uk/">Home</a></li>
         <li>/</li>
         <li class="text-muted"><?php the_title(); ?></li>
       </ul>
@@ -129,7 +129,7 @@
       </div>
 
       <div class="pbs-group">
-        <h4 class="mb-3 pbs-font pbs-fairalls-heading">More Careers from Parker Group</h4>
+        <h4 class="mb-3 pbs-font pbs-fairalls-heading">More opportunities within our group</h4>
         <div class="row">
           <div class="col-md-4">
             <div class="pbs-item pbs-parkers">

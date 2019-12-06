@@ -129,7 +129,7 @@
       </div>
 
       <div class="pbs-group">
-        <h4 class="mb-3 pbs-font pbs-heading">More Careers from Parker Group</h4>
+        <h4 class="mb-3 pbs-font pbs-heading">More opportunities within our group</h4>
         <div class="row">
           <div class="col-md-4">
             <div class="pbs-item pbs-fairalls">
