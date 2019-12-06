@@ -4,9 +4,7 @@
  */
  ?>
 
-<?php get_header(); ?>
-
-  <?php get_template_part( 'template-parts/group/stamco-header' ); ?>
+<?php get_template_part( 'template-parts/group/stamco-header' ); ?>
 
   <div class="pbs-breadcrumb">
     <nav class="container-fluid">
@@ -161,6 +159,4 @@
     </div>
   </div>
 
-  <?php get_template_part( 'template-parts/group/stamco-footer' ); ?>
-
-<?php get_footer(); ?>
+<?php get_template_part( 'template-parts/group/stamco-footer' ); ?>

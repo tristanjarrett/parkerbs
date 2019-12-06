@@ -1,7 +1,5 @@
 <?php include 'inc/mail/send-email-jobs.php'; ?>
-<?php get_header(); ?>
-
-	<?php get_template_part( 'template-parts/group/fairalls-header' ); ?>
+<?php get_template_part( 'template-parts/group/fairalls-header' ); ?>
 
 	<div class="pbs-breadcrumb">
 		<nav class="container-fluid">
@@ -150,6 +148,4 @@
 		</div>
 	</div>
 
-	<?php get_template_part( 'template-parts/group/fairalls-footer' ); ?>
-
-<?php get_footer(); ?>
+<?php get_template_part( 'template-parts/group/fairalls-footer' ); ?>
