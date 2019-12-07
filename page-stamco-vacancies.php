@@ -142,24 +142,24 @@
         <h4 class="mb-3 pbs-font pbs-stamco-heading">More opportunities within our group</h4>
         <div class="row">
           <div class="col-md-4">
-            <div class="pbs-item pbs-fairalls">
-              <div class="pbs-img-back">
+            <div class="pbs-item">
+              <div class="pbs-img-back pbs-fairalls">
                 <div class="pbs-img" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/images/group/fairalls-logo.png');"></div>
               </div>
               <a href="<?php echo site_url() . '/fairalls-vacancies'; ?>">See Vacancies <i class="fas fa-fw fa-chevron-circle-right fa-lg"></i></a>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="pbs-item pbs-parkers">
-              <div class="pbs-img-back">
+            <div class="pbs-item">
+              <div class="pbs-img-back pbs-parkers">
                 <div class="pbs-img" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/images/group/parkers-logo.png');"></div>
               </div>
               <a href="<?php echo site_url() . '/vacancies'; ?>">See Vacancies <i class="fas fa-fw fa-chevron-circle-right fa-lg"></i></a>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="pbs-item pbs-chandlers">
-              <div class="pbs-img-back">
+            <div class="pbs-item">
+              <div class="pbs-img-back pbs-chandlers">
                 <div class="pbs-img" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/images/group/chandlers-logo.png');"></div>
               </div>
               <a href="<?php echo site_url() . '/chandlers-vacancies'; ?>">See Vacancies <i class="fas fa-fw fa-chevron-circle-right fa-lg"></i></a>

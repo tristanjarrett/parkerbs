@@ -10,20 +10,20 @@
 		.pbs-item {
 			margin-bottom: 1rem;
 			border: solid 1px #e1e1e1;
-			&.pbs-parkers {
-				background-color: #44a8ab;
-			}
-			&.pbs-stamco {
-				background-color: #f9f9f9;
-			}
-			&.pbs-fairalls {
-				background-color: #006231;
-			}
-			&.pbs-chandlers {
-				background-color: #00652e;
-			}
 			.pbs-img-back {
 				padding: 1rem;
+				&.pbs-parkers {
+					background-color: #44a8ab;
+				}
+				&.pbs-stamco {
+					background-color: #f9f9f9;
+				}
+				&.pbs-fairalls {
+					background-color: #006231;
+				}
+				&.pbs-chandlers {
+					background-color: #00652e;
+				}
 			}
 			.pbs-img {
 				width: 100%;
