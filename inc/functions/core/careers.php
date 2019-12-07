@@ -24,15 +24,15 @@ function pbs_linkedin_meta() {
 // }
 // add_filter('single_template', 'check_for_category_single_template');
 
-// Create special page templates by post type and category name
-function check_for_category_single_template( $t ) {
+// Create special page templates by post type and taxonomy term
+function check_for_taxonomy_single_template( $t ) {
 	global $post;
 	foreach( (array) get_the_terms($post, 'employer') as $cat ) { 
 	  if ( file_exists(get_stylesheet_directory() . "/single-vacancy-{$cat->slug}.php") ) return get_stylesheet_directory() . "/single-vacancy-{$cat->slug}.php"; 
 	} 
 	return $t;
 }
-add_filter('single_template', 'check_for_category_single_template');
+add_filter('single_template', 'check_for_taxonomy_single_template');
 
 // Register custom tax for Vacancy to sort between businesses
 function create_vacancy_taxonomies() {
