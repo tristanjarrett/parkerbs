@@ -14,17 +14,16 @@ function pbs_post_vacancy() {
       'publicly_queryable'  => true,
       'supports' => array(
         'title',
-        'editor',
-        'thumbnail'
+        'editor'
       ),
       'menu_icon' => 'dashicons-businessman',
       'menu_position' => null,
       'rewrite' => array(
         'slug' => 'vacancy'
-      ),
-      'taxonomies' => array( 'category' ),
-      'capability_type' => array('pbs_vacancy', 'pbs_vacancies'),
-      'map_meta_cap' => true
+      )
+      // 'taxonomies' => array( 'category' ),
+      // 'capability_type' => array('pbs_vacancy', 'pbs_vacancies'),
+      // 'map_meta_cap' => true
     )
   );
 }

@@ -39,8 +39,14 @@
         $argsCount = array(
           'post_type' => 'vacancy',
           'post_status' => 'publish',
-          'category_name' => 'fairalls',
-          'numberposts' => -1
+          'numberposts' => -1,
+          'tax_query' => array(
+            array(
+                'taxonomy' => 'employer',
+                'field' => 'slug',
+                'terms' => 'fairalls'
+            )
+          )
         );
         $postNum = count( get_posts( $argsCount ) );
         ?>
@@ -54,8 +60,14 @@
             $args = array(
               'post_type' => 'vacancy',
               'posts_per_page' => 10,
-              'category_name' => 'fairalls',
-              'paged' => get_query_var('paged') ? get_query_var('paged') : 1
+              'paged' => get_query_var('paged') ? get_query_var('paged') : 1,
+              'tax_query' => array(
+                array(
+                    'taxonomy' => 'employer',
+                    'field' => 'slug',
+                    'terms' => 'fairalls'
+                )
+              )
             );
             $vacancy_loop = new WP_Query($args);
 

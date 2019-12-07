@@ -6,6 +6,8 @@
 
 <?php get_header(); ?>
 
+
+
   <?php get_template_part( 'template-parts/header-content' ); ?>
 
   <div class="pbs-breadcrumb">
@@ -41,8 +43,14 @@
         $argsCount = array(
           'post_type' => 'vacancy',
           'post_status' => 'publish',
-          'category_name' => 'parkers',
-          'numberposts' => -1
+          'numberposts' => -1,
+          'tax_query' => array(
+            array(
+                'taxonomy' => 'employer',
+                'field' => 'slug',
+                'terms' => 'parkers'
+            )
+          )
         );
         $postNum = count( get_posts( $argsCount ) );
         ?>
@@ -56,8 +64,14 @@
             $args = array(
               'post_type' => 'vacancy',
               'posts_per_page' => 10,
-              'category_name' => 'parkers',
-              'paged' => get_query_var('paged') ? get_query_var('paged') : 1
+              'paged' => get_query_var('paged') ? get_query_var('paged') : 1,
+              'tax_query' => array(
+                array(
+                    'taxonomy' => 'employer',
+                    'field' => 'slug',
+                    'terms' => 'parkers'
+                )
+              )
             );
             $vacancy_loop = new WP_Query($args);
 

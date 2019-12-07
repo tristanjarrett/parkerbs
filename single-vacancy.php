@@ -119,7 +119,13 @@
 								 'orderby'=> 'title',
 								 'order' => 'ASC',
 								 'post__not_in' => array( $post->ID ),
-								 'category_name' => 'parkers'
+								 'tax_query' => array(
+								   array(
+									   'taxonomy' => 'employer',
+									   'field' => 'slug',
+									   'terms' => 'parkers'
+								   )
+								 )
 							 );
 				       $branches = new WP_Query( $args );
 							 if ( $branches->have_posts() ):

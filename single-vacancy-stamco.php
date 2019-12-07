@@ -118,7 +118,13 @@
 								 'orderby'=> 'title',
 								 'order' => 'ASC',
 								 'post__not_in' => array( $post->ID ),
-								 'category_name' => 'stamco'
+								 'tax_query' => array(
+								   array(
+									   'taxonomy' => 'employer',
+									   'field' => 'slug',
+									   'terms' => 'stamco'
+								   )
+								 )
 							 );
 				       $branches = new WP_Query( $args );
 							 if ( $branches->have_posts() ):
