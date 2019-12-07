@@ -12,3 +12,4 @@ define('WPMS_SMTP_PASS', 'mail_account_password_here');
 - Jetpack by WordPress.com
 - Yoast SEO
 - Google Analytics for WordPress by MonsterInsights
+- Radio Buttons for Taxonomies
