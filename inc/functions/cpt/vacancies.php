@@ -89,15 +89,15 @@ function add_pbs_vacancy_manager_caps() {
   foreach($roles as $the_role) {
     $role = get_role($the_role);
     $role->add_cap( 'read' );
-	  $role->add_cap( 'read_pbs_vacancy');
-	  $role->add_cap( 'read_private_pbs_vacancies' );
-	  $role->add_cap( 'edit_pbs_vacancy' );
-	  $role->add_cap( 'edit_pbs_vacancies' );
-	  $role->add_cap( 'edit_others_pbs_vacancies' );
-	  $role->add_cap( 'edit_published_pbs_vacancies' );
-	  $role->add_cap( 'publish_pbs_vacancies' );
-	  $role->add_cap( 'delete_others_pbs_vacancies' );
-	  $role->add_cap( 'delete_private_pbs_vacancies' );
-	  $role->add_cap( 'delete_published_pbs_vacancies' );
+    $role->add_cap( 'read_pbs_vacancy');
+    $role->add_cap( 'read_private_pbs_vacancies' );
+    $role->add_cap( 'edit_pbs_vacancy' );
+    $role->add_cap( 'edit_pbs_vacancies' );
+    $role->add_cap( 'edit_others_pbs_vacancies' );
+    $role->add_cap( 'edit_published_pbs_vacancies' );
+    $role->add_cap( 'publish_pbs_vacancies' );
+    $role->add_cap( 'delete_others_pbs_vacancies' );
+    $role->add_cap( 'delete_private_pbs_vacancies' );
+    $role->add_cap( 'delete_published_pbs_vacancies' );
   }
 }
