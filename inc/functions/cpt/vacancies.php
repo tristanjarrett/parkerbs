@@ -20,10 +20,9 @@ function pbs_post_vacancy() {
       'menu_position' => null,
       'rewrite' => array(
         'slug' => 'vacancy'
-      )
-      // 'taxonomies' => array( 'category' ),
-      // 'capability_type' => array('pbs_vacancy', 'pbs_vacancies'),
-      // 'map_meta_cap' => true
+      ),
+      'capability_type' => array('pbs_vacancy', 'pbs_vacancies'),
+      'map_meta_cap' => true
     )
   );
 }
