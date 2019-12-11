@@ -57,6 +57,12 @@ function create_vacancy_taxonomies() {
 		'show_admin_column' => true,
 		'query_var'         => true,
 		'rewrite'           => array( 'slug' => 'employer' ),
+		'capabilities' => array(
+			// 'manage_terms' => 'pbs_vacancy_manager',
+			// 'edit_terms'   => 'pbs_vacancy_manager',
+			// 'delete_terms' => 'pbs_vacancy_manager',
+			'assign_terms' => 'read',
+		),
 	);
 
   register_taxonomy( 'employer', 'vacancy', $args );
